@@ -1,0 +1,1248 @@
+<!DOCTYPE html>
+<html lang="it-IT">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="profile" href="https://gmpg.org/xfn/11">
+
+<link rel="manifest" href="/superpwa-manifest.json">
+<link rel="prefetch" href="/superpwa-manifest.json">
+<meta name="theme-color" content="#D5E0EB">
+
+<title>Romanzi &#8211; Audiolibri.org</title>
+<meta name="robots" content="max-image-preview:large">
+<link rel="manifest" href="/pwa-manifest.json">
+<link rel="apple-touch-icon-precomposed" sizes="192x192" href="/wp-content/plugins/pwa-for-wp/images/logo.png">
+<link rel="amphtml" href="/romanzi/amp/">
+<meta name="generator" content="AMP for WP 1.0.77.35">
+<link rel="dns-prefetch" href="//www.googletagmanager.com">
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//s.w.org">
+<link href="https://fonts.gstatic.com/" crossorigin rel="preconnect">
+<link rel="alternate" type="application/rss+xml" title="Audiolibri.org &raquo; Feed" href="/feed/">
+<link rel="alternate" type="application/rss+xml" title="Audiolibri.org &raquo; Feed dei commenti" href="/comments/feed/">
+<link rel="stylesheet" id="wp-block-library-css" href="/wp-includes/css/dist/block-library/style.min.css?ver=03419a7def9bc99d964c28ff4ca4bab2" type="text/css" media="all">
+<link rel="stylesheet" id="image-hover-effects-css-css" href="/wp-content/plugins/mega-addons-for-visual-composer/css/ihover.css?ver=03419a7def9bc99d964c28ff4ca4bab2" type="text/css" media="all">
+<link rel="stylesheet" id="style-css-css" href="/wp-content/plugins/mega-addons-for-visual-composer/css/style.css?ver=03419a7def9bc99d964c28ff4ca4bab2" type="text/css" media="all">
+<link rel="stylesheet" id="font-awesome-latest-css" href="/wp-content/plugins/mega-addons-for-visual-composer/css/font-awesome/css/all.css?ver=03419a7def9bc99d964c28ff4ca4bab2" type="text/css" media="all">
+<link rel="stylesheet" id="materialis-style-css" href="/wp-content/themes/materialis/style.min.css?ver=1.1.16" type="text/css" media="all">
+<style id="materialis-style-inline-css" type="text/css">img.logo.dark, img.custom-logo{width:auto;max-height:70px;}</style>
+<link rel="stylesheet" id="materialis-material-icons-css" href="/wp-content/themes/materialis/assets/css/material-icons.min.css?ver=1.1.16" type="text/css" media="all">
+<link rel="stylesheet" id="materialis-style-bundle-css" href="/wp-content/themes/materialis/assets/css/theme.bundle.min.css?ver=1.1.16" type="text/css" media="all">
+<link rel="stylesheet" id="materialis-fonts-css" data-href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,400,400italic,500,500italic,700,700italic,900,900italic%7CPlayfair%20Display:400,400italic,700,700italic&#038;subset=latin,latin-ext" type="text/css" media="all">
+<link rel="stylesheet" id="js_composer_front-css" href="/wp-content/plugins/js_composer/assets/css/js_composer.min.css?ver=6.6.0" type="text/css" media="all">
+<link rel="stylesheet" id="pwaforwp-style-css" href="/wp-content/plugins/pwa-for-wp/assets/css/pwaforwp-main.min.css?ver=1.7.41" type="text/css" media="all">
+<link rel="stylesheet" id="kirki-styles-materialis-css" href="/wp-content/themes/materialis/customizer/kirki/assets/css/kirki-styles.css" type="text/css" media="all">
+<style id="kirki-styles-materialis-inline-css" type="text/css">/** cached kirki style */.header{background-position:center center;}.header-homepage.color-overlay:before{background:#181818;}.header-homepage .background-overlay,.header-homepage.color-overlay::before{opacity:0.53;}.header.color-overlay:before{background:#181818;}.header .background-overlay,.header.color-overlay::before{opacity:0.4;}.header-homepage .hero-title{color:#ffffff;}.header-homepage .header-description-row{padding-top:15%;padding-bottom:25%;}.inner-header-description{padding-top:10%;padding-bottom:10%;}.materialis-inner-page .navigation-bar.bordered{border-bottom-color:#ffffff;border-bottom-style:solid;}.materialis-inner-page .navigation-bar.bordered:not(.fixto-fixed){border-bottom-width:2px;}@media screen and (max-width:767px){.header-homepage .header-description-row{padding-top:10%;padding-bottom:10%;}}@media only screen and (min-width: 768px){.header-content .align-holder{width:85%!important;}.inner-header-description{text-align:center!important;}}</style>
+<script type="text/javascript" src="/wp-includes/js/jquery/jquery.min.js?ver=3.6.0" id="jquery-core-js"></script>
+<script type="text/javascript" id="jquery-core-js-after">
+MaterialisTheme = {"blog_posts_as_masonry_grid":false}
+</script>
+<script type="text/javascript" src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
+<script type="text/javascript" id="jquery-js-after">
+    
+        (function ($) {
+            function setHeaderTopSpacing() {
+                $('.header-wrapper .header,.header-wrapper .header-homepage').css({
+                    'padding-top': $('.header-top').height()
+                });
+
+             setTimeout(function() {
+                  var headerTop = document.querySelector('.header-top');
+                  var headers = document.querySelectorAll('.header-wrapper .header,.header-wrapper .header-homepage');
+
+                  for (var i = 0; i < headers.length; i++) {
+                      var item = headers[i];
+                      item.style.paddingTop = headerTop.getBoundingClientRect().height + "px";
+                  }
+
+                    var languageSwitcher = document.querySelector('.materialis-language-switcher');
+
+                    if(languageSwitcher){
+                        languageSwitcher.style.top = "calc( " +  headerTop.getBoundingClientRect().height + "px + 1rem)" ;
+                    }
+                    
+                }, 100);
+
+            }
+
+            jQuery(window).on('resize orientationchange', setHeaderTopSpacing);
+            window.materialisSetHeaderTopSpacing = setHeaderTopSpacing
+
+        })(jQuery);
+    
+    
+</script>
+
+<script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-40272154-32" id="google_gtagjs-js" async></script>
+<script type="text/javascript" id="google_gtagjs-js-after">
+window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}
+gtag('set', 'linker', {"domains":["audiolibri.org"]} );
+gtag("js", new Date());
+gtag("set", "developer_id.dZTNiMT", true);
+gtag("config", "UA-40272154-32", {"anonymize_ip":true});
+</script>
+
+<link rel="https://api.w.org/" href="/wp-json/">
+<link rel="alternate" type="application/json" href="/wp-json/wp/v2/pages/2979">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd">
+<link rel="canonical" href="/romanzi/">
+<link rel="shortlink" href="/?p=2979">
+<link rel="alternate" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2Fromanzi%2F">
+<link rel="alternate" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2Fromanzi%2F&#038;format=xml">
+<meta name="generator" content="Site Kit by Google 1.49.0"> <script type="text/javascript" data-name="async-styles">
+        (function () {
+            var links = document.querySelectorAll('link[data-href]');
+            for (var i = 0; i < links.length; i++) {
+                var item = links[i];
+                item.href = item.getAttribute('data-href')
+            }
+        })();
+    </script>
+<meta name="onesignal" content="wordpress-plugin">
+<script>
+
+      window.OneSignal = window.OneSignal || [];
+
+      OneSignal.push( function() {
+        OneSignal.SERVICE_WORKER_UPDATER_PATH = "OneSignalSDKUpdaterWorker.js.php";
+                      OneSignal.SERVICE_WORKER_PATH = "OneSignalSDKWorker.js.php";
+                      OneSignal.SERVICE_WORKER_PARAM = { scope: "/" };
+        OneSignal.setDefaultNotificationUrl("");
+        var oneSignal_options = {};
+        window._oneSignalInitOptions = oneSignal_options;
+
+        oneSignal_options['wordpress'] = true;
+oneSignal_options['appId'] = '7efbd26e-459f-4b2e-8ceb-8d35cabbf5c5';
+oneSignal_options['allowLocalhostAsSecureOrigin'] = true;
+oneSignal_options['welcomeNotification'] = { };
+oneSignal_options['welcomeNotification']['disable'] = true;
+oneSignal_options['path'] = "/wp-content/plugins/onesignal-free-web-push-notifications/sdk_files/";
+oneSignal_options['safari_web_id'] = "web.onesignal.auto.110555e6-7aae-4d44-9896-bfe7a2b1c987";
+oneSignal_options['persistNotification'] = true;
+oneSignal_options['promptOptions'] = { };
+                OneSignal.init(window._oneSignalInitOptions);
+                OneSignal.showSlidedownPrompt();      });
+
+      function documentInitOneSignal() {
+        var oneSignal_elements = document.getElementsByClassName("OneSignal-prompt");
+
+        var oneSignalLinkClickHandler = function(event) { OneSignal.push(['registerForPushNotifications']); event.preventDefault(); };        for(var i = 0; i < oneSignal_elements.length; i++)
+          oneSignal_elements[i].addEventListener('click', oneSignalLinkClickHandler, false);
+      }
+
+      if (document.readyState === 'complete') {
+           documentInitOneSignal();
+      }
+      else {
+           window.addEventListener("load", function(event){
+               documentInitOneSignal();
+          });
+      }
+    </script>
+<meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress.">
+<link rel="icon" href="/wp-content/uploads/2017/06/cropped-audiobooks_icon_alfa-32x32.png" sizes="32x32">
+<link rel="icon" href="/wp-content/uploads/2017/06/cropped-audiobooks_icon_alfa-192x192.png" sizes="192x192">
+<meta name="msapplication-TileImage" content="/wp-content/uploads/2017/06/cropped-audiobooks_icon_alfa-270x270.png">
+<meta name="pwaforwp" content="wordpress-plugin">
+<meta name="theme-color" content="#D5E0EB">
+<meta name="apple-mobile-web-app-title" content="Audiolibri.org">
+<meta name="application-name" content="Audiolibri.org">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="YES">
+<link rel="apple-touch-startup-image" href="/wp-content/plugins/pwa-for-wp/images/logo.png">
+<link rel="apple-touch-icon" sizes="192x192" href="/wp-content/plugins/pwa-for-wp/images/logo.png">
+<link rel="apple-touch-icon" sizes="512x512" href="/wp-content/plugins/pwa-for-wp/images/logo-512x512.png">
+<style type="text/css" id="wp-custom-css">.navigation-bar {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.emoji {
+    font-size: x-large;
+}
+
+a.link {
+    font-size: large;
+}
+
+.h3, h3 {
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+}
+
+.header-homepage .header-description-row {
+    padding-top: 5%;
+}</style>
+<noscript><style>.wpb_animate_when_almost_visible { opacity: 1; }</style></noscript> <style id="page-content-custom-styles"></style>
+<style data-name="background-content-colors">.materialis-front-page .content.blog-page,
+        .materialis-inner-page .page-content,
+        .materialis-inner-page .content,
+        .materialis-front-page.materialis-content-padding .page-content {
+            background-color: #f5fafd;
+        }</style>
+</head>
+<body class="page-template-default page page-id-2979 overlap-first-section materialis-inner-page wpb-js-composer js-comp-ver-6.6.0 vc_responsive">
+<style>.screen-reader-text[href="#page-content"]:focus {
+            background-color: #f1f1f1;
+            border-radius: 3px;
+            box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+            clip: auto !important;
+            clip-path: none;
+            color: #21759b;
+           
+        }</style>
+<a class="skip-link screen-reader-text" href="#page-content">Skip to content</a>
+<div id="page-top" class="header-top">
+<div class="navigation-bar  boxed bordered" data-sticky="0" data-sticky-mobile="1" data-sticky-to="top">
+<div class="gridContainer navigation-wrapper">
+<div class="row basis-auto">
+<div class="logo_col col-xs col-sm-fit">
+<a class="text-logo" data-type="group" data-dynamic-mod="true" href="/">Audiolibri.org</a> </div>
+<div class="main_menu_col col-xs">
+<div id="mainmenu_container" class="row"><ul id="main_menu" class="simple-text-buttons main-menu dropdown-menu">
+<li id="menu-item-7378" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7378">
+<a href="/audiolibri-in-italiano/">🇮🇹</a>
+<ul class="sub-menu">
+<li id="menu-item-18293" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18293"><a href="/audiolibri-in-italiano/poesia/">Poesia</a></li>
+<li id="menu-item-18289" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18289"><a href="/audiolibri-in-italiano/racconti/">Racconti</a></li>
+<li id="menu-item-18295" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18295"><a href="/audiolibri-in-italiano/romanzi/">Romanzi</a></li>
+<li id="menu-item-18290" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18290"><a href="/audiolibri-in-italiano/saggi/">Saggi</a></li>
+<li id="menu-item-18294" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18294"><a href="/audiolibri-in-italiano/religioni/">Religioni</a></li>
+<li id="menu-item-18292" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18292"><a href="/audiolibri-in-italiano/ragazzi/">Ragazzi</a></li>
+<li id="menu-item-18291" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18291"><a href="/audiolibri-in-italiano/estratti/">Estratti</a></li>
+</ul>
+</li>
+<li id="menu-item-7379" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7379">
+<a href="/audiolibri-in-inglese/">🇬🇧</a>
+<ul class="sub-menu">
+<li id="menu-item-18296" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18296"><a href="/audiolibri-in-inglese/kids/">Kids</a></li>
+<li id="menu-item-18297" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18297"><a href="/audiolibri-in-inglese/novels/">Novels</a></li>
+<li id="menu-item-18298" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18298"><a href="/audiolibri-in-inglese/poetry/">Poetry</a></li>
+</ul>
+</li>
+<li id="menu-item-7380" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7380">
+<a href="/audiolibri-in-spagnolo/">🇪🇸</a>
+<ul class="sub-menu">
+<li id="menu-item-18299" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18299"><a href="/audiolibri-in-spagnolo/cuentos/">Cuentos</a></li>
+<li id="menu-item-18300" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18300"><a href="/audiolibri-in-spagnolo/infantiles/">Infantiles</a></li>
+<li id="menu-item-18301" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18301"><a href="/audiolibri-in-spagnolo/novelas/">Novelas</a></li>
+<li id="menu-item-18302" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18302"><a href="/audiolibri-in-spagnolo/poesia-audiolibri-in-spagnolo/">Poesia</a></li>
+</ul>
+</li>
+<li id="menu-item-8728" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8728"><a href="/category/audiolibri-in-francese/">🇫🇷</a></li>
+<li id="menu-item-8729" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8729"><a href="/category/audiolibri-in-tedesco/">🇩🇪</a></li>
+<li id="menu-item-8730" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8730"><a href="/category/audiolibri-in-portoghese/">🇵🇹</a></li>
+<li id="menu-item-8731" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8731"><a href="/category/audiolibri-in-russo/">🇷🇺</a></li>
+<li id="menu-item-8732" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8732"><a href="/category/audiolibri-in-polacco/">🇵🇱</a></li>
+<li id="menu-item-8733" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8733"><a href="/category/audiolibri-in-olandese/">🇳🇱</a></li>
+<li id="menu-item-8736" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8736"><a href="/category/audiolibri-in-arabo/">🇸🇦</a></li>
+</ul></div> <a href="#" data-component="offcanvas" data-target="#offcanvas-wrapper" data-direction="right" data-width="300px" data-push="false">
+<div class="bubble"></div>
+<i class="mdi mdi-view-sequential"></i>
+</a>
+<div id="offcanvas-wrapper" class="hide force-hide offcanvas-right">
+<div class="offcanvas-top">
+<div class="logo-holder">
+<a class="text-logo" data-type="group" data-dynamic-mod="true" href="/">Audiolibri.org</a> </div>
+</div>
+<div id="offcanvas-menu" class="menu-top-bar-flags-container"><ul id="offcanvas_menu" class="offcanvas_menu">
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7378">
+<a href="/audiolibri-in-italiano/">🇮🇹</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18293"><a href="/audiolibri-in-italiano/poesia/">Poesia</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18289"><a href="/audiolibri-in-italiano/racconti/">Racconti</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18295"><a href="/audiolibri-in-italiano/romanzi/">Romanzi</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18290"><a href="/audiolibri-in-italiano/saggi/">Saggi</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18294"><a href="/audiolibri-in-italiano/religioni/">Religioni</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18292"><a href="/audiolibri-in-italiano/ragazzi/">Ragazzi</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18291"><a href="/audiolibri-in-italiano/estratti/">Estratti</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7379">
+<a href="/audiolibri-in-inglese/">🇬🇧</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18296"><a href="/audiolibri-in-inglese/kids/">Kids</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18297"><a href="/audiolibri-in-inglese/novels/">Novels</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18298"><a href="/audiolibri-in-inglese/poetry/">Poetry</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7380">
+<a href="/audiolibri-in-spagnolo/">🇪🇸</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18299"><a href="/audiolibri-in-spagnolo/cuentos/">Cuentos</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18300"><a href="/audiolibri-in-spagnolo/infantiles/">Infantiles</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18301"><a href="/audiolibri-in-spagnolo/novelas/">Novelas</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18302"><a href="/audiolibri-in-spagnolo/poesia-audiolibri-in-spagnolo/">Poesia</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8728"><a href="/category/audiolibri-in-francese/">🇫🇷</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8729"><a href="/category/audiolibri-in-tedesco/">🇩🇪</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8730"><a href="/category/audiolibri-in-portoghese/">🇵🇹</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8731"><a href="/category/audiolibri-in-russo/">🇷🇺</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8732"><a href="/category/audiolibri-in-polacco/">🇵🇱</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8733"><a href="/category/audiolibri-in-olandese/">🇳🇱</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8736"><a href="/category/audiolibri-in-arabo/">🇸🇦</a></li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="page" class="site">
+<div class="header-wrapper">
+<div class="header  color-overlay  custom-mobile-image" style="; background-image:url(&quot;/wp-content/themes/materialis/assets/images/curve-1209392.jpg&quot;); background-color:#6a73da">
+<div class="inner-header-description gridContainer">
+<div class="row header-description-row">
+<div class="col-xs col-xs-12">
+<h1 class="hero-title">
+Romanzi </h1>
+<p class="header-subtitle">Audiolibri in Italiano e in lingua originale.</p>
+</div>
+</div>
+</div>
+<script>
+		if (window.materialisSetHeaderTopSpacing) {
+			window.materialisSetHeaderTopSpacing();
+		}
+    </script>
+</div>
+</div>
+<div class="page-content" id="page-content">
+<div class="gridContainer content">
+<div id="post-2979" class="post-2979 page type-page status-publish hentry">
+<div>
+<div class="vc_row wpb_row vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
+<div class="vc_grid-container-wrapper vc_clearfix">
+<div class="vc_grid-container vc_clearfix wpb_content_element vc_basic_grid" data-initial-loading-animation="fadeIn" data-vc-grid-settings="{&quot;page_id&quot;:2979,&quot;style&quot;:&quot;lazy&quot;,&quot;action&quot;:&quot;vc_get_vc_grid_data&quot;,&quot;shortcode_id&quot;:&quot;1549204433392-673a531f-a295-7&quot;,&quot;items_per_page&quot;:&quot;18&quot;,&quot;tag&quot;:&quot;vc_basic_grid&quot;}" data-vc-request="/wp-admin/admin-ajax.php" data-vc-post-id="2979" data-vc-public-nonce="765c0fdb61">
+<div class="vc_grid vc_row vc_grid-gutter-30px vc_pageable-wrapper vc_hook_hover" data-vc-pageable-content="true">
+<div class="vc_pageable-slide-wrapper vc_clearfix" data-vc-grid-content="true">
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/il-gioioso-mendicante-di-louis-de-wohl-recensione-di-luigi-gaudio/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="&#8220;Il gioioso mendicante&#8221; di Louis De Wohl recensione di Luigi Gaudio"><img width="150" height="150" src="/wp-content/uploads/2019/04/Il-gioioso-mendicante-di-Louis-De-Wohl-recensione-di-Luigi-Gaudio-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/il-gioioso-mendicante-di-louis-de-wohl-recensione-di-luigi-gaudio/" class="vc_gitem-link" title="&#8220;Il gioioso mendicante&#8221; di Louis De Wohl recensione di Luigi Gaudio">&#8220;Il gioioso mendicante&#8221; di Louis De Wohl recensione di Luigi Gaudio</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/quanto-costa-l-amore-ai-vecchi-di-h-de-balzac/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="&#8220;QUANTO COSTA L&#8217; AMORE AI VECCHI&#8221;  di H. De Balzac"><img width="150" height="150" src="/wp-content/uploads/2019/08/QUANTO-COSTA-L-AMORE-AI-VECCHI-di-H.-De-Balzac-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/quanto-costa-l-amore-ai-vecchi-di-h-de-balzac/" class="vc_gitem-link" title="&#8220;QUANTO COSTA L&#8217; AMORE AI VECCHI&#8221;  di H. De Balzac">&#8220;QUANTO COSTA L&#8217; AMORE AI VECCHI&#8221; di H. De Balzac</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/storia-straordinaria-di-peter-schlemihl-di-adelbert-von-chamisso/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="&#8220;Storia straordinaria di Peter Schlemihl&#8221; di Adelbert von Chamisso"><img width="150" height="150" src="/wp-content/uploads/2020/03/Storia-straordinaria-di-Peter-Schlemihl-di-Adelbert-von-Chamisso-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/storia-straordinaria-di-peter-schlemihl-di-adelbert-von-chamisso/" class="vc_gitem-link" title="&#8220;Storia straordinaria di Peter Schlemihl&#8221; di Adelbert von Chamisso">&#8220;Storia straordinaria di Peter Schlemihl&#8221; di Adelbert von Chamisso</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/01-delitto-e-castigo-romanzo-di-f-dostoevskij-parte-prima/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="01 &#8211; DELITTO E CASTIGO &#8211; romanzo di F Dostoevskij  PARTE PRIMA"><img width="150" height="150" src="/wp-content/uploads/2020/02/01-DELITTO-E-CASTIGO-romanzo-di-F-Dostoevskij-PARTE-PRIMA-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/01-delitto-e-castigo-romanzo-di-f-dostoevskij-parte-prima/" class="vc_gitem-link" title="01 &#8211; DELITTO E CASTIGO &#8211; romanzo di F Dostoevskij  PARTE PRIMA">01 &#8211; DELITTO E CASTIGO &#8211; romanzo di F Dostoevskij PARTE PRIMA</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/02-delitto-e-castigo-di-f-dostoevskij-parte-seconda/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="02 &#8211;  DELITTO E CASTIGO &#8211; di F. Dostoevskij &#8211; PARTE SECONDA"><img width="150" height="150" src="/wp-content/uploads/2020/02/02-DELITTO-E-CASTIGO-di-F.-Dostoevskij-PARTE-SECONDA-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/02-delitto-e-castigo-di-f-dostoevskij-parte-seconda/" class="vc_gitem-link" title="02 &#8211;  DELITTO E CASTIGO &#8211; di F. Dostoevskij &#8211; PARTE SECONDA">02 &#8211; DELITTO E CASTIGO &#8211; di F. Dostoevskij &#8211; PARTE SECONDA</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/03-delitto-e-castigo-di-f-dostoevskij-parte-terza/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="03  &#8211;  DELITTO E CASTIGO  di F. Dostoevskij &#8211; PARTE TERZA"><img width="150" height="150" src="/wp-content/uploads/2020/02/03-DELITTO-E-CASTIGO-di-F.-Dostoevskij-PARTE-TERZA-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/03-delitto-e-castigo-di-f-dostoevskij-parte-terza/" class="vc_gitem-link" title="03  &#8211;  DELITTO E CASTIGO  di F. Dostoevskij &#8211; PARTE TERZA">03 &#8211; DELITTO E CASTIGO di F. Dostoevskij &#8211; PARTE TERZA</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/04-delitto-e-castigo-di-f-dostoevskij-parte-quarta/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="04 &#8211;  DELITTO E CASTIGO  di F. Dostoevskij &#8211; PARTE QUARTA"><img width="150" height="150" src="/wp-content/uploads/2020/02/04-DELITTO-E-CASTIGO-di-F.-Dostoevskij-PARTE-QUARTA-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/04-delitto-e-castigo-di-f-dostoevskij-parte-quarta/" class="vc_gitem-link" title="04 &#8211;  DELITTO E CASTIGO  di F. Dostoevskij &#8211; PARTE QUARTA">04 &#8211; DELITTO E CASTIGO di F. Dostoevskij &#8211; PARTE QUARTA</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/05-delitto-e-castigo-di-f-dostoevskij-parte-quinta/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="05 &#8211;  DELITTO E CASTIGO  di F. Dostoevskij &#8211; PARTE QUINTA"><img width="150" height="150" src="/wp-content/uploads/2020/02/05-DELITTO-E-CASTIGO-di-F.-Dostoevskij-PARTE-QUINTA-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/05-delitto-e-castigo-di-f-dostoevskij-parte-quinta/" class="vc_gitem-link" title="05 &#8211;  DELITTO E CASTIGO  di F. Dostoevskij &#8211; PARTE QUINTA">05 &#8211; DELITTO E CASTIGO di F. Dostoevskij &#8211; PARTE QUINTA</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/06-delitto-e-castigo-di-f-dostoevskij-parte-sesta/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="06 &#8211;  DELITTO E CASTIGO  di F. Dostoevskij &#8211; PARTE SESTA"><img width="150" height="150" src="/wp-content/uploads/2020/02/06-DELITTO-E-CASTIGO-di-F.-Dostoevskij-PARTE-SESTA-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/06-delitto-e-castigo-di-f-dostoevskij-parte-sesta/" class="vc_gitem-link" title="06 &#8211;  DELITTO E CASTIGO  di F. Dostoevskij &#8211; PARTE SESTA">06 &#8211; DELITTO E CASTIGO di F. Dostoevskij &#8211; PARTE SESTA</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/07-delitto-e-castigo-di-f-dostoevskij-epilogo/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="07 &#8211;  DELITTO E CASTIGO  di F. Dostoevskij &#8211; EPILOGO"><img width="150" height="150" src="/wp-content/uploads/2020/02/07-DELITTO-E-CASTIGO-di-F.-Dostoevskij-EPILOGO-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/07-delitto-e-castigo-di-f-dostoevskij-epilogo/" class="vc_gitem-link" title="07 &#8211;  DELITTO E CASTIGO  di F. Dostoevskij &#8211; EPILOGO">07 &#8211; DELITTO E CASTIGO di F. Dostoevskij &#8211; EPILOGO</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/1984-di-g-orwell-lettura-integrale/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="1984 di G. Orwell &#8211; lettura integrale"><img width="150" height="150" src="/wp-content/uploads/2019/06/1984-di-G.-Orwell-lettura-integrale-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/1984-di-g-orwell-lettura-integrale/" class="vc_gitem-link" title="1984 di G. Orwell &#8211; lettura integrale">1984 di G. Orwell &#8211; lettura integrale</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/26-i-miserabili-romanzo-di-v-hugo-libro-sesto-parte-terza/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="26 &#8211; I MISERABILI  romanzo di V. Hugo  libro sesto PARTE TERZA"><img width="150" height="150" src="/wp-content/uploads/2020/03/26-I-MISERABILI-romanzo-di-V.-Hugo-libro-sesto-PARTE-TERZA-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/26-i-miserabili-romanzo-di-v-hugo-libro-sesto-parte-terza/" class="vc_gitem-link" title="26 &#8211; I MISERABILI  romanzo di V. Hugo  libro sesto PARTE TERZA">26 &#8211; I MISERABILI romanzo di V. Hugo libro sesto PARTE TERZA</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/28-i-miserabili-romanzo-di-v-hugo-parte-terza-libro-ottavo-ultimo-della-parte-terza/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="28   &#8211; I MISERABILI &#8211; romanzo di V. Hugo &#8211; PARTE TERZA libro ottavo (ultimo della parte terza)"><img width="150" height="150" src="/wp-content/uploads/2020/03/28-I-MISERABILI-romanzo-di-V.-Hugo-PARTE-TERZA-libro-ottavo-ultimo-della-parte-terza-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/28-i-miserabili-romanzo-di-v-hugo-parte-terza-libro-ottavo-ultimo-della-parte-terza/" class="vc_gitem-link" title="28   &#8211; I MISERABILI &#8211; romanzo di V. Hugo &#8211; PARTE TERZA libro ottavo (ultimo della parte terza)">28 &#8211; I MISERABILI &#8211; romanzo di V. Hugo &#8211; PARTE TERZA libro ottavo (ultimo della parte terza)</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/albert-racconto-lungo-di-l-tolstoj/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="Albèrt &#8211; racconto lungo di L- Tolstoj"><img width="150" height="150" src="/wp-content/uploads/2018/03/Albrt-racconto-lungo-di-L-Tolstoj-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/albert-racconto-lungo-di-l-tolstoj/" class="vc_gitem-link" title="Albèrt &#8211; racconto lungo di L- Tolstoj">Albèrt &#8211; racconto lungo di L- Tolstoj</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/alice-allo-specchio-di-l-carrol-lettura-integrale/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="ALICE ALLO SPECCHIO di L. Carrol &#8211; LETTURA INTEGRALE"><img width="150" height="150" src="/wp-content/uploads/2020/02/ALICE-ALLO-SPECCHIO-di-L.-Carrol-LETTURA-INTEGRALE-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/alice-allo-specchio-di-l-carrol-lettura-integrale/" class="vc_gitem-link" title="ALICE ALLO SPECCHIO di L. Carrol &#8211; LETTURA INTEGRALE">ALICE ALLO SPECCHIO di L. Carrol &#8211; LETTURA INTEGRALE</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/alice-nel-paese-delle-meraviglie-di-lewis-carroll-lettura-integrale/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="ALICE NEL PAESE DELLE MERAVIGLIE di Lewis Carroll &#8211; lettura integrale"><img width="150" height="150" src="/wp-content/uploads/2019/05/ALICE-NEL-PAESE-DELLE-MERAVIGLIE-di-Lewis-Carroll-lettura-integrale-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/alice-nel-paese-delle-meraviglie-di-lewis-carroll-lettura-integrale/" class="vc_gitem-link" title="ALICE NEL PAESE DELLE MERAVIGLIE di Lewis Carroll &#8211; lettura integrale">ALICE NEL PAESE DELLE MERAVIGLIE di Lewis Carroll &#8211; lettura integrale</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/amok-racconto-lungo-di-stefan-zweig/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="AMOK   racconto lungo di Stefan Zweig"><img width="150" height="150" src="/wp-content/uploads/2019/10/AMOK-racconto-lungo-di-Stefan-Zweig-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/amok-racconto-lungo-di-stefan-zweig/" class="vc_gitem-link" title="AMOK   racconto lungo di Stefan Zweig">AMOK racconto lungo di Stefan Zweig</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/apuleio-amore-e-psiche-integrale/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="APULEIO &#8211; Amore e Psiche &#8211; integrale"><img width="150" height="150" src="/wp-content/uploads/2019/10/APULEIO-Amore-e-Psiche-integrale-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/apuleio-amore-e-psiche-integrale/" class="vc_gitem-link" title="APULEIO &#8211; Amore e Psiche &#8211; integrale">APULEIO &#8211; Amore e Psiche &#8211; integrale</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/audiolibri-org-i-migliori-audiolibri-della-rete-gratis/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="audiolibri.org  i migliori audiolibri della rete, GRATIS"><img width="150" height="150" src="/wp-content/uploads/2018/10/-i-migliori-audiolibri-della-rete-GRATIS-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/audiolibri-org-i-migliori-audiolibri-della-rete-gratis/" class="vc_gitem-link" title="audiolibri.org  i migliori audiolibri della rete, GRATIS">audiolibri.org i migliori audiolibri della rete, GRATIS</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/audiolibri-org-audiolibri-gratuiti-completi-in-italiano-e-lingue-varie/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="audiolibri.org Audiolibri gratuiti completi in italiano e lingue varie"><img width="150" height="150" src="/wp-content/uploads/2017/06/-Audiolibri-gratuiti-completi-in-italiano-e-lingue-varie-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/audiolibri-org-audiolibri-gratuiti-completi-in-italiano-e-lingue-varie/" class="vc_gitem-link" title="audiolibri.org Audiolibri gratuiti completi in italiano e lingue varie">audiolibri.org Audiolibri gratuiti completi in italiano e lingue varie</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/cosi-parlo-zarathustra-lettura-integrale/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="COSì PARLO ZARATHUSTRA lettura integrale"><img width="150" height="150" src="/wp-content/uploads/2019/09/COS-PARLO-ZARATHUSTRA-lettura-integrale-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/cosi-parlo-zarathustra-lettura-integrale/" class="vc_gitem-link" title="COSì PARLO ZARATHUSTRA lettura integrale">COSì PARLO ZARATHUSTRA lettura integrale</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/cuore-di-tenebra-romanzo-di-j-conrad/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="CUORE DI TENEBRA  romanzo di J. Conrad"><img width="150" height="150" src="/wp-content/uploads/2019/10/CUORE-DI-TENEBRA-romanzo-di-J.-Conrad-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/cuore-di-tenebra-romanzo-di-j-conrad/" class="vc_gitem-link" title="CUORE DI TENEBRA  romanzo di J. Conrad">CUORE DI TENEBRA romanzo di J. Conrad</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/de-profundis-di-oscar-wilde/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="DE PROFUNDIS &#8211;  di Oscar Wilde"><img width="150" height="150" src="/wp-content/uploads/2019/10/DE-PROFUNDIS-di-Oscar-Wilde-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/de-profundis-di-oscar-wilde/" class="vc_gitem-link" title="DE PROFUNDIS &#8211;  di Oscar Wilde">DE PROFUNDIS &#8211; di Oscar Wilde</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/due-o-tre-grazie-racconto-romanzo-di-a-huxley-lettura-integrale/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="DUE O TRE GRAZIE &#8211;  racconto- romanzo di A. Huxley &#8211; lettura integrale"><img width="150" height="150" src="/wp-content/uploads/2019/06/DUE-O-TRE-GRAZIE-racconto-romanzo-di-A.-Huxley-lettura-integrale-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/due-o-tre-grazie-racconto-romanzo-di-a-huxley-lettura-integrale/" class="vc_gitem-link" title="DUE O TRE GRAZIE &#8211;  racconto- romanzo di A. Huxley &#8211; lettura integrale">DUE O TRE GRAZIE &#8211; racconto- romanzo di A. Huxley &#8211; lettura integrale</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/ethan-frome-romanzo-di-edith-wharton-lettura-integrale/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="ETHAN  FROME  romanzo di Edith Wharton &#8211; LETTURA INTEGRALE"><img width="150" height="150" src="/wp-content/uploads/2019/07/ETHAN-FROME-romanzo-di-Edith-Wharton-LETTURA-INTEGRALE-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/ethan-frome-romanzo-di-edith-wharton-lettura-integrale/" class="vc_gitem-link" title="ETHAN  FROME  romanzo di Edith Wharton &#8211; LETTURA INTEGRALE">ETHAN FROME romanzo di Edith Wharton &#8211; LETTURA INTEGRALE</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/etty-hillesum-diari-completo/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="ETTY HILLESUM &#8211;  DIARI &#8211;  completo"><img width="150" height="150" src="/wp-content/uploads/2020/01/ETTY-HILLESUM-DIARI-completo-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/etty-hillesum-diari-completo/" class="vc_gitem-link" title="ETTY HILLESUM &#8211;  DIARI &#8211;  completo">ETTY HILLESUM &#8211; DIARI &#8211; completo</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/i-demoni-romanzo-di-f-dostoevskij-lettura-integrale/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="I DEMONI  romanzo di F. Dostoevskij &#8211; LETTURA INTEGRALE"><img width="150" height="150" src="/wp-content/uploads/2019/07/I-DEMONI-romanzo-di-F.-Dostoevskij-LETTURA-INTEGRALE-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/i-demoni-romanzo-di-f-dostoevskij-lettura-integrale/" class="vc_gitem-link" title="I DEMONI  romanzo di F. Dostoevskij &#8211; LETTURA INTEGRALE">I DEMONI romanzo di F. Dostoevskij &#8211; LETTURA INTEGRALE</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/i-fratelli-karamazov-romanzo-di-f-dostoevskij-parte-prima-di-due/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="I FRATELLI KARAMAZOV romanzo di F. Dostoevskij parte prima di due"><img width="150" height="150" src="/wp-content/uploads/2019/07/I-FRATELLI-KARAMAZOV-romanzo-di-F.-Dostoevskij-parte-prima-di-due-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/i-fratelli-karamazov-romanzo-di-f-dostoevskij-parte-prima-di-due/" class="vc_gitem-link" title="I FRATELLI KARAMAZOV romanzo di F. Dostoevskij parte prima di due">I FRATELLI KARAMAZOV romanzo di F. Dostoevskij parte prima di due</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/i-fratelli-karamazov-romanzo-di-f-dostoevskij-parte-seconda-e-ultima/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="I FRATELLI KARAMAZOV romanzo di F. Dostoevskij parte seconda e ultima"><img width="150" height="150" src="/wp-content/uploads/2019/07/I-FRATELLI-KARAMAZOV-romanzo-di-F.-Dostoevskij-parte-seconda-e-ultima-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/i-fratelli-karamazov-romanzo-di-f-dostoevskij-parte-seconda-e-ultima/" class="vc_gitem-link" title="I FRATELLI KARAMAZOV romanzo di F. Dostoevskij parte seconda e ultima">I FRATELLI KARAMAZOV romanzo di F. Dostoevskij parte seconda e ultima</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/i-malavoglia-giovanni-verga-audio-libro-italiano-audio-book-italian/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="I Malavoglia Giovanni Verga Audio Libro Italiano Audio Book Italian"><img width="150" height="150" src="/wp-content/uploads/2019/02/I-Malavoglia-Giovanni-Verga-Audio-Libro-Italiano-Audio-Book-Italian-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/i-malavoglia-giovanni-verga-audio-libro-italiano-audio-book-italian/" class="vc_gitem-link" title="I Malavoglia Giovanni Verga Audio Libro Italiano Audio Book Italian">I Malavoglia Giovanni Verga Audio Libro Italiano Audio Book Italian</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/i-miei-sette-figli-alcide-cervi-lettura-integrale/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="I MIEI SETTE FIGLI &#8211; Alcide Cervi &#8211; lettura integrale"><img width="150" height="150" src="/wp-content/uploads/2020/01/I-MIEI-SETTE-FIGLI-Alcide-Cervi-lettura-integrale-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/i-miei-sette-figli-alcide-cervi-lettura-integrale/" class="vc_gitem-link" title="I MIEI SETTE FIGLI &#8211; Alcide Cervi &#8211; lettura integrale">I MIEI SETTE FIGLI &#8211; Alcide Cervi &#8211; lettura integrale</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/i-promessi-sposi-di-a-manzoni-lettura-integrale/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="I PROMESSI SPOSI di A. Manzoni &#8211; lettura integrale"><img width="150" height="150" src="/wp-content/uploads/2019/11/I-PROMESSI-SPOSI-di-A.-Manzoni-lettura-integrale-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/i-promessi-sposi-di-a-manzoni-lettura-integrale/" class="vc_gitem-link" title="I PROMESSI SPOSI di A. Manzoni &#8211; lettura integrale">I PROMESSI SPOSI di A. Manzoni &#8211; lettura integrale</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/i-quaderni-di-malte-laudris-brigge-di-r-m-rilke-lettura-integrale/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="I QUADERNI DI MALTE LAUDRIS BRIGGE di R. M. Rilke &#8211; lettura integrale"><img width="150" height="150" src="/wp-content/uploads/2019/08/I-QUADERNI-DI-MALTE-LAUDRIS-BRIGGE-di-R.-M.-Rilke-lettura-integrale-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/i-quaderni-di-malte-laudris-brigge-di-r-m-rilke-lettura-integrale/" class="vc_gitem-link" title="I QUADERNI DI MALTE LAUDRIS BRIGGE di R. M. Rilke &#8211; lettura integrale">I QUADERNI DI MALTE LAUDRIS BRIGGE di R. M. Rilke &#8211; lettura integrale</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/il-canto-dell-amor-trionfante-di-i-turgenev-lettura-integrale/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="IL CANTO DELL&#8217; AMOR TRIONFANTE di I. Turgenev &#8211; lettura integrale"><img width="150" height="150" src="/wp-content/uploads/2019/07/IL-CANTO-DELL-AMOR-TRIONFANTE-di-I.-Turgenev-lettura-integrale-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/il-canto-dell-amor-trionfante-di-i-turgenev-lettura-integrale/" class="vc_gitem-link" title="IL CANTO DELL&#8217; AMOR TRIONFANTE di I. Turgenev &#8211; lettura integrale">IL CANTO DELL&#8217; AMOR TRIONFANTE di I. Turgenev &#8211; lettura integrale</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/il-fu-mattia-pascal-audio-libro-italiano-luigi-pirandello-audio-book-italian/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="Il fu Mattia Pascal .. Audio Libro Italiano Luigi Pirandello Audio Book Italian"><img width="150" height="150" src="/wp-content/uploads/2017/06/Il-fu-Mattia-Pascal-..-Audio-Libro-Italiano-Luigi-Pirandello-Audio-Book-Italian-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/il-fu-mattia-pascal-audio-libro-italiano-luigi-pirandello-audio-book-italian/" class="vc_gitem-link" title="Il fu Mattia Pascal .. Audio Libro Italiano Luigi Pirandello Audio Book Italian">Il fu Mattia Pascal .. Audio Libro Italiano Luigi Pirandello Audio Book Italian</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/il-libro-dell-inquietudine-di-f-pessoa-lettura-integrale/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="IL LIBRO DELL&#8217; INQUIETUDINE di F. Pessoa &#8211; LETTURA INTEGRALE"><img width="150" height="150" src="/wp-content/uploads/2019/07/IL-LIBRO-DELL-INQUIETUDINE-di-F.-Pessoa-LETTURA-INTEGRALE-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/il-libro-dell-inquietudine-di-f-pessoa-lettura-integrale/" class="vc_gitem-link" title="IL LIBRO DELL&#8217; INQUIETUDINE di F. Pessoa &#8211; LETTURA INTEGRALE">IL LIBRO DELL&#8217; INQUIETUDINE di F. Pessoa &#8211; LETTURA INTEGRALE</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/il-piccolo-principe/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="Il Piccolo Principe"><img width="150" height="150" src="/wp-content/uploads/2019/04/Il-Piccolo-Principe-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/il-piccolo-principe/" class="vc_gitem-link" title="Il Piccolo Principe">Il Piccolo Principe</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/il-piccolo-principe-di-antoine-de-saint-exupery-lettura-integrale/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="IL PICCOLO PRINCIPE  di Antoine de Saint-Exupéry lettura integrale"><img width="150" height="150" src="/wp-content/uploads/2019/10/IL-PICCOLO-PRINCIPE-di-Antoine-de-Saint-Exupry-lettura-integrale-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/il-piccolo-principe-di-antoine-de-saint-exupery-lettura-integrale/" class="vc_gitem-link" title="IL PICCOLO PRINCIPE  di Antoine de Saint-Exupéry lettura integrale">IL PICCOLO PRINCIPE di Antoine de Saint-Exupéry lettura integrale</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/il-posto-delle-fragole-di-i-bergman-la-sceneggiatura/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="IL POSTO DELLE FRAGOLE &#8211; di I. Bergman &#8211; LA SCENEGGIATURA"><img width="150" height="150" src="/wp-content/uploads/2019/12/IL-POSTO-DELLE-FRAGOLE-di-I.-Bergman-LA-SCENEGGIATURA-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/il-posto-delle-fragole-di-i-bergman-la-sceneggiatura/" class="vc_gitem-link" title="IL POSTO DELLE FRAGOLE &#8211; di I. Bergman &#8211; LA SCENEGGIATURA">IL POSTO DELLE FRAGOLE &#8211; di I. Bergman &#8211; LA SCENEGGIATURA</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/il-processo-di-f-kafka-lettura-integrale/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="IL PROCESSO  di F. Kafka &#8211; LETTURA INTEGRALE"><img width="150" height="150" src="/wp-content/uploads/2020/02/IL-PROCESSO-di-F.-Kafka-LETTURA-INTEGRALE-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/il-processo-di-f-kafka-lettura-integrale/" class="vc_gitem-link" title="IL PROCESSO  di F. Kafka &#8211; LETTURA INTEGRALE">IL PROCESSO di F. Kafka &#8211; LETTURA INTEGRALE</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/il-profeta-di-k-gibram-lettura-integrale/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="IL PROFETA &#8211; di K. Gibram &#8211; lettura integrale"><img width="150" height="150" src="/wp-content/uploads/2018/12/IL-PROFETA-di-K.-Gibram-lettura-integrale-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/il-profeta-di-k-gibram-lettura-integrale/" class="vc_gitem-link" title="IL PROFETA &#8211; di K. Gibram &#8211; lettura integrale">IL PROFETA &#8211; di K. Gibram &#8211; lettura integrale</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/il-sogno-di-un-uomo-ridicolo-racconto-di-f-dostoevskij/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="IL SOGNO DI UN UOMO RIDICOLO racconto di F. Dostoevskij"><img width="150" height="150" src="/wp-content/uploads/2019/07/IL-SOGNO-DI-UN-UOMO-RIDICOLO-racconto-di-F.-Dostoevskij-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/il-sogno-di-un-uomo-ridicolo-racconto-di-f-dostoevskij/" class="vc_gitem-link" title="IL SOGNO DI UN UOMO RIDICOLO racconto di F. Dostoevskij">IL SOGNO DI UN UOMO RIDICOLO racconto di F. Dostoevskij</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/il-sosia-romanzo-di-f-dostoevskij/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="IL SOSIA romanzo di F. Dostoevskij"><img width="150" height="150" src="/wp-content/uploads/2019/07/IL-SOSIA-romanzo-di-F.-Dostoevskij-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/il-sosia-romanzo-di-f-dostoevskij/" class="vc_gitem-link" title="IL SOSIA romanzo di F. Dostoevskij">IL SOSIA romanzo di F. Dostoevskij</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/il-sottotenente-gustl-di-a-schnitzler/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="IL SOTTOTENENTE GUSTL &#8211; di A. Schnitzler"><img width="150" height="150" src="/wp-content/uploads/2019/05/IL-SOTTOTENENTE-GUSTL-di-A.-Schnitzler-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/il-sottotenente-gustl-di-a-schnitzler/" class="vc_gitem-link" title="IL SOTTOTENENTE GUSTL &#8211; di A. Schnitzler">IL SOTTOTENENTE GUSTL &#8211; di A. Schnitzler</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/il-vecchio-e-il-mare-di-e-hemingway-rilettura-integrale/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="IL VECCHIO E IL MARE di E.. Hemingway &#8211;   RILETTURA INTEGRALE"><img width="150" height="150" src="/wp-content/uploads/2019/10/IL-VECCHIO-E-IL-MARE-di-E..-Hemingway-RILETTURA-INTEGRALE-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/il-vecchio-e-il-mare-di-e-hemingway-rilettura-integrale/" class="vc_gitem-link" title="IL VECCHIO E IL MARE di E.. Hemingway &#8211;   RILETTURA INTEGRALE">IL VECCHIO E IL MARE di E.. Hemingway &#8211; RILETTURA INTEGRALE</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/l-uomo-senza-qualita-di-r-musil-prima-parte-del-romanzo/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="L&#8217; UOMO SENZA QUALITA&#8217; di R. Musil &#8211; prima parte del romanzo"><img width="150" height="150" src="/wp-content/uploads/2019/10/L-UOMO-SENZA-QUALITA-di-R.-Musil-prima-parte-del-romanzo-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/l-uomo-senza-qualita-di-r-musil-prima-parte-del-romanzo/" class="vc_gitem-link" title="L&#8217; UOMO SENZA QUALITA&#8217; di R. Musil &#8211; prima parte del romanzo">L&#8217; UOMO SENZA QUALITA&#8217; di R. Musil &#8211; prima parte del romanzo</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/la-confessione-romanzo-di-l-tolstoj-lettura-integrale/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="LA CONFESSIONE Romanzo di L. Tolstoj  lettura integrale"><img width="150" height="150" src="/wp-content/uploads/2019/07/LA-CONFESSIONE-Romanzo-di-L.-Tolstoj-lettura-integrale-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/la-confessione-romanzo-di-l-tolstoj-lettura-integrale/" class="vc_gitem-link" title="LA CONFESSIONE Romanzo di L. Tolstoj  lettura integrale">LA CONFESSIONE Romanzo di L. Tolstoj lettura integrale</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/la-contessa-di-karolystria-audio-libro-italiano-full-audiobook-italian/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="La Contessa di Karolystria .. AUDIO LIBRO ITALIANO [FULL AUDIOBOOK ITALIAN]"><img width="150" height="150" src="/wp-content/uploads/2019/04/La-Contessa-di-Karolystria-..-AUDIO-LIBRO-ITALIANO-FULL-AUDIOBOOK-ITALIAN-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/la-contessa-di-karolystria-audio-libro-italiano-full-audiobook-italian/" class="vc_gitem-link" title="La Contessa di Karolystria .. AUDIO LIBRO ITALIANO [FULL AUDIOBOOK ITALIAN]">La Contessa di Karolystria .. AUDIO LIBRO ITALIANO [FULL AUDIOBOOK ITALIAN]</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/la-fattoria-degli-animali-di-g-orwell-lettura-integrale/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="LA FATTORIA DEGLI ANIMALI   di G.  Orwell   lettura integrale"><img width="150" height="150" src="/wp-content/uploads/2019/06/LA-FATTORIA-DEGLI-ANIMALI-di-G.-Orwell-lettura-integrale-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/la-fattoria-degli-animali-di-g-orwell-lettura-integrale/" class="vc_gitem-link" title="LA FATTORIA DEGLI ANIMALI   di G.  Orwell   lettura integrale">LA FATTORIA DEGLI ANIMALI di G. Orwell lettura integrale</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/la-leggenda-del-santo-bevitore-di-j-roth-lettura-integrale/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="LA LEGGENDA DEL SANTO BEVITORE di J.  Roth   lettura integrale"><img width="150" height="150" src="/wp-content/uploads/2019/06/LA-LEGGENDA-DEL-SANTO-BEVITORE-di-J.-Roth-lettura-integrale-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/la-leggenda-del-santo-bevitore-di-j-roth-lettura-integrale/" class="vc_gitem-link" title="LA LEGGENDA DEL SANTO BEVITORE di J.  Roth   lettura integrale">LA LEGGENDA DEL SANTO BEVITORE di J. Roth lettura integrale</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/la-mite-racconto-di-f-dostoeskij/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="LA MITE &#8211; racconto di F. Dostoeskij"><img width="150" height="150" src="/wp-content/uploads/2019/07/LA-MITE-racconto-di-F.-Dostoeskij-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/la-mite-racconto-di-f-dostoeskij/" class="vc_gitem-link" title="LA MITE &#8211; racconto di F. Dostoeskij">LA MITE &#8211; racconto di F. Dostoeskij</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/la-morte-di-ivan-ilic-di-l-tolstoj/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="LA MORTE DI IVAN IL&#8217;IC di L  Tolstoj"><img width="150" height="150" src="/wp-content/uploads/2019/06/LA-MORTE-DI-IVAN-ILIC-di-L-Tolstoj-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/la-morte-di-ivan-ilic-di-l-tolstoj/" class="vc_gitem-link" title="LA MORTE DI IVAN IL&#8217;IC di L  Tolstoj">LA MORTE DI IVAN IL&#8217;IC di L Tolstoj</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/la-nascita-della-tragedia-di-f-nietzsche/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="LA NASCITA DELLA TRAGEDIA di  F.  Nietzsche"><img width="150" height="150" src="/wp-content/uploads/2019/09/LA-NASCITA-DELLA-TRAGEDIA-di-F.-Nietzsche-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/la-nascita-della-tragedia-di-f-nietzsche/" class="vc_gitem-link" title="LA NASCITA DELLA TRAGEDIA di  F.  Nietzsche">LA NASCITA DELLA TRAGEDIA di F. Nietzsche</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/la-novella-degli-scacchi-di-s-zweig/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="LA NOVELLA DEGLI SCACCHI di S.  Zweig"><img width="150" height="150" src="/wp-content/uploads/2019/04/LA-NOVELLA-DEGLI-SCACCHI-di-S.-Zweig-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/la-novella-degli-scacchi-di-s-zweig/" class="vc_gitem-link" title="LA NOVELLA DEGLI SCACCHI di S.  Zweig">LA NOVELLA DEGLI SCACCHI di S. Zweig</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/la-padrona-racconto-lungo-di-f-dostoevskij-novita/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="LA PADRONA &#8211; racconto lungo di F. Dostoevskij &#8211; (novità)"><img width="150" height="150" src="/wp-content/uploads/2019/11/LA-PADRONA-racconto-lungo-di-F.-Dostoevskij-novit-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/la-padrona-racconto-lungo-di-f-dostoevskij-novita/" class="vc_gitem-link" title="LA PADRONA &#8211; racconto lungo di F. Dostoevskij &#8211; (novità)">LA PADRONA &#8211; racconto lungo di F. Dostoevskij &#8211; (novità)</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/la-padrona-racconto-lungo-di-f-dostoevskij/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="LA PADRONA racconto lungo di F. Dostoevskij"><img width="150" height="150" src="/wp-content/uploads/2019/11/LA-PADRONA-racconto-lungo-di-F.-Dostoevskij-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/la-padrona-racconto-lungo-di-f-dostoevskij/" class="vc_gitem-link" title="LA PADRONA racconto lungo di F. Dostoevskij">LA PADRONA racconto lungo di F. Dostoevskij</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/la-tregua-di-primo-levi-luigi-gaudio/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="La tregua di Primo Levi &#8211; Luigi Gaudio"><img width="150" height="150" src="/wp-content/uploads/2019/04/La-tregua-di-Primo-Levi-Luigi-Gaudio-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/la-tregua-di-primo-levi-luigi-gaudio/" class="vc_gitem-link" title="La tregua di Primo Levi &#8211; Luigi Gaudio">La tregua di Primo Levi &#8211; Luigi Gaudio</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/la-volpe-racconto-lungo-di-d-h-lawrence-integrale-novita/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="LA VOLPE &#8211; racconto lungo di D. H. Lawrence &#8211;  integrale &#8211; NOVITA&#8217;"><img width="150" height="150" src="/wp-content/uploads/2019/10/LA-VOLPE-racconto-lungo-di-D.-H.-Lawrence-integrale-NOVITA-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/la-volpe-racconto-lungo-di-d-h-lawrence-integrale-novita/" class="vc_gitem-link" title="LA VOLPE &#8211; racconto lungo di D. H. Lawrence &#8211;  integrale &#8211; NOVITA&#8217;">LA VOLPE &#8211; racconto lungo di D. H. Lawrence &#8211; integrale &#8211; NOVITA&#8217;</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/le-meraviglie-del-duemila-audio-libro-italiano-emilio-salgari-audiobook-italian/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="Le meraviglie del Duemila | AUDIO LIBRO ITALIANO | Emilio SALGARI | AUDIOBOOK ITALIAN"><img width="150" height="150" src="/wp-content/uploads/2019/02/Le-meraviglie-del-Duemila-AUDIO-LIBRO-ITALIANO-Emilio-SALGARI-AUDIOBOOK-ITALIAN-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/le-meraviglie-del-duemila-audio-libro-italiano-emilio-salgari-audiobook-italian/" class="vc_gitem-link" title="Le meraviglie del Duemila | AUDIO LIBRO ITALIANO | Emilio SALGARI | AUDIOBOOK ITALIAN">Le meraviglie del Duemila | AUDIO LIBRO ITALIANO | Emilio SALGARI | AUDIOBOOK ITALIAN</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/le-notti-bianche-racconto-di-f-dostoevskij/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="LE NOTTI BIANCHE &#8211; racconto di F. Dostoevskij"><img width="150" height="150" src="/wp-content/uploads/2019/07/LE-NOTTI-BIANCHE-racconto-di-F.-Dostoevskij-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/le-notti-bianche-racconto-di-f-dostoevskij/" class="vc_gitem-link" title="LE NOTTI BIANCHE &#8211; racconto di F. Dostoevskij">LE NOTTI BIANCHE &#8211; racconto di F. Dostoevskij</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/memorie-dal-sottosuolo-di-f-dostoevskij-lettura-integrale/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="MEMORIE  DAL SOTTOSUOLO di F. Dostoevskij &#8211; lettura integrale"><img width="150" height="150" src="/wp-content/uploads/2019/07/MEMORIE-DAL-SOTTOSUOLO-di-F.-Dostoevskij-lettura-integrale-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/memorie-dal-sottosuolo-di-f-dostoevskij-lettura-integrale/" class="vc_gitem-link" title="MEMORIE  DAL SOTTOSUOLO di F. Dostoevskij &#8211; lettura integrale">MEMORIE DAL SOTTOSUOLO di F. Dostoevskij &#8211; lettura integrale</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/moby-dick-di-h-melville-lettura-integrale/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="MOBY DICK &#8211;  di H. Melville &#8211; lettura integrale"><img width="150" height="150" src="/wp-content/uploads/2019/11/MOBY-DICK-di-H.-Melville-lettura-integrale-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/moby-dick-di-h-melville-lettura-integrale/" class="vc_gitem-link" title="MOBY DICK &#8211;  di H. Melville &#8211; lettura integrale">MOBY DICK &#8211; di H. Melville &#8211; lettura integrale</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/netocka-nezvanova-storia-di-una-donna-di-fedor-dostoevskij-lettura-integrale/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="NETOC&#8217;KA NEZVANOVA Storia di una donna di Fedor Dostoevskij  &#8211; LETTURA INTEGRALE"><img width="150" height="150" src="/wp-content/uploads/2019/07/NETOCKA-NEZVANOVA-Storia-di-una-donna-di-Fedor-Dostoevskij-LETTURA-INTEGRALE-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/netocka-nezvanova-storia-di-una-donna-di-fedor-dostoevskij-lettura-integrale/" class="vc_gitem-link" title="NETOC&#8217;KA NEZVANOVA Storia di una donna di Fedor Dostoevskij  &#8211; LETTURA INTEGRALE">NETOC&#8217;KA NEZVANOVA Storia di una donna di Fedor Dostoevskij &#8211; LETTURA INTEGRALE</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/omero-odissea-lettura-integrale/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="OMERO &#8211; ODISSEA &#8211; LETTURA INTEGRALE"><img width="150" height="150" src="/wp-content/uploads/2019/11/OMERO-ODISSEA-LETTURA-INTEGRALE-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/omero-odissea-lettura-integrale/" class="vc_gitem-link" title="OMERO &#8211; ODISSEA &#8211; LETTURA INTEGRALE">OMERO &#8211; ODISSEA &#8211; LETTURA INTEGRALE</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/pinocchio-di-c-collodi-lettura-integrale/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="PINOCCHIO  di C.  Collodi  &#8211; lettura integrale"><img width="150" height="150" src="/wp-content/uploads/2020/02/PINOCCHIO-di-C.-Collodi-lettura-integrale-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/pinocchio-di-c-collodi-lettura-integrale/" class="vc_gitem-link" title="PINOCCHIO  di C.  Collodi  &#8211; lettura integrale">PINOCCHIO di C. Collodi &#8211; lettura integrale</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/povera-gente-racconto-di-f-dostoevskij/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="POVERA GENTE racconto di F. Dostoevskij"><img width="150" height="150" src="/wp-content/uploads/2019/07/POVERA-GENTE-racconto-di-F.-Dostoevskij-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/povera-gente-racconto-di-f-dostoevskij/" class="vc_gitem-link" title="POVERA GENTE racconto di F. Dostoevskij">POVERA GENTE racconto di F. Dostoevskij</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/primo-amore-racconto-lungo-di-ivan-sergeevitch-turgenev-integrale/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="PRIMO AMORE racconto lungo di Ivan Sergeevitch Turgenev  &#8211; integrale"><img width="150" height="150" src="/wp-content/uploads/2019/07/PRIMO-AMORE-racconto-lungo-di-Ivan-Sergeevitch-Turgenev-integrale-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/primo-amore-racconto-lungo-di-ivan-sergeevitch-turgenev-integrale/" class="vc_gitem-link" title="PRIMO AMORE racconto lungo di Ivan Sergeevitch Turgenev  &#8211; integrale">PRIMO AMORE racconto lungo di Ivan Sergeevitch Turgenev &#8211; integrale</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/dostoevskij-racconto-storia-di-una-donna-legge-v-zanardi/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="RACCONTO &#8211; STORIA DI UNA DONNA di Fëdor Dostoevskij"><img width="150" height="150" src="/wp-content/uploads/2017/12/Dostoevskij-RACCONTO-STORIA-DI-UNA-DONNA-legge-V.-Zanardi-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/dostoevskij-racconto-storia-di-una-donna-legge-v-zanardi/" class="vc_gitem-link" title="RACCONTO &#8211; STORIA DI UNA DONNA di Fëdor Dostoevskij">RACCONTO &#8211; STORIA DI UNA DONNA di Fëdor Dostoevskij</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/se-questo-e-un-uomo-primo-levi/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="Se questo è un uomo &#8211; Primo Levi"><img width="150" height="150" src="/wp-content/uploads/2019/04/Se-questo-un-uomo-Primo-Levi-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/se-questo-e-un-uomo-primo-levi/" class="vc_gitem-link" title="Se questo è un uomo &#8211; Primo Levi">Se questo è un uomo &#8211; Primo Levi</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/storia-nel-crepuscolo-di-s-zweig-racconto-lungo-completo/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="STORIA NEL CREPUSCOLO di S  Zweig racconto lungo completo"><img width="150" height="150" src="/wp-content/uploads/2019/12/STORIA-NEL-CREPUSCOLO-di-S-Zweig-racconto-lungo-completo-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/storia-nel-crepuscolo-di-s-zweig-racconto-lungo-completo/" class="vc_gitem-link" title="STORIA NEL CREPUSCOLO di S  Zweig racconto lungo completo">STORIA NEL CREPUSCOLO di S Zweig racconto lungo completo</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/sylvie-romanzo-di-gerard-de-nerval/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="Sylvie  romanzo di  Gérard de Nerval"><img width="150" height="150" src="/wp-content/uploads/2020/03/Sylvie-romanzo-di-Grard-de-Nerval-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/sylvie-romanzo-di-gerard-de-nerval/" class="vc_gitem-link" title="Sylvie  romanzo di  Gérard de Nerval">Sylvie romanzo di Gérard de Nerval</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/umiliati-ed-offesi-romanzo-di-f-dostoevskij-lettura-integrale/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="UMILIATI ED OFFESI romanzo di F. Dostoevskij &#8211; lettura integrale"><img width="150" height="150" src="/wp-content/uploads/2019/07/UMILIATI-ED-OFFESI-romanzo-di-F.-Dostoevskij-lettura-integrale-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/umiliati-ed-offesi-romanzo-di-f-dostoevskij-lettura-integrale/" class="vc_gitem-link" title="UMILIATI ED OFFESI romanzo di F. Dostoevskij &#8211; lettura integrale">UMILIATI ED OFFESI romanzo di F. Dostoevskij &#8211; lettura integrale</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/under-pressure-bowie-and-lennox/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="Under Pressure &#8211; Bowie and Lennox"><img width="150" height="150" src="/wp-content/uploads/2019/04/Under-Pressure-Bowie-and-Lennox-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/under-pressure-bowie-and-lennox/" class="vc_gitem-link" title="Under Pressure &#8211; Bowie and Lennox">Under Pressure &#8211; Bowie and Lennox</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/uno-spiacevole-episodio-racconto-lungo-di-f-dostoevskij/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="UNO SPIACEVOLE EPISODIO racconto lungo di F. Dostoevskij"><img width="150" height="150" src="/wp-content/uploads/2019/07/UNO-SPIACEVOLE-EPISODIO-racconto-lungo-di-F.-Dostoevskij-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/uno-spiacevole-episodio-racconto-lungo-di-f-dostoevskij/" class="vc_gitem-link" title="UNO SPIACEVOLE EPISODIO racconto lungo di F. Dostoevskij">UNO SPIACEVOLE EPISODIO racconto lungo di F. Dostoevskij</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/vatsyayana-kamasutra/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="Vātsyāyana KAMASUTRA"><img width="150" height="150" src="/wp-content/uploads/2019/10/Vtsyyana-KAMASUTRA-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/vatsyayana-kamasutra/" class="vc_gitem-link" title="Vātsyāyana KAMASUTRA">Vātsyāyana KAMASUTRA</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/viaggio-nel-passato-racconto-lungo-di-s-zweig/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="VIAGGIO NEL PASSATO racconto lungo di S. ZWEIG"><img width="150" height="150" src="/wp-content/uploads/2020/01/VIAGGIO-NEL-PASSATO-racconto-lungo-di-S.-ZWEIG-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/viaggio-nel-passato-racconto-lungo-di-s-zweig/" class="vc_gitem-link" title="VIAGGIO NEL PASSATO racconto lungo di S. ZWEIG">VIAGGIO NEL PASSATO racconto lungo di S. ZWEIG</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+</div>
+<div data-lazy-loading-btn="true" style="display: none;"><a href="/romanzi/"></a></div>
+</div>
+</div>
+</div>
+</div></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer footer-contact-boxes">
+<div class="footer-content">
+<div class="gridContainer">
+<div class="row text-center">
+<div class="col-sm-3">
+<div data-type="group" data-dynamic-mod="true">
+<i class="big-icon mdi mdi-android"></i>
+<p>
+<a href="https://play.google.com/store/apps/details?id=application.audiobooks">Audiolibri App</a> </p>
+</div>
+</div>
+<div class="col-sm-3">
+<div data-type="group" data-dynamic-mod="true">
+<i class="big-icon mdi mdi-email"></i>
+<p>
+<a href="/cdn-cgi/l/email-protection#c0a9aea6af80a1b5a4a9afaca9a2b2a9eeafb2a7"><span class="__cf_email__" data-cfemail="2f464149406f4e5a4b464043464d5d4601405d48">[email&#160;protected]</span></a> </p>
+</div>
+</div>
+<div class="col-sm-3">
+<div data-type="group" data-dynamic-mod="true">
+<i class="big-icon mdi mdi-search-web"></i>
+<p>
+<a href="/search/">Cerca un audiolibro</a> </p>
+</div>
+</div>
+<div class="col-sm-3 footer-bg-accent">
+<div>
+<div data-type="group" data-dynamic-mod="true" class="footer-social-icons">
+<a target="_blank" class="social-icon" href="https://www.facebook.com/audiolibriGRATIS/">
+<i class="mdi mdi-facebook-box"></i>
+</a>
+<a target="_blank" class="social-icon" href="https://www.youtube.com/channel/UCcI3Bk2oB91HujHwX9ljEFw">
+<i class="mdi mdi-youtube-play"></i>
+</a>
+</div>
+</div>
+<p class="copyright">&copy;&nbsp;&nbsp;2022&nbsp;Audiolibri.org.&nbsp;create con WordPress e con il tema <a rel="nofollow" target="_blank" href="https://extendthemes.com/go/built-with-materialis/">Il tema Materialis</a></p> </div>
+</div>
+</div>
+</div>
+</div>
+<div id="pwaforwp_loading_div"></div>
+<div class="pwaforwp-loading-wrapper"><div id="pwaforwp_loading_icon" style="border-top-color: #3498db"></div></div>
+<link rel="stylesheet" id="lightbox2-css" href="/wp-content/plugins/js_composer/assets/lib/bower/lightbox2/dist/css/lightbox.min.css?ver=6.6.0" type="text/css" media="all">
+<link rel="stylesheet" id="vc_pageable_owl-carousel-css-css" href="/wp-content/plugins/js_composer/assets/lib/owl-carousel2-dist/assets/owl.min.css?ver=6.6.0" type="text/css" media="all">
+<link rel="stylesheet" id="vc_animate-css-css" href="/wp-content/plugins/js_composer/assets/lib/bower/animate-css/animate.min.css?ver=6.6.0" type="text/css" media="all">
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript" id="superpwa-register-sw-js-extra">
+/* <![CDATA[ */
+var superpwa_sw = {"url":"\/superpwa-amp-sw.js","disable_addtohome":"0","enableOnDesktop":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="/wp-content/plugins/super-progressive-web-apps/public/js/register-sw.js" id="superpwa-register-sw-js"></script>
+<script type="text/javascript" src="/wp-includes/js/jquery/ui/effect.min.js?ver=1.12.1" id="jquery-effects-core-js"></script>
+<script type="text/javascript" src="/wp-includes/js/jquery/ui/effect-slide.min.js?ver=1.12.1" id="jquery-effects-slide-js"></script>
+<script type="text/javascript" defer src="/wp-includes/js/imagesloaded.min.js?ver=4.1.4" id="imagesloaded-js"></script>
+<script type="text/javascript" defer src="/wp-includes/js/masonry.min.js?ver=4.2.2" id="masonry-js"></script>
+<script type="text/javascript" defer src="/wp-content/themes/materialis/assets/js/theme.bundle.min.js?ver=1.1.16" id="materialis-theme-js"></script>
+<script type="text/javascript" id="pwaforwp-js-js-extra">
+/* <![CDATA[ */
+var pwaforwp_js_obj = {"ajax_url":"\/wp-admin\/admin-ajax.php","pwa_ms_prefix":"","pwa_home_url":"\/","loader_desktop":"1","loader_mobile":"1","loader_only_pwa":"0","reset_cookies":"0"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="/wp-content/plugins/pwa-for-wp/assets/js/pwaforwp.min.js?ver=1.7.41" id="pwaforwp-js-js"></script>
+<script type="text/javascript" src="/pwa-register-sw.js?ver=1.7.41" id="pwa-main-script-js"></script>
+<script type="text/javascript" src="https://cdn.onesignal.com/sdks/OneSignalSDK.js?ver=03419a7def9bc99d964c28ff4ca4bab2" async="async" id="remote_sdk-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js?ver=6.6.0" id="wpb_composer_front_js-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/js_composer/assets/lib/bower/lightbox2/dist/js/lightbox.min.js?ver=6.6.0" id="lightbox2-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/js_composer/assets/lib/owl-carousel2-dist/owl.carousel.min.js?ver=6.6.0" id="vc_pageable_owl-carousel-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/js_composer/assets/lib/bower/imagesloaded/imagesloaded.pkgd.min.js?ver=6.6.0" id="vc_grid-js-imagesloaded-js"></script>
+<script type="text/javascript" src="/wp-includes/js/underscore.min.js?ver=1.13.1" id="underscore-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/js_composer/assets/lib/vc_waypoints/vc-waypoints.min.js?ver=6.6.0" id="vc_waypoints-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/js_composer/assets/js/dist/vc_grid.min.js?ver=6.6.0" id="vc_grid-js"></script>
+<script>
+        /(trident|msie)/i.test(navigator.userAgent) && document.getElementById && window.addEventListener && window.addEventListener("hashchange", function() {
+            var t, e = location.hash.substring(1);
+            /^[A-z0-9_-]+$/.test(e) && (t = document.getElementById(e)) && (/^(?:a|select|input|button|textarea)$/i.test(t.tagName) || (t.tabIndex = -1), t.focus())
+        }, !1);
+    </script>
+</body>
+</html>

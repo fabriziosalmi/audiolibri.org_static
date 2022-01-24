@@ -1,0 +1,26 @@
+{
+    "name": "Audiolibri.org",
+    "short_name": "Audiolibri.org",
+    "description": "Audiolibri in Italiano e in lingua originale.",
+    "icons": [
+        {
+            "src": "https:\/\/audiolibri.org\/wp-content\/plugins\/pwa-for-wp\/images\/logo.png",
+            "sizes": "192x192",
+            "type": "image\/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "https:\/\/audiolibri.org\/wp-content\/plugins\/pwa-for-wp\/images\/logo-512x512.png",
+            "sizes": "512x512",
+            "type": "image\/png",
+            "purpose": "any maskable"
+        }
+    ],
+    "background_color": "#D5E0EB",
+    "theme_color": "#D5E0EB",
+    "display": "standalone",
+    "orientation": "portrait",
+    "start_url": "https:\/\/audiolibri.org\/amp\/",
+    "scope": "https:\/\/audiolibri.org\/amp\/",
+    "gcm_sender_id": "482941778795"
+}

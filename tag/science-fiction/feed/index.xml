@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>science fiction &#8211; Audiolibri.org</title>
+	<atom:link href="/tag/science-fiction/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Audiolibri in Italiano e in lingua originale.</description>
+	<lastBuildDate>Wed, 17 Mar 2021 11:32:38 +0000</lastBuildDate>
+	<language>it-IT</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	
+
+<image>
+	<url>/wp-content/uploads/2017/06/cropped-audiobooks_icon_alfa-32x32.png</url>
+	<title>science fiction &#8211; Audiolibri.org</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>10 anni di NASF</title>
+		<link>/10-anni-di-nasf/</link>
+					<comments>/10-anni-di-nasf/#respond</comments>
+		
+		<dc:creator><![CDATA[audiolibri.org]]></dc:creator>
+		<pubDate>Mon, 17 Nov 2014 20:07:52 +0000</pubDate>
+				<category><![CDATA[NASF]]></category>
+		<category><![CDATA[fantascienza]]></category>
+		<category><![CDATA[nasf]]></category>
+		<category><![CDATA[science fiction]]></category>
+		<guid isPermaLink="false">/?p=25946</guid>
+
+					<description><![CDATA[Un piccolo tributo per la raccolta di Nuovi Autori Science Fiction che giunge alla sua decima edizione. Original Soundtrack: &#8220;Requiem for a dream&#8221; composed by Clint Mansell https://www.youtube.com/watch?v=MWvOqSV99xE]]></description>
+										<content:encoded><![CDATA[<p><iframe loading="lazy" width="200" height="113" src="https://www.youtube.com/embed/VUtZs5D9SHA?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+<p>Un piccolo tributo per la raccolta di Nuovi Autori Science Fiction che giunge alla sua decima edizione.</p>
+<p>Original Soundtrack: &#8220;Requiem for a dream&#8221; composed by Clint Mansell<br />
+https://www.youtube.com/watch?v=MWvOqSV99xE</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/10-anni-di-nasf/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

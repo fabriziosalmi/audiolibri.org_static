@@ -1,0 +1,1627 @@
+<!DOCTYPE html>
+<html lang="it-IT">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="profile" href="https://gmpg.org/xfn/11">
+
+<link rel="manifest" href="/superpwa-manifest.json">
+<link rel="prefetch" href="/superpwa-manifest.json">
+<meta name="theme-color" content="#D5E0EB">
+
+<title>Saggi &#8211; Audiolibri.org</title>
+<meta name="robots" content="max-image-preview:large">
+<link rel="manifest" href="/pwa-manifest.json">
+<link rel="apple-touch-icon-precomposed" sizes="192x192" href="/wp-content/plugins/pwa-for-wp/images/logo.png">
+<link rel="amphtml" href="/saggi/amp/">
+<meta name="generator" content="AMP for WP 1.0.77.35">
+<link rel="dns-prefetch" href="//www.googletagmanager.com">
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//s.w.org">
+<link href="https://fonts.gstatic.com/" crossorigin rel="preconnect">
+<link rel="alternate" type="application/rss+xml" title="Audiolibri.org &raquo; Feed" href="/feed/">
+<link rel="alternate" type="application/rss+xml" title="Audiolibri.org &raquo; Feed dei commenti" href="/comments/feed/">
+<link rel="stylesheet" id="wp-block-library-css" href="/wp-includes/css/dist/block-library/style.min.css?ver=03419a7def9bc99d964c28ff4ca4bab2" type="text/css" media="all">
+<link rel="stylesheet" id="image-hover-effects-css-css" href="/wp-content/plugins/mega-addons-for-visual-composer/css/ihover.css?ver=03419a7def9bc99d964c28ff4ca4bab2" type="text/css" media="all">
+<link rel="stylesheet" id="style-css-css" href="/wp-content/plugins/mega-addons-for-visual-composer/css/style.css?ver=03419a7def9bc99d964c28ff4ca4bab2" type="text/css" media="all">
+<link rel="stylesheet" id="font-awesome-latest-css" href="/wp-content/plugins/mega-addons-for-visual-composer/css/font-awesome/css/all.css?ver=03419a7def9bc99d964c28ff4ca4bab2" type="text/css" media="all">
+<link rel="stylesheet" id="materialis-style-css" href="/wp-content/themes/materialis/style.min.css?ver=1.1.16" type="text/css" media="all">
+<style id="materialis-style-inline-css" type="text/css">img.logo.dark, img.custom-logo{width:auto;max-height:70px;}</style>
+<link rel="stylesheet" id="materialis-material-icons-css" href="/wp-content/themes/materialis/assets/css/material-icons.min.css?ver=1.1.16" type="text/css" media="all">
+<link rel="stylesheet" id="materialis-style-bundle-css" href="/wp-content/themes/materialis/assets/css/theme.bundle.min.css?ver=1.1.16" type="text/css" media="all">
+<link rel="stylesheet" id="materialis-fonts-css" data-href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,400,400italic,500,500italic,700,700italic,900,900italic%7CPlayfair%20Display:400,400italic,700,700italic&#038;subset=latin,latin-ext" type="text/css" media="all">
+<link rel="stylesheet" id="js_composer_front-css" href="/wp-content/plugins/js_composer/assets/css/js_composer.min.css?ver=6.6.0" type="text/css" media="all">
+<link rel="stylesheet" id="pwaforwp-style-css" href="/wp-content/plugins/pwa-for-wp/assets/css/pwaforwp-main.min.css?ver=1.7.41" type="text/css" media="all">
+<link rel="stylesheet" id="kirki-styles-materialis-css" href="/wp-content/themes/materialis/customizer/kirki/assets/css/kirki-styles.css" type="text/css" media="all">
+<style id="kirki-styles-materialis-inline-css" type="text/css">/** cached kirki style */.header{background-position:center center;}.header-homepage.color-overlay:before{background:#181818;}.header-homepage .background-overlay,.header-homepage.color-overlay::before{opacity:0.53;}.header.color-overlay:before{background:#181818;}.header .background-overlay,.header.color-overlay::before{opacity:0.4;}.header-homepage .hero-title{color:#ffffff;}.header-homepage .header-description-row{padding-top:15%;padding-bottom:25%;}.inner-header-description{padding-top:10%;padding-bottom:10%;}.materialis-inner-page .navigation-bar.bordered{border-bottom-color:#ffffff;border-bottom-style:solid;}.materialis-inner-page .navigation-bar.bordered:not(.fixto-fixed){border-bottom-width:2px;}@media screen and (max-width:767px){.header-homepage .header-description-row{padding-top:10%;padding-bottom:10%;}}@media only screen and (min-width: 768px){.header-content .align-holder{width:85%!important;}.inner-header-description{text-align:center!important;}}</style>
+<script type="text/javascript" src="/wp-includes/js/jquery/jquery.min.js?ver=3.6.0" id="jquery-core-js"></script>
+<script type="text/javascript" id="jquery-core-js-after">
+MaterialisTheme = {"blog_posts_as_masonry_grid":false}
+</script>
+<script type="text/javascript" src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
+<script type="text/javascript" id="jquery-js-after">
+    
+        (function ($) {
+            function setHeaderTopSpacing() {
+                $('.header-wrapper .header,.header-wrapper .header-homepage').css({
+                    'padding-top': $('.header-top').height()
+                });
+
+             setTimeout(function() {
+                  var headerTop = document.querySelector('.header-top');
+                  var headers = document.querySelectorAll('.header-wrapper .header,.header-wrapper .header-homepage');
+
+                  for (var i = 0; i < headers.length; i++) {
+                      var item = headers[i];
+                      item.style.paddingTop = headerTop.getBoundingClientRect().height + "px";
+                  }
+
+                    var languageSwitcher = document.querySelector('.materialis-language-switcher');
+
+                    if(languageSwitcher){
+                        languageSwitcher.style.top = "calc( " +  headerTop.getBoundingClientRect().height + "px + 1rem)" ;
+                    }
+                    
+                }, 100);
+
+            }
+
+            jQuery(window).on('resize orientationchange', setHeaderTopSpacing);
+            window.materialisSetHeaderTopSpacing = setHeaderTopSpacing
+
+        })(jQuery);
+    
+    
+</script>
+
+<script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-40272154-32" id="google_gtagjs-js" async></script>
+<script type="text/javascript" id="google_gtagjs-js-after">
+window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}
+gtag('set', 'linker', {"domains":["audiolibri.org"]} );
+gtag("js", new Date());
+gtag("set", "developer_id.dZTNiMT", true);
+gtag("config", "UA-40272154-32", {"anonymize_ip":true});
+</script>
+
+<link rel="https://api.w.org/" href="/wp-json/">
+<link rel="alternate" type="application/json" href="/wp-json/wp/v2/pages/3071">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd">
+<link rel="canonical" href="/saggi/">
+<link rel="shortlink" href="/?p=3071">
+<link rel="alternate" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2Fsaggi%2F">
+<link rel="alternate" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2Fsaggi%2F&#038;format=xml">
+<meta name="generator" content="Site Kit by Google 1.49.0"> <script type="text/javascript" data-name="async-styles">
+        (function () {
+            var links = document.querySelectorAll('link[data-href]');
+            for (var i = 0; i < links.length; i++) {
+                var item = links[i];
+                item.href = item.getAttribute('data-href')
+            }
+        })();
+    </script>
+<meta name="onesignal" content="wordpress-plugin">
+<script>
+
+      window.OneSignal = window.OneSignal || [];
+
+      OneSignal.push( function() {
+        OneSignal.SERVICE_WORKER_UPDATER_PATH = "OneSignalSDKUpdaterWorker.js.php";
+                      OneSignal.SERVICE_WORKER_PATH = "OneSignalSDKWorker.js.php";
+                      OneSignal.SERVICE_WORKER_PARAM = { scope: "/" };
+        OneSignal.setDefaultNotificationUrl("");
+        var oneSignal_options = {};
+        window._oneSignalInitOptions = oneSignal_options;
+
+        oneSignal_options['wordpress'] = true;
+oneSignal_options['appId'] = '7efbd26e-459f-4b2e-8ceb-8d35cabbf5c5';
+oneSignal_options['allowLocalhostAsSecureOrigin'] = true;
+oneSignal_options['welcomeNotification'] = { };
+oneSignal_options['welcomeNotification']['disable'] = true;
+oneSignal_options['path'] = "/wp-content/plugins/onesignal-free-web-push-notifications/sdk_files/";
+oneSignal_options['safari_web_id'] = "web.onesignal.auto.110555e6-7aae-4d44-9896-bfe7a2b1c987";
+oneSignal_options['persistNotification'] = true;
+oneSignal_options['promptOptions'] = { };
+                OneSignal.init(window._oneSignalInitOptions);
+                OneSignal.showSlidedownPrompt();      });
+
+      function documentInitOneSignal() {
+        var oneSignal_elements = document.getElementsByClassName("OneSignal-prompt");
+
+        var oneSignalLinkClickHandler = function(event) { OneSignal.push(['registerForPushNotifications']); event.preventDefault(); };        for(var i = 0; i < oneSignal_elements.length; i++)
+          oneSignal_elements[i].addEventListener('click', oneSignalLinkClickHandler, false);
+      }
+
+      if (document.readyState === 'complete') {
+           documentInitOneSignal();
+      }
+      else {
+           window.addEventListener("load", function(event){
+               documentInitOneSignal();
+          });
+      }
+    </script>
+<meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress.">
+<link rel="icon" href="/wp-content/uploads/2017/06/cropped-audiobooks_icon_alfa-32x32.png" sizes="32x32">
+<link rel="icon" href="/wp-content/uploads/2017/06/cropped-audiobooks_icon_alfa-192x192.png" sizes="192x192">
+<meta name="msapplication-TileImage" content="/wp-content/uploads/2017/06/cropped-audiobooks_icon_alfa-270x270.png">
+<meta name="pwaforwp" content="wordpress-plugin">
+<meta name="theme-color" content="#D5E0EB">
+<meta name="apple-mobile-web-app-title" content="Audiolibri.org">
+<meta name="application-name" content="Audiolibri.org">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="YES">
+<link rel="apple-touch-startup-image" href="/wp-content/plugins/pwa-for-wp/images/logo.png">
+<link rel="apple-touch-icon" sizes="192x192" href="/wp-content/plugins/pwa-for-wp/images/logo.png">
+<link rel="apple-touch-icon" sizes="512x512" href="/wp-content/plugins/pwa-for-wp/images/logo-512x512.png">
+<style type="text/css" id="wp-custom-css">.navigation-bar {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.emoji {
+    font-size: x-large;
+}
+
+a.link {
+    font-size: large;
+}
+
+.h3, h3 {
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+}
+
+.header-homepage .header-description-row {
+    padding-top: 5%;
+}</style>
+<noscript><style>.wpb_animate_when_almost_visible { opacity: 1; }</style></noscript> <style id="page-content-custom-styles"></style>
+<style data-name="background-content-colors">.materialis-front-page .content.blog-page,
+        .materialis-inner-page .page-content,
+        .materialis-inner-page .content,
+        .materialis-front-page.materialis-content-padding .page-content {
+            background-color: #f5fafd;
+        }</style>
+</head>
+<body class="page-template-default page page-id-3071 overlap-first-section materialis-inner-page wpb-js-composer js-comp-ver-6.6.0 vc_responsive">
+<style>.screen-reader-text[href="#page-content"]:focus {
+            background-color: #f1f1f1;
+            border-radius: 3px;
+            box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+            clip: auto !important;
+            clip-path: none;
+            color: #21759b;
+           
+        }</style>
+<a class="skip-link screen-reader-text" href="#page-content">Skip to content</a>
+<div id="page-top" class="header-top">
+<div class="navigation-bar  boxed bordered" data-sticky="0" data-sticky-mobile="1" data-sticky-to="top">
+<div class="gridContainer navigation-wrapper">
+<div class="row basis-auto">
+<div class="logo_col col-xs col-sm-fit">
+<a class="text-logo" data-type="group" data-dynamic-mod="true" href="/">Audiolibri.org</a> </div>
+<div class="main_menu_col col-xs">
+<div id="mainmenu_container" class="row"><ul id="main_menu" class="simple-text-buttons main-menu dropdown-menu">
+<li id="menu-item-7378" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7378">
+<a href="/audiolibri-in-italiano/">🇮🇹</a>
+<ul class="sub-menu">
+<li id="menu-item-18293" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18293"><a href="/audiolibri-in-italiano/poesia/">Poesia</a></li>
+<li id="menu-item-18289" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18289"><a href="/audiolibri-in-italiano/racconti/">Racconti</a></li>
+<li id="menu-item-18295" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18295"><a href="/audiolibri-in-italiano/romanzi/">Romanzi</a></li>
+<li id="menu-item-18290" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18290"><a href="/audiolibri-in-italiano/saggi/">Saggi</a></li>
+<li id="menu-item-18294" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18294"><a href="/audiolibri-in-italiano/religioni/">Religioni</a></li>
+<li id="menu-item-18292" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18292"><a href="/audiolibri-in-italiano/ragazzi/">Ragazzi</a></li>
+<li id="menu-item-18291" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18291"><a href="/audiolibri-in-italiano/estratti/">Estratti</a></li>
+</ul>
+</li>
+<li id="menu-item-7379" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7379">
+<a href="/audiolibri-in-inglese/">🇬🇧</a>
+<ul class="sub-menu">
+<li id="menu-item-18296" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18296"><a href="/audiolibri-in-inglese/kids/">Kids</a></li>
+<li id="menu-item-18297" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18297"><a href="/audiolibri-in-inglese/novels/">Novels</a></li>
+<li id="menu-item-18298" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18298"><a href="/audiolibri-in-inglese/poetry/">Poetry</a></li>
+</ul>
+</li>
+<li id="menu-item-7380" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7380">
+<a href="/audiolibri-in-spagnolo/">🇪🇸</a>
+<ul class="sub-menu">
+<li id="menu-item-18299" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18299"><a href="/audiolibri-in-spagnolo/cuentos/">Cuentos</a></li>
+<li id="menu-item-18300" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18300"><a href="/audiolibri-in-spagnolo/infantiles/">Infantiles</a></li>
+<li id="menu-item-18301" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18301"><a href="/audiolibri-in-spagnolo/novelas/">Novelas</a></li>
+<li id="menu-item-18302" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18302"><a href="/audiolibri-in-spagnolo/poesia-audiolibri-in-spagnolo/">Poesia</a></li>
+</ul>
+</li>
+<li id="menu-item-8728" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8728"><a href="/category/audiolibri-in-francese/">🇫🇷</a></li>
+<li id="menu-item-8729" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8729"><a href="/category/audiolibri-in-tedesco/">🇩🇪</a></li>
+<li id="menu-item-8730" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8730"><a href="/category/audiolibri-in-portoghese/">🇵🇹</a></li>
+<li id="menu-item-8731" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8731"><a href="/category/audiolibri-in-russo/">🇷🇺</a></li>
+<li id="menu-item-8732" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8732"><a href="/category/audiolibri-in-polacco/">🇵🇱</a></li>
+<li id="menu-item-8733" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8733"><a href="/category/audiolibri-in-olandese/">🇳🇱</a></li>
+<li id="menu-item-8736" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8736"><a href="/category/audiolibri-in-arabo/">🇸🇦</a></li>
+</ul></div> <a href="#" data-component="offcanvas" data-target="#offcanvas-wrapper" data-direction="right" data-width="300px" data-push="false">
+<div class="bubble"></div>
+<i class="mdi mdi-view-sequential"></i>
+</a>
+<div id="offcanvas-wrapper" class="hide force-hide offcanvas-right">
+<div class="offcanvas-top">
+<div class="logo-holder">
+<a class="text-logo" data-type="group" data-dynamic-mod="true" href="/">Audiolibri.org</a> </div>
+</div>
+<div id="offcanvas-menu" class="menu-top-bar-flags-container"><ul id="offcanvas_menu" class="offcanvas_menu">
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7378">
+<a href="/audiolibri-in-italiano/">🇮🇹</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18293"><a href="/audiolibri-in-italiano/poesia/">Poesia</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18289"><a href="/audiolibri-in-italiano/racconti/">Racconti</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18295"><a href="/audiolibri-in-italiano/romanzi/">Romanzi</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18290"><a href="/audiolibri-in-italiano/saggi/">Saggi</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18294"><a href="/audiolibri-in-italiano/religioni/">Religioni</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18292"><a href="/audiolibri-in-italiano/ragazzi/">Ragazzi</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18291"><a href="/audiolibri-in-italiano/estratti/">Estratti</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7379">
+<a href="/audiolibri-in-inglese/">🇬🇧</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18296"><a href="/audiolibri-in-inglese/kids/">Kids</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18297"><a href="/audiolibri-in-inglese/novels/">Novels</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18298"><a href="/audiolibri-in-inglese/poetry/">Poetry</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7380">
+<a href="/audiolibri-in-spagnolo/">🇪🇸</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18299"><a href="/audiolibri-in-spagnolo/cuentos/">Cuentos</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18300"><a href="/audiolibri-in-spagnolo/infantiles/">Infantiles</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18301"><a href="/audiolibri-in-spagnolo/novelas/">Novelas</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18302"><a href="/audiolibri-in-spagnolo/poesia-audiolibri-in-spagnolo/">Poesia</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8728"><a href="/category/audiolibri-in-francese/">🇫🇷</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8729"><a href="/category/audiolibri-in-tedesco/">🇩🇪</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8730"><a href="/category/audiolibri-in-portoghese/">🇵🇹</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8731"><a href="/category/audiolibri-in-russo/">🇷🇺</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8732"><a href="/category/audiolibri-in-polacco/">🇵🇱</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8733"><a href="/category/audiolibri-in-olandese/">🇳🇱</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8736"><a href="/category/audiolibri-in-arabo/">🇸🇦</a></li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="page" class="site">
+<div class="header-wrapper">
+<div class="header  color-overlay  custom-mobile-image" style="; background-image:url(&quot;/wp-content/themes/materialis/assets/images/curve-1209392.jpg&quot;); background-color:#6a73da">
+<div class="inner-header-description gridContainer">
+<div class="row header-description-row">
+<div class="col-xs col-xs-12">
+<h1 class="hero-title">
+Saggi </h1>
+<p class="header-subtitle">Audiolibri in Italiano e in lingua originale.</p>
+</div>
+</div>
+</div>
+<script>
+		if (window.materialisSetHeaderTopSpacing) {
+			window.materialisSetHeaderTopSpacing();
+		}
+    </script>
+</div>
+</div>
+<div class="page-content" id="page-content">
+<div class="gridContainer content">
+<div id="post-3071" class="post-3071 page type-page status-publish hentry">
+<div>
+<div class="vc_row wpb_row vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
+<div class="vc_grid-container-wrapper vc_clearfix">
+<div class="vc_grid-container vc_clearfix wpb_content_element vc_basic_grid" data-initial-loading-animation="fadeIn" data-vc-grid-settings="{&quot;page_id&quot;:3071,&quot;style&quot;:&quot;lazy&quot;,&quot;action&quot;:&quot;vc_get_vc_grid_data&quot;,&quot;shortcode_id&quot;:&quot;1497785069962-0fe74a4a-c3b0-3&quot;,&quot;items_per_page&quot;:&quot;18&quot;,&quot;tag&quot;:&quot;vc_basic_grid&quot;}" data-vc-request="/wp-admin/admin-ajax.php" data-vc-post-id="3071" data-vc-public-nonce="765c0fdb61">
+<div class="vc_grid vc_row vc_grid-gutter-30px vc_pageable-wrapper vc_hook_hover" data-vc-pageable-content="true">
+<div class="vc_pageable-slide-wrapper vc_clearfix" data-vc-grid-content="true">
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-16-9 vc_gitem-is-link">
+<a href="/al-di-la-del-principio-di-piacere-di-s-freud-saggio-prima-parte-di-2/" title="&#8220;Al di la del principio di piacere&#8221; di S. Freud  &#8211; saggio &#8211; prima parte di 2" class="vc_gitem-link vc-zone-link"></a><div class="vc_gitem-zone-mini">
+<div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_right">
+<figure class="wpb_wrapper vc_figure">
+<a href="/al-di-la-del-principio-di-piacere-di-s-freud-saggio-prima-parte-di-2/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="&#8220;Al di la del principio di piacere&#8221; di S. Freud  &#8211; saggio &#8211; prima parte di 2"><img width="320" height="180" src="/wp-content/uploads/2018/05/Al-di-la-del-principio-di-piacere-di-S.-Freud-saggio-prima-parte-di-2.jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="/wp-content/uploads/2018/05/Al-di-la-del-principio-di-piacere-di-S.-Freud-saggio-prima-parte-di-2.jpg 320w, /wp-content/uploads/2018/05/Al-di-la-del-principio-di-piacere-di-S.-Freud-saggio-prima-parte-di-2-300x169.jpg 300w" sizes="(max-width: 320px) 100vw, 320px"></a>
+</figure>
+</div>
+</div></div>
+<div class="vc_gitem_row vc_row vc_gitem-row-position-bottom"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/al-di-la-del-principio-di-piacere-di-s-freud-saggio-prima-parte-di-2/" class="vc_gitem-link" title="&#8220;Al di la del principio di piacere&#8221; di S. Freud  &#8211; saggio &#8211; prima parte di 2">&#8220;Al di la del principio di piacere&#8221; di S. Freud &#8211; saggio &#8211; prima parte di 2</a></div></div></div></div>
+</div>
+</div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-16-9 vc_gitem-is-link">
+<a href="/la-cripta-dei-cappuccini-di-joseph-roth-recensione-di-luigi-gaudio/" title="&#8220;La Cripta dei Cappuccini&#8221;  di Joseph Roth recensione di Luigi Gaudio" class="vc_gitem-link vc-zone-link"></a><div class="vc_gitem-zone-mini">
+<div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_right">
+<figure class="wpb_wrapper vc_figure">
+<a href="/la-cripta-dei-cappuccini-di-joseph-roth-recensione-di-luigi-gaudio/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="&#8220;La Cripta dei Cappuccini&#8221;  di Joseph Roth recensione di Luigi Gaudio"><img width="320" height="180" src="/wp-content/uploads/2019/04/La-Cripta-dei-Cappuccini-di-Joseph-Roth-recensione-di-Luigi-Gaudio.jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="/wp-content/uploads/2019/04/La-Cripta-dei-Cappuccini-di-Joseph-Roth-recensione-di-Luigi-Gaudio.jpg 320w, /wp-content/uploads/2019/04/La-Cripta-dei-Cappuccini-di-Joseph-Roth-recensione-di-Luigi-Gaudio-300x169.jpg 300w" sizes="(max-width: 320px) 100vw, 320px"></a>
+</figure>
+</div>
+</div></div>
+<div class="vc_gitem_row vc_row vc_gitem-row-position-bottom"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/la-cripta-dei-cappuccini-di-joseph-roth-recensione-di-luigi-gaudio/" class="vc_gitem-link" title="&#8220;La Cripta dei Cappuccini&#8221;  di Joseph Roth recensione di Luigi Gaudio">&#8220;La Cripta dei Cappuccini&#8221; di Joseph Roth recensione di Luigi Gaudio</a></div></div></div></div>
+</div>
+</div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-16-9 vc_gitem-is-link">
+<a href="/adele-fulciniti-incontra-goffredo-parise-sillabari-con-paolo-poli-01-04/" title="Adele Fulciniti incontra Goffredo Parise &#8220;Sillabari&#8221; con Paolo Poli 01/04" class="vc_gitem-link vc-zone-link"></a><div class="vc_gitem-zone-mini">
+<div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_right">
+<figure class="wpb_wrapper vc_figure">
+<a href="/adele-fulciniti-incontra-goffredo-parise-sillabari-con-paolo-poli-01-04/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="Adele Fulciniti incontra Goffredo Parise &#8220;Sillabari&#8221; con Paolo Poli 01/04"><img width="320" height="180" src="/wp-content/uploads/2019/04/Adele-Fulciniti-incontra-Goffredo-Parise-Sillabari-con-Paolo-Poli-0104.jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="/wp-content/uploads/2019/04/Adele-Fulciniti-incontra-Goffredo-Parise-Sillabari-con-Paolo-Poli-0104.jpg 320w, /wp-content/uploads/2019/04/Adele-Fulciniti-incontra-Goffredo-Parise-Sillabari-con-Paolo-Poli-0104-300x169.jpg 300w" sizes="(max-width: 320px) 100vw, 320px"></a>
+</figure>
+</div>
+</div></div>
+<div class="vc_gitem_row vc_row vc_gitem-row-position-bottom"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/adele-fulciniti-incontra-goffredo-parise-sillabari-con-paolo-poli-01-04/" class="vc_gitem-link" title="Adele Fulciniti incontra Goffredo Parise &#8220;Sillabari&#8221; con Paolo Poli 01/04">Adele Fulciniti incontra Goffredo Parise &#8220;Sillabari&#8221; con Paolo Poli 01/04</a></div></div></div></div>
+</div>
+</div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-16-9 vc_gitem-is-link">
+<a href="/al-di-la-del-principio-di-piacere-di-s-freud-saggio-parte-seconda-di-2/" title="Al di la del principio di piacere di S. Freud  &#8211; saggio &#8211; parte seconda di 2" class="vc_gitem-link vc-zone-link"></a><div class="vc_gitem-zone-mini">
+<div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_right">
+<figure class="wpb_wrapper vc_figure">
+<a href="/al-di-la-del-principio-di-piacere-di-s-freud-saggio-parte-seconda-di-2/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="Al di la del principio di piacere di S. Freud  &#8211; saggio &#8211; parte seconda di 2"><img width="320" height="180" src="/wp-content/uploads/2018/05/Al-di-la-del-principio-di-piacere-di-S.-Freud-saggio-parte-seconda-di-2.jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="/wp-content/uploads/2018/05/Al-di-la-del-principio-di-piacere-di-S.-Freud-saggio-parte-seconda-di-2.jpg 320w, /wp-content/uploads/2018/05/Al-di-la-del-principio-di-piacere-di-S.-Freud-saggio-parte-seconda-di-2-300x169.jpg 300w" sizes="(max-width: 320px) 100vw, 320px"></a>
+</figure>
+</div>
+</div></div>
+<div class="vc_gitem_row vc_row vc_gitem-row-position-bottom"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/al-di-la-del-principio-di-piacere-di-s-freud-saggio-parte-seconda-di-2/" class="vc_gitem-link" title="Al di la del principio di piacere di S. Freud  &#8211; saggio &#8211; parte seconda di 2">Al di la del principio di piacere di S. Freud &#8211; saggio &#8211; parte seconda di 2</a></div></div></div></div>
+</div>
+</div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-16-9 vc_gitem-is-link">
+<a href="/alcibiade-primo-platone-dialogo-parte-prima-di-due/" title="ALCIBIADE PRIMO &#8211; Platone -dialogo &#8211; parte prima di due" class="vc_gitem-link vc-zone-link"></a><div class="vc_gitem-zone-mini">
+<div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_right">
+<figure class="wpb_wrapper vc_figure">
+<a href="/alcibiade-primo-platone-dialogo-parte-prima-di-due/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="ALCIBIADE PRIMO &#8211; Platone -dialogo &#8211; parte prima di due"><img width="320" height="180" src="/wp-content/uploads/2018/12/ALCIBIADE-PRIMO-Platone-dialogo-parte-prima-di-due.jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="/wp-content/uploads/2018/12/ALCIBIADE-PRIMO-Platone-dialogo-parte-prima-di-due.jpg 320w, /wp-content/uploads/2018/12/ALCIBIADE-PRIMO-Platone-dialogo-parte-prima-di-due-300x169.jpg 300w" sizes="(max-width: 320px) 100vw, 320px"></a>
+</figure>
+</div>
+</div></div>
+<div class="vc_gitem_row vc_row vc_gitem-row-position-bottom"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/alcibiade-primo-platone-dialogo-parte-prima-di-due/" class="vc_gitem-link" title="ALCIBIADE PRIMO &#8211; Platone -dialogo &#8211; parte prima di due">ALCIBIADE PRIMO &#8211; Platone -dialogo &#8211; parte prima di due</a></div></div></div></div>
+</div>
+</div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-16-9 vc_gitem-is-link">
+<a href="/alcibiade-primo-platone-dialogo-parte-seconda-di-due-lettura-integrale/" title="ALCIBIADE PRIMO &#8211; Platone -dialogo &#8211; parte seconda di due &#8211; lettura integrale" class="vc_gitem-link vc-zone-link"></a><div class="vc_gitem-zone-mini">
+<div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_right">
+<figure class="wpb_wrapper vc_figure">
+<a href="/alcibiade-primo-platone-dialogo-parte-seconda-di-due-lettura-integrale/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="ALCIBIADE PRIMO &#8211; Platone -dialogo &#8211; parte seconda di due &#8211; lettura integrale"><img width="320" height="180" src="/wp-content/uploads/2018/12/ALCIBIADE-PRIMO-Platone-dialogo-parte-seconda-di-due-lettura-integrale.jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="/wp-content/uploads/2018/12/ALCIBIADE-PRIMO-Platone-dialogo-parte-seconda-di-due-lettura-integrale.jpg 320w, /wp-content/uploads/2018/12/ALCIBIADE-PRIMO-Platone-dialogo-parte-seconda-di-due-lettura-integrale-300x169.jpg 300w" sizes="(max-width: 320px) 100vw, 320px"></a>
+</figure>
+</div>
+</div></div>
+<div class="vc_gitem_row vc_row vc_gitem-row-position-bottom"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/alcibiade-primo-platone-dialogo-parte-seconda-di-due-lettura-integrale/" class="vc_gitem-link" title="ALCIBIADE PRIMO &#8211; Platone -dialogo &#8211; parte seconda di due &#8211; lettura integrale">ALCIBIADE PRIMO &#8211; Platone -dialogo &#8211; parte seconda di due &#8211; lettura integrale</a></div></div></div></div>
+</div>
+</div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-16-9 vc_gitem-is-link">
+<a href="/arrigo-polillo-storia-del-jazz-seconda-parte-2di3-audiolibro/" title="Arrigo Polillo &#8211; Storia del Jazz &#8211; Seconda parte (2di3) [audiolibro]" class="vc_gitem-link vc-zone-link"></a><div class="vc_gitem-zone-mini">
+<div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_right">
+<figure class="wpb_wrapper vc_figure">
+<a href="/arrigo-polillo-storia-del-jazz-seconda-parte-2di3-audiolibro/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="Arrigo Polillo &#8211; Storia del Jazz &#8211; Seconda parte (2di3) [audiolibro]"><img width="320" height="180" src="/wp-content/uploads/2013/03/Arrigo-Polillo-Storia-del-Jazz-Seconda-parte-2di3-audiolibro.jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="/wp-content/uploads/2013/03/Arrigo-Polillo-Storia-del-Jazz-Seconda-parte-2di3-audiolibro.jpg 320w, /wp-content/uploads/2013/03/Arrigo-Polillo-Storia-del-Jazz-Seconda-parte-2di3-audiolibro-300x169.jpg 300w" sizes="(max-width: 320px) 100vw, 320px"></a>
+</figure>
+</div>
+</div></div>
+<div class="vc_gitem_row vc_row vc_gitem-row-position-bottom"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/arrigo-polillo-storia-del-jazz-seconda-parte-2di3-audiolibro/" class="vc_gitem-link" title="Arrigo Polillo &#8211; Storia del Jazz &#8211; Seconda parte (2di3) [audiolibro]">Arrigo Polillo &#8211; Storia del Jazz &#8211; Seconda parte (2di3) [audiolibro]</a></div></div></div></div>
+</div>
+</div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-16-9 vc_gitem-is-link">
+<a href="/arrigo-polillo-storia-del-jazz-terza-parte-3di3-audiolibro/" title="Arrigo Polillo &#8211; Storia del Jazz &#8211; Terza parte (3di3) [audiolibro]" class="vc_gitem-link vc-zone-link"></a><div class="vc_gitem-zone-mini">
+<div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_right">
+<figure class="wpb_wrapper vc_figure">
+<a href="/arrigo-polillo-storia-del-jazz-terza-parte-3di3-audiolibro/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="Arrigo Polillo &#8211; Storia del Jazz &#8211; Terza parte (3di3) [audiolibro]"><img width="320" height="180" src="/wp-content/uploads/2013/03/Arrigo-Polillo-Storia-del-Jazz-Terza-parte-3di3-audiolibro.jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="/wp-content/uploads/2013/03/Arrigo-Polillo-Storia-del-Jazz-Terza-parte-3di3-audiolibro.jpg 320w, /wp-content/uploads/2013/03/Arrigo-Polillo-Storia-del-Jazz-Terza-parte-3di3-audiolibro-300x169.jpg 300w" sizes="(max-width: 320px) 100vw, 320px"></a>
+</figure>
+</div>
+</div></div>
+<div class="vc_gitem_row vc_row vc_gitem-row-position-bottom"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/arrigo-polillo-storia-del-jazz-terza-parte-3di3-audiolibro/" class="vc_gitem-link" title="Arrigo Polillo &#8211; Storia del Jazz &#8211; Terza parte (3di3) [audiolibro]">Arrigo Polillo &#8211; Storia del Jazz &#8211; Terza parte (3di3) [audiolibro]</a></div></div></div></div>
+</div>
+</div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-16-9 vc_gitem-is-link">
+<a href="/audio-corra-reiki/" title="Audio Corra &#8211; Reiki" class="vc_gitem-link vc-zone-link"></a><div class="vc_gitem-zone-mini">
+<div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_right">
+<figure class="wpb_wrapper vc_figure">
+<a href="/audio-corra-reiki/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="Audio Corra &#8211; Reiki"><img width="320" height="180" src="/wp-content/uploads/2017/12/Audio-Corra-Reiki.jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="/wp-content/uploads/2017/12/Audio-Corra-Reiki.jpg 320w, /wp-content/uploads/2017/12/Audio-Corra-Reiki-300x169.jpg 300w" sizes="(max-width: 320px) 100vw, 320px"></a>
+</figure>
+</div>
+</div></div>
+<div class="vc_gitem_row vc_row vc_gitem-row-position-bottom"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/audio-corra-reiki/" class="vc_gitem-link" title="Audio Corra &#8211; Reiki">Audio Corra &#8211; Reiki</a></div></div></div></div>
+</div>
+</div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-16-9 vc_gitem-is-link">
+<a href="/audiolibro-cosa-e/" title="audiolibro &#8211; cosa è?" class="vc_gitem-link vc-zone-link"></a><div class="vc_gitem-zone-mini">
+<div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_right">
+<figure class="wpb_wrapper vc_figure">
+<a href="/audiolibro-cosa-e/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="audiolibro &#8211; cosa è?"><img width="1200" height="675" src="/wp-content/uploads/2017/10/audiolibro-cosa-.jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="/wp-content/uploads/2017/10/audiolibro-cosa-.jpg 1200w, /wp-content/uploads/2017/10/audiolibro-cosa--300x169.jpg 300w, /wp-content/uploads/2017/10/audiolibro-cosa--768x432.jpg 768w, /wp-content/uploads/2017/10/audiolibro-cosa--1024x576.jpg 1024w" sizes="(max-width: 1200px) 100vw, 1200px"></a>
+</figure>
+</div>
+</div></div>
+<div class="vc_gitem_row vc_row vc_gitem-row-position-bottom"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/audiolibro-cosa-e/" class="vc_gitem-link" title="audiolibro &#8211; cosa è?">audiolibro &#8211; cosa è?</a></div></div></div></div>
+</div>
+</div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-16-9 vc_gitem-is-link">
+<a href="/audiolibro-seneca-la-tranquillita-dellanimo/" title="Audiolibro-Seneca-La tranquillità dell&#8217;animo." class="vc_gitem-link vc-zone-link"></a><div class="vc_gitem-zone-mini">
+<div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_right">
+<figure class="wpb_wrapper vc_figure">
+<a href="/audiolibro-seneca-la-tranquillita-dellanimo/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="Audiolibro-Seneca-La tranquillità dell&#8217;animo."><img width="320" height="180" src="/wp-content/uploads/2012/03/Audiolibro-Seneca-La-tranquillit-dellanimo..jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="/wp-content/uploads/2012/03/Audiolibro-Seneca-La-tranquillit-dellanimo..jpg 320w, /wp-content/uploads/2012/03/Audiolibro-Seneca-La-tranquillit-dellanimo.-300x169.jpg 300w" sizes="(max-width: 320px) 100vw, 320px"></a>
+</figure>
+</div>
+</div></div>
+<div class="vc_gitem_row vc_row vc_gitem-row-position-bottom"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/audiolibro-seneca-la-tranquillita-dellanimo/" class="vc_gitem-link" title="Audiolibro-Seneca-La tranquillità dell&#8217;animo.">Audiolibro-Seneca-La tranquillità dell&#8217;animo.</a></div></div></div></div>
+</div>
+</div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-16-9 vc_gitem-is-link">
+<a href="/come-affascinare-chiunque-3-segreti/" title="Come AFFASCINARE chiunque: 3 SEGRETI" class="vc_gitem-link vc-zone-link"></a><div class="vc_gitem-zone-mini">
+<div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_right">
+<figure class="wpb_wrapper vc_figure">
+<a href="/come-affascinare-chiunque-3-segreti/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="Come AFFASCINARE chiunque: 3 SEGRETI"><img width="320" height="180" src="/wp-content/uploads/2019/04/Come-AFFASCINARE-chiunque-3-SEGRETI.jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="/wp-content/uploads/2019/04/Come-AFFASCINARE-chiunque-3-SEGRETI.jpg 320w, /wp-content/uploads/2019/04/Come-AFFASCINARE-chiunque-3-SEGRETI-300x169.jpg 300w" sizes="(max-width: 320px) 100vw, 320px"></a>
+</figure>
+</div>
+</div></div>
+<div class="vc_gitem_row vc_row vc_gitem-row-position-bottom"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/come-affascinare-chiunque-3-segreti/" class="vc_gitem-link" title="Come AFFASCINARE chiunque: 3 SEGRETI">Come AFFASCINARE chiunque: 3 SEGRETI</a></div></div></div></div>
+</div>
+</div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-16-9 vc_gitem-is-link">
+<a href="/cultura-libera-di-lawrence-lessig/" title="CULTURA LIBERA di Lawrence Lessig" class="vc_gitem-link vc-zone-link"></a><div class="vc_gitem-zone-mini">
+<div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_right">
+<figure class="wpb_wrapper vc_figure">
+<a href="/cultura-libera-di-lawrence-lessig/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="CULTURA LIBERA di Lawrence Lessig"><img width="320" height="180" src="/wp-content/uploads/2019/05/CULTURA-LIBERA-di-Lawrence-Lessig.jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="/wp-content/uploads/2019/05/CULTURA-LIBERA-di-Lawrence-Lessig.jpg 320w, /wp-content/uploads/2019/05/CULTURA-LIBERA-di-Lawrence-Lessig-300x169.jpg 300w" sizes="(max-width: 320px) 100vw, 320px"></a>
+</figure>
+</div>
+</div></div>
+<div class="vc_gitem_row vc_row vc_gitem-row-position-bottom"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/cultura-libera-di-lawrence-lessig/" class="vc_gitem-link" title="CULTURA LIBERA di Lawrence Lessig">CULTURA LIBERA di Lawrence Lessig</a></div></div></div></div>
+</div>
+</div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-16-9 vc_gitem-is-link">
+<a href="/da-pensieri-di-un-uomo-curioso-di-a-einstein/" title="da  PENSIERI DI UN UOMO CURIOSO   di A.  Einstein" class="vc_gitem-link vc-zone-link"></a><div class="vc_gitem-zone-mini">
+<div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_right">
+<figure class="wpb_wrapper vc_figure">
+<a href="/da-pensieri-di-un-uomo-curioso-di-a-einstein/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="da  PENSIERI DI UN UOMO CURIOSO   di A.  Einstein"><img width="320" height="180" src="/wp-content/uploads/2020/03/da-PENSIERI-DI-UN-UOMO-CURIOSO-di-A.-Einstein.jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="/wp-content/uploads/2020/03/da-PENSIERI-DI-UN-UOMO-CURIOSO-di-A.-Einstein.jpg 320w, /wp-content/uploads/2020/03/da-PENSIERI-DI-UN-UOMO-CURIOSO-di-A.-Einstein-300x169.jpg 300w" sizes="(max-width: 320px) 100vw, 320px"></a>
+</figure>
+</div>
+</div></div>
+<div class="vc_gitem_row vc_row vc_gitem-row-position-bottom"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/da-pensieri-di-un-uomo-curioso-di-a-einstein/" class="vc_gitem-link" title="da  PENSIERI DI UN UOMO CURIOSO   di A.  Einstein">da PENSIERI DI UN UOMO CURIOSO di A. Einstein</a></div></div></div></div>
+</div>
+</div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-16-9 vc_gitem-is-link">
+<a href="/da-l-arte-di-amare-di-e-fromm-altruismo-egoismo/" title="da &#8220;L&#8217; ARTE DI AMARE&#8221; di E. Fromm &#8211; ALTRUISMO &#8211; EGOISMO" class="vc_gitem-link vc-zone-link"></a><div class="vc_gitem-zone-mini">
+<div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_right">
+<figure class="wpb_wrapper vc_figure">
+<a href="/da-l-arte-di-amare-di-e-fromm-altruismo-egoismo/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="da &#8220;L&#8217; ARTE DI AMARE&#8221; di E. Fromm &#8211; ALTRUISMO &#8211; EGOISMO"><img width="1280" height="720" src="/wp-content/uploads/2018/09/da-L-ARTE-DI-AMARE-di-E.-Fromm-ALTRUISMO-EGOISMO.jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="/wp-content/uploads/2018/09/da-L-ARTE-DI-AMARE-di-E.-Fromm-ALTRUISMO-EGOISMO.jpg 1280w, /wp-content/uploads/2018/09/da-L-ARTE-DI-AMARE-di-E.-Fromm-ALTRUISMO-EGOISMO-300x169.jpg 300w, /wp-content/uploads/2018/09/da-L-ARTE-DI-AMARE-di-E.-Fromm-ALTRUISMO-EGOISMO-1024x576.jpg 1024w, /wp-content/uploads/2018/09/da-L-ARTE-DI-AMARE-di-E.-Fromm-ALTRUISMO-EGOISMO-768x432.jpg 768w, /wp-content/uploads/2018/09/da-L-ARTE-DI-AMARE-di-E.-Fromm-ALTRUISMO-EGOISMO-1232x693.jpg 1232w" sizes="(max-width: 1280px) 100vw, 1280px"></a>
+</figure>
+</div>
+</div></div>
+<div class="vc_gitem_row vc_row vc_gitem-row-position-bottom"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/da-l-arte-di-amare-di-e-fromm-altruismo-egoismo/" class="vc_gitem-link" title="da &#8220;L&#8217; ARTE DI AMARE&#8221; di E. Fromm &#8211; ALTRUISMO &#8211; EGOISMO">da &#8220;L&#8217; ARTE DI AMARE&#8221; di E. Fromm &#8211; ALTRUISMO &#8211; EGOISMO</a></div></div></div></div>
+</div>
+</div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-16-9 vc_gitem-is-link">
+<a href="/da-gunther-anders-la-coscienza-al-bando-il-carteggio-del-pilota-di-hiroshima/" title="da Günther Anders, &#8220;La coscienza al bando&#8221;  Il carteggio del pilota di Hiroshima" class="vc_gitem-link vc-zone-link"></a><div class="vc_gitem-zone-mini">
+<div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_right">
+<figure class="wpb_wrapper vc_figure">
+<a href="/da-gunther-anders-la-coscienza-al-bando-il-carteggio-del-pilota-di-hiroshima/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="da Günther Anders, &#8220;La coscienza al bando&#8221;  Il carteggio del pilota di Hiroshima"><img width="320" height="180" src="/wp-content/uploads/2019/02/da-Gnther-Anders-La-coscienza-al-bando-Il-carteggio-del-pilota-di-Hiroshima.jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="/wp-content/uploads/2019/02/da-Gnther-Anders-La-coscienza-al-bando-Il-carteggio-del-pilota-di-Hiroshima.jpg 320w, /wp-content/uploads/2019/02/da-Gnther-Anders-La-coscienza-al-bando-Il-carteggio-del-pilota-di-Hiroshima-300x169.jpg 300w" sizes="(max-width: 320px) 100vw, 320px"></a>
+</figure>
+</div>
+</div></div>
+<div class="vc_gitem_row vc_row vc_gitem-row-position-bottom"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/da-gunther-anders-la-coscienza-al-bando-il-carteggio-del-pilota-di-hiroshima/" class="vc_gitem-link" title="da Günther Anders, &#8220;La coscienza al bando&#8221;  Il carteggio del pilota di Hiroshima">da Günther Anders, &#8220;La coscienza al bando&#8221; Il carteggio del pilota di Hiroshima</a></div></div></div></div>
+</div>
+</div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-16-9 vc_gitem-is-link">
+<a href="/de-vita-beata-di-l-a-seneca/" title="DE VITA BEATA di L. A. Seneca" class="vc_gitem-link vc-zone-link"></a><div class="vc_gitem-zone-mini">
+<div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_right">
+<figure class="wpb_wrapper vc_figure">
+<a href="/de-vita-beata-di-l-a-seneca/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="DE VITA BEATA di L. A. Seneca"><img width="320" height="180" src="/wp-content/uploads/2019/10/DE-VITA-BEATA-di-L.-A.-Seneca.jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="/wp-content/uploads/2019/10/DE-VITA-BEATA-di-L.-A.-Seneca.jpg 320w, /wp-content/uploads/2019/10/DE-VITA-BEATA-di-L.-A.-Seneca-300x169.jpg 300w" sizes="(max-width: 320px) 100vw, 320px"></a>
+</figure>
+</div>
+</div></div>
+<div class="vc_gitem_row vc_row vc_gitem-row-position-bottom"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/de-vita-beata-di-l-a-seneca/" class="vc_gitem-link" title="DE VITA BEATA di L. A. Seneca">DE VITA BEATA di L. A. Seneca</a></div></div></div></div>
+</div>
+</div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-16-9 vc_gitem-is-link">
+<a href="/e-zola-il-caso-dreyfus-scheurer-kestner/" title="E.  Zola &#8211; IL CASO DREYFUS &#8211;  Scheurer Kestner" class="vc_gitem-link vc-zone-link"></a><div class="vc_gitem-zone-mini">
+<div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_right">
+<figure class="wpb_wrapper vc_figure">
+<a href="/e-zola-il-caso-dreyfus-scheurer-kestner/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="E.  Zola &#8211; IL CASO DREYFUS &#8211;  Scheurer Kestner"><img width="320" height="180" src="/wp-content/uploads/2020/02/E.-Zola-IL-CASO-DREYFUS-Scheurer-Kestner.jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="/wp-content/uploads/2020/02/E.-Zola-IL-CASO-DREYFUS-Scheurer-Kestner.jpg 320w, /wp-content/uploads/2020/02/E.-Zola-IL-CASO-DREYFUS-Scheurer-Kestner-300x169.jpg 300w" sizes="(max-width: 320px) 100vw, 320px"></a>
+</figure>
+</div>
+</div></div>
+<div class="vc_gitem_row vc_row vc_gitem-row-position-bottom"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/e-zola-il-caso-dreyfus-scheurer-kestner/" class="vc_gitem-link" title="E.  Zola &#8211; IL CASO DREYFUS &#8211;  Scheurer Kestner">E. Zola &#8211; IL CASO DREYFUS &#8211; Scheurer Kestner</a></div></div></div></div>
+</div>
+</div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-16-9 vc_gitem-is-link">
+<a href="/e-zola-il-caso-dreyfus-jaccuse/" title="E. ZOLA  &#8211;  IL CASO DREYFUS  &#8211; J&#8217;ACCUSE" class="vc_gitem-link vc-zone-link"></a><div class="vc_gitem-zone-mini">
+<div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_right">
+<figure class="wpb_wrapper vc_figure">
+<a href="/e-zola-il-caso-dreyfus-jaccuse/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="E. ZOLA  &#8211;  IL CASO DREYFUS  &#8211; J&#8217;ACCUSE"><img width="320" height="180" src="/wp-content/uploads/2020/02/E.-ZOLA-IL-CASO-DREYFUS-JACCUSE.jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="/wp-content/uploads/2020/02/E.-ZOLA-IL-CASO-DREYFUS-JACCUSE.jpg 320w, /wp-content/uploads/2020/02/E.-ZOLA-IL-CASO-DREYFUS-JACCUSE-300x169.jpg 300w" sizes="(max-width: 320px) 100vw, 320px"></a>
+</figure>
+</div>
+</div></div>
+<div class="vc_gitem_row vc_row vc_gitem-row-position-bottom"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/e-zola-il-caso-dreyfus-jaccuse/" class="vc_gitem-link" title="E. ZOLA  &#8211;  IL CASO DREYFUS  &#8211; J&#8217;ACCUSE">E. ZOLA &#8211; IL CASO DREYFUS &#8211; J&#8217;ACCUSE</a></div></div></div></div>
+</div>
+</div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-16-9 vc_gitem-is-link">
+<a href="/e-zola-caso-dreyfus-il-sindacato/" title="E. ZOLA &#8211;  CASO DREYFUS &#8211;  IL SINDACATO" class="vc_gitem-link vc-zone-link"></a><div class="vc_gitem-zone-mini">
+<div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_right">
+<figure class="wpb_wrapper vc_figure">
+<a href="/e-zola-caso-dreyfus-il-sindacato/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="E. ZOLA &#8211;  CASO DREYFUS &#8211;  IL SINDACATO"><img width="320" height="180" src="/wp-content/uploads/2020/02/E.-ZOLA-CASO-DREYFUS-IL-SINDACATO.jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="/wp-content/uploads/2020/02/E.-ZOLA-CASO-DREYFUS-IL-SINDACATO.jpg 320w, /wp-content/uploads/2020/02/E.-ZOLA-CASO-DREYFUS-IL-SINDACATO-300x169.jpg 300w" sizes="(max-width: 320px) 100vw, 320px"></a>
+</figure>
+</div>
+</div></div>
+<div class="vc_gitem_row vc_row vc_gitem-row-position-bottom"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/e-zola-caso-dreyfus-il-sindacato/" class="vc_gitem-link" title="E. ZOLA &#8211;  CASO DREYFUS &#8211;  IL SINDACATO">E. ZOLA &#8211; CASO DREYFUS &#8211; IL SINDACATO</a></div></div></div></div>
+</div>
+</div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-16-9 vc_gitem-is-link">
+<a href="/e-zola-il-caso-dreyfus-lettera-alla-gioventu/" title="E. ZOLA &#8211; IL CASO  DREYFUS &#8211; LETTERA ALLA GIOVENTU&#8217;" class="vc_gitem-link vc-zone-link"></a><div class="vc_gitem-zone-mini">
+<div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_right">
+<figure class="wpb_wrapper vc_figure">
+<a href="/e-zola-il-caso-dreyfus-lettera-alla-gioventu/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="E. ZOLA &#8211; IL CASO  DREYFUS &#8211; LETTERA ALLA GIOVENTU&#8217;"><img width="320" height="180" src="/wp-content/uploads/2020/02/E.-ZOLA-IL-CASO-DREYFUS-LETTERA-ALLA-GIOVENTU.jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="/wp-content/uploads/2020/02/E.-ZOLA-IL-CASO-DREYFUS-LETTERA-ALLA-GIOVENTU.jpg 320w, /wp-content/uploads/2020/02/E.-ZOLA-IL-CASO-DREYFUS-LETTERA-ALLA-GIOVENTU-300x169.jpg 300w" sizes="(max-width: 320px) 100vw, 320px"></a>
+</figure>
+</div>
+</div></div>
+<div class="vc_gitem_row vc_row vc_gitem-row-position-bottom"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/e-zola-il-caso-dreyfus-lettera-alla-gioventu/" class="vc_gitem-link" title="E. ZOLA &#8211; IL CASO  DREYFUS &#8211; LETTERA ALLA GIOVENTU&#8217;">E. ZOLA &#8211; IL CASO DREYFUS &#8211; LETTERA ALLA GIOVENTU&#8217;</a></div></div></div></div>
+</div>
+</div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-16-9 vc_gitem-is-link">
+<a href="/e-zola-il-caso-dreyfus-per-gli-ebrei/" title="E. ZOLA &#8211; IL CASO DREYFUS &#8211; PER GLI EBREI" class="vc_gitem-link vc-zone-link"></a><div class="vc_gitem-zone-mini">
+<div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_right">
+<figure class="wpb_wrapper vc_figure">
+<a href="/e-zola-il-caso-dreyfus-per-gli-ebrei/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="E. ZOLA &#8211; IL CASO DREYFUS &#8211; PER GLI EBREI"><img width="320" height="180" src="/wp-content/uploads/2020/02/E.-ZOLA-IL-CASO-DREYFUS-PER-GLI-EBREI.jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="/wp-content/uploads/2020/02/E.-ZOLA-IL-CASO-DREYFUS-PER-GLI-EBREI.jpg 320w, /wp-content/uploads/2020/02/E.-ZOLA-IL-CASO-DREYFUS-PER-GLI-EBREI-300x169.jpg 300w" sizes="(max-width: 320px) 100vw, 320px"></a>
+</figure>
+</div>
+</div></div>
+<div class="vc_gitem_row vc_row vc_gitem-row-position-bottom"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/e-zola-il-caso-dreyfus-per-gli-ebrei/" class="vc_gitem-link" title="E. ZOLA &#8211; IL CASO DREYFUS &#8211; PER GLI EBREI">E. ZOLA &#8211; IL CASO DREYFUS &#8211; PER GLI EBREI</a></div></div></div></div>
+</div>
+</div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-16-9 vc_gitem-is-link">
+<a href="/e-zola-il-caso-dreyfus-lettera-alla-francia/" title="E. ZOLA IL CASO DREYFUS &#8211;   LETTERA ALLA FRANCIA" class="vc_gitem-link vc-zone-link"></a><div class="vc_gitem-zone-mini">
+<div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_right">
+<figure class="wpb_wrapper vc_figure">
+<a href="/e-zola-il-caso-dreyfus-lettera-alla-francia/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="E. ZOLA IL CASO DREYFUS &#8211;   LETTERA ALLA FRANCIA"><img width="320" height="180" src="/wp-content/uploads/2020/02/E.-ZOLA-IL-CASO-DREYFUS-LETTERA-ALLA-FRANCIA.jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="/wp-content/uploads/2020/02/E.-ZOLA-IL-CASO-DREYFUS-LETTERA-ALLA-FRANCIA.jpg 320w, /wp-content/uploads/2020/02/E.-ZOLA-IL-CASO-DREYFUS-LETTERA-ALLA-FRANCIA-300x169.jpg 300w" sizes="(max-width: 320px) 100vw, 320px"></a>
+</figure>
+</div>
+</div></div>
+<div class="vc_gitem_row vc_row vc_gitem-row-position-bottom"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/e-zola-il-caso-dreyfus-lettera-alla-francia/" class="vc_gitem-link" title="E. ZOLA IL CASO DREYFUS &#8211;   LETTERA ALLA FRANCIA">E. ZOLA IL CASO DREYFUS &#8211; LETTERA ALLA FRANCIA</a></div></div></div></div>
+</div>
+</div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-16-9 vc_gitem-is-link">
+<a href="/etty-hillesum-diari-completo/" title="ETTY HILLESUM &#8211;  DIARI &#8211;  completo" class="vc_gitem-link vc-zone-link"></a><div class="vc_gitem-zone-mini">
+<div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_right">
+<figure class="wpb_wrapper vc_figure">
+<a href="/etty-hillesum-diari-completo/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="ETTY HILLESUM &#8211;  DIARI &#8211;  completo"><img width="320" height="180" src="/wp-content/uploads/2020/01/ETTY-HILLESUM-DIARI-completo.jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="/wp-content/uploads/2020/01/ETTY-HILLESUM-DIARI-completo.jpg 320w, /wp-content/uploads/2020/01/ETTY-HILLESUM-DIARI-completo-300x169.jpg 300w" sizes="(max-width: 320px) 100vw, 320px"></a>
+</figure>
+</div>
+</div></div>
+<div class="vc_gitem_row vc_row vc_gitem-row-position-bottom"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/etty-hillesum-diari-completo/" class="vc_gitem-link" title="ETTY HILLESUM &#8211;  DIARI &#8211;  completo">ETTY HILLESUM &#8211; DIARI &#8211; completo</a></div></div></div></div>
+</div>
+</div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-16-9 vc_gitem-is-link">
+<a href="/friedrich-nietzsche-genealogia-della-morale-prefazione-lettura-di-roberto-caracci/" title="FRIEDRICH NIETZSCHE-GENEALOGIA DELLA MORALE-PREFAZIONE-LETTURA DI ROBERTO CARACCI" class="vc_gitem-link vc-zone-link"></a><div class="vc_gitem-zone-mini">
+<div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_right">
+<figure class="wpb_wrapper vc_figure">
+<a href="/friedrich-nietzsche-genealogia-della-morale-prefazione-lettura-di-roberto-caracci/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="FRIEDRICH NIETZSCHE-GENEALOGIA DELLA MORALE-PREFAZIONE-LETTURA DI ROBERTO CARACCI"><img width="320" height="180" src="/wp-content/uploads/2017/11/FRIEDRICH-NIETZSCHE-GENEALOGIA-DELLA-MORALE-PREFAZIONE-LETTURA-DI-ROBERTO-CARACCI.jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="/wp-content/uploads/2017/11/FRIEDRICH-NIETZSCHE-GENEALOGIA-DELLA-MORALE-PREFAZIONE-LETTURA-DI-ROBERTO-CARACCI.jpg 320w, /wp-content/uploads/2017/11/FRIEDRICH-NIETZSCHE-GENEALOGIA-DELLA-MORALE-PREFAZIONE-LETTURA-DI-ROBERTO-CARACCI-300x169.jpg 300w" sizes="(max-width: 320px) 100vw, 320px"></a>
+</figure>
+</div>
+</div></div>
+<div class="vc_gitem_row vc_row vc_gitem-row-position-bottom"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/friedrich-nietzsche-genealogia-della-morale-prefazione-lettura-di-roberto-caracci/" class="vc_gitem-link" title="FRIEDRICH NIETZSCHE-GENEALOGIA DELLA MORALE-PREFAZIONE-LETTURA DI ROBERTO CARACCI">FRIEDRICH NIETZSCHE-GENEALOGIA DELLA MORALE-PREFAZIONE-LETTURA DI ROBERTO CARACCI</a></div></div></div></div>
+</div>
+</div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-16-9 vc_gitem-is-link">
+<a href="/hegel-fenomenologia-dello-spirito-la-certezza-sensibile-lettura-di-roberto-caracci/" title="HEGEL, FENOMENOLOGIA DELLO SPIRITO, La certezza sensibile- Lettura di Roberto Caracci" class="vc_gitem-link vc-zone-link"></a><div class="vc_gitem-zone-mini">
+<div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_right">
+<figure class="wpb_wrapper vc_figure">
+<a href="/hegel-fenomenologia-dello-spirito-la-certezza-sensibile-lettura-di-roberto-caracci/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="HEGEL, FENOMENOLOGIA DELLO SPIRITO, La certezza sensibile- Lettura di Roberto Caracci"><img width="320" height="180" src="/wp-content/uploads/2017/11/HEGEL-FENOMENOLOGIA-DELLO-SPIRITO-La-certezza-sensibile-Lettura-di-Roberto-Caracci.jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="/wp-content/uploads/2017/11/HEGEL-FENOMENOLOGIA-DELLO-SPIRITO-La-certezza-sensibile-Lettura-di-Roberto-Caracci.jpg 320w, /wp-content/uploads/2017/11/HEGEL-FENOMENOLOGIA-DELLO-SPIRITO-La-certezza-sensibile-Lettura-di-Roberto-Caracci-300x169.jpg 300w" sizes="(max-width: 320px) 100vw, 320px"></a>
+</figure>
+</div>
+</div></div>
+<div class="vc_gitem_row vc_row vc_gitem-row-position-bottom"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/hegel-fenomenologia-dello-spirito-la-certezza-sensibile-lettura-di-roberto-caracci/" class="vc_gitem-link" title="HEGEL, FENOMENOLOGIA DELLO SPIRITO, La certezza sensibile- Lettura di Roberto Caracci">HEGEL, FENOMENOLOGIA DELLO SPIRITO, La certezza sensibile- Lettura di Roberto Caracci</a></div></div></div></div>
+</div>
+</div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-16-9 vc_gitem-is-link">
+<a href="/i-giovani-infelici-da-lettere-luterane-di-p-p-pasolini-1975/" title="I GIOVANI INFELICI da &#8220;Lettere Luterane&#8221; di P.  P.  Pasolini 1975" class="vc_gitem-link vc-zone-link"></a><div class="vc_gitem-zone-mini">
+<div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_right">
+<figure class="wpb_wrapper vc_figure">
+<a href="/i-giovani-infelici-da-lettere-luterane-di-p-p-pasolini-1975/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="I GIOVANI INFELICI da &#8220;Lettere Luterane&#8221; di P.  P.  Pasolini 1975"><img width="1280" height="720" src="/wp-content/uploads/2019/06/I-GIOVANI-INFELICI-da-Lettere-Luterane-di-P.-P.-Pasolini-1975.jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="/wp-content/uploads/2019/06/I-GIOVANI-INFELICI-da-Lettere-Luterane-di-P.-P.-Pasolini-1975.jpg 1280w, /wp-content/uploads/2019/06/I-GIOVANI-INFELICI-da-Lettere-Luterane-di-P.-P.-Pasolini-1975-300x169.jpg 300w, /wp-content/uploads/2019/06/I-GIOVANI-INFELICI-da-Lettere-Luterane-di-P.-P.-Pasolini-1975-1024x576.jpg 1024w, /wp-content/uploads/2019/06/I-GIOVANI-INFELICI-da-Lettere-Luterane-di-P.-P.-Pasolini-1975-768x432.jpg 768w, /wp-content/uploads/2019/06/I-GIOVANI-INFELICI-da-Lettere-Luterane-di-P.-P.-Pasolini-1975-1232x693.jpg 1232w" sizes="(max-width: 1280px) 100vw, 1280px"></a>
+</figure>
+</div>
+</div></div>
+<div class="vc_gitem_row vc_row vc_gitem-row-position-bottom"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/i-giovani-infelici-da-lettere-luterane-di-p-p-pasolini-1975/" class="vc_gitem-link" title="I GIOVANI INFELICI da &#8220;Lettere Luterane&#8221; di P.  P.  Pasolini 1975">I GIOVANI INFELICI da &#8220;Lettere Luterane&#8221; di P. P. Pasolini 1975</a></div></div></div></div>
+</div>
+</div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-16-9 vc_gitem-is-link">
+<a href="/il-linguaggio-celle-cose-di-p-pasolini-da-lettere-luterane/" title="IL LINGUAGGIO CELLE COSE di P  Pasolini da  Lettere luterane" class="vc_gitem-link vc-zone-link"></a><div class="vc_gitem-zone-mini">
+<div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_right">
+<figure class="wpb_wrapper vc_figure">
+<a href="/il-linguaggio-celle-cose-di-p-pasolini-da-lettere-luterane/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="IL LINGUAGGIO CELLE COSE di P  Pasolini da  Lettere luterane"><img width="320" height="180" src="/wp-content/uploads/2019/11/IL-LINGUAGGIO-CELLE-COSE-di-P-Pasolini-da-Lettere-luterane.jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="/wp-content/uploads/2019/11/IL-LINGUAGGIO-CELLE-COSE-di-P-Pasolini-da-Lettere-luterane.jpg 320w, /wp-content/uploads/2019/11/IL-LINGUAGGIO-CELLE-COSE-di-P-Pasolini-da-Lettere-luterane-300x169.jpg 300w" sizes="(max-width: 320px) 100vw, 320px"></a>
+</figure>
+</div>
+</div></div>
+<div class="vc_gitem_row vc_row vc_gitem-row-position-bottom"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/il-linguaggio-celle-cose-di-p-pasolini-da-lettere-luterane/" class="vc_gitem-link" title="IL LINGUAGGIO CELLE COSE di P  Pasolini da  Lettere luterane">IL LINGUAGGIO CELLE COSE di P Pasolini da Lettere luterane</a></div></div></div></div>
+</div>
+</div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-16-9 vc_gitem-is-link">
+<a href="/il-racconto-storia-distinzioni-generi/" title="Il racconto &#8211; Storia, distinzioni, generi" class="vc_gitem-link vc-zone-link"></a><div class="vc_gitem-zone-mini">
+<div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_right">
+<figure class="wpb_wrapper vc_figure">
+<a href="/il-racconto-storia-distinzioni-generi/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="Il racconto &#8211; Storia, distinzioni, generi"><img width="1200" height="675" src="/wp-content/uploads/2017/10/Il-racconto-Storia-distinzioni-generi.jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="/wp-content/uploads/2017/10/Il-racconto-Storia-distinzioni-generi.jpg 1200w, /wp-content/uploads/2017/10/Il-racconto-Storia-distinzioni-generi-300x169.jpg 300w, /wp-content/uploads/2017/10/Il-racconto-Storia-distinzioni-generi-768x432.jpg 768w, /wp-content/uploads/2017/10/Il-racconto-Storia-distinzioni-generi-1024x576.jpg 1024w" sizes="(max-width: 1200px) 100vw, 1200px"></a>
+</figure>
+</div>
+</div></div>
+<div class="vc_gitem_row vc_row vc_gitem-row-position-bottom"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/il-racconto-storia-distinzioni-generi/" class="vc_gitem-link" title="Il racconto &#8211; Storia, distinzioni, generi">Il racconto &#8211; Storia, distinzioni, generi</a></div></div></div></div>
+</div>
+</div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-16-9 vc_gitem-is-link">
+<a href="/il-rimedio-e-la-poverta-g-parise-30-giugno-1974/" title="Il rimedio è la povertà  &#8211; G. Parise , 30 giugno 1974" class="vc_gitem-link vc-zone-link"></a><div class="vc_gitem-zone-mini">
+<div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_right">
+<figure class="wpb_wrapper vc_figure">
+<a href="/il-rimedio-e-la-poverta-g-parise-30-giugno-1974/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="Il rimedio è la povertà  &#8211; G. Parise , 30 giugno 1974"><img width="320" height="180" src="/wp-content/uploads/2019/07/Il-rimedio-la-povert-G.-Parise-30-giugno-1974.jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="/wp-content/uploads/2019/07/Il-rimedio-la-povert-G.-Parise-30-giugno-1974.jpg 320w, /wp-content/uploads/2019/07/Il-rimedio-la-povert-G.-Parise-30-giugno-1974-300x169.jpg 300w" sizes="(max-width: 320px) 100vw, 320px"></a>
+</figure>
+</div>
+</div></div>
+<div class="vc_gitem_row vc_row vc_gitem-row-position-bottom"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/il-rimedio-e-la-poverta-g-parise-30-giugno-1974/" class="vc_gitem-link" title="Il rimedio è la povertà  &#8211; G. Parise , 30 giugno 1974">Il rimedio è la povertà &#8211; G. Parise , 30 giugno 1974</a></div></div></div></div>
+</div>
+</div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-16-9 vc_gitem-is-link">
+<a href="/il-romanzo-etimologia-storia-sottogeneri/" title="Il romanzo &#8211; etimologia, storia, sottogeneri" class="vc_gitem-link vc-zone-link"></a><div class="vc_gitem-zone-mini">
+<div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_right">
+<figure class="wpb_wrapper vc_figure">
+<a href="/il-romanzo-etimologia-storia-sottogeneri/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="Il romanzo &#8211; etimologia, storia, sottogeneri"><img width="1200" height="675" src="/wp-content/uploads/2017/11/Il-romanzo-etimologia-storia-sottogeneri.jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="/wp-content/uploads/2017/11/Il-romanzo-etimologia-storia-sottogeneri.jpg 1200w, /wp-content/uploads/2017/11/Il-romanzo-etimologia-storia-sottogeneri-300x169.jpg 300w, /wp-content/uploads/2017/11/Il-romanzo-etimologia-storia-sottogeneri-768x432.jpg 768w, /wp-content/uploads/2017/11/Il-romanzo-etimologia-storia-sottogeneri-1024x576.jpg 1024w" sizes="(max-width: 1200px) 100vw, 1200px"></a>
+</figure>
+</div>
+</div></div>
+<div class="vc_gitem_row vc_row vc_gitem-row-position-bottom"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/il-romanzo-etimologia-storia-sottogeneri/" class="vc_gitem-link" title="Il romanzo &#8211; etimologia, storia, sottogeneri">Il romanzo &#8211; etimologia, storia, sottogeneri</a></div></div></div></div>
+</div>
+</div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-16-9 vc_gitem-is-link">
+<a href="/il-sofista-da-platone/" title="Il Sofista da Platone" class="vc_gitem-link vc-zone-link"></a><div class="vc_gitem-zone-mini">
+<div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_right">
+<figure class="wpb_wrapper vc_figure">
+<a href="/il-sofista-da-platone/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="Il Sofista da Platone"><img width="320" height="180" src="/wp-content/uploads/2013/02/Il-Sofista-da-Platone.jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="/wp-content/uploads/2013/02/Il-Sofista-da-Platone.jpg 320w, /wp-content/uploads/2013/02/Il-Sofista-da-Platone-300x169.jpg 300w" sizes="(max-width: 320px) 100vw, 320px"></a>
+</figure>
+</div>
+</div></div>
+<div class="vc_gitem_row vc_row vc_gitem-row-position-bottom"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/il-sofista-da-platone/" class="vc_gitem-link" title="Il Sofista da Platone">Il Sofista da Platone</a></div></div></div></div>
+</div>
+</div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-16-9 vc_gitem-is-link">
+<a href="/ivan-illich-leconomia-i-bisogni-la-convivialita/" title="Ivan Illich l’economia, i bisogni, la convivialità" class="vc_gitem-link vc-zone-link"></a><div class="vc_gitem-zone-mini">
+<div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_right">
+<figure class="wpb_wrapper vc_figure">
+<a href="/ivan-illich-leconomia-i-bisogni-la-convivialita/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="Ivan Illich l’economia, i bisogni, la convivialità"><img width="320" height="180" src="/wp-content/uploads/2019/08/Ivan-Illich-leconomia-i-bisogni-la-convivialit.jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="/wp-content/uploads/2019/08/Ivan-Illich-leconomia-i-bisogni-la-convivialit.jpg 320w, /wp-content/uploads/2019/08/Ivan-Illich-leconomia-i-bisogni-la-convivialit-300x169.jpg 300w" sizes="(max-width: 320px) 100vw, 320px"></a>
+</figure>
+</div>
+</div></div>
+<div class="vc_gitem_row vc_row vc_gitem-row-position-bottom"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/ivan-illich-leconomia-i-bisogni-la-convivialita/" class="vc_gitem-link" title="Ivan Illich l’economia, i bisogni, la convivialità">Ivan Illich l’economia, i bisogni, la convivialità</a></div></div></div></div>
+</div>
+</div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-16-9 vc_gitem-is-link">
+<a href="/l-a-seneca-de-providentia/" title="L. A. SENECA &#8211; De providentia" class="vc_gitem-link vc-zone-link"></a><div class="vc_gitem-zone-mini">
+<div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_right">
+<figure class="wpb_wrapper vc_figure">
+<a href="/l-a-seneca-de-providentia/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="L. A. SENECA &#8211; De providentia"><img width="320" height="180" src="/wp-content/uploads/2019/10/L.-A.-SENECA-De-providentia.jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="/wp-content/uploads/2019/10/L.-A.-SENECA-De-providentia.jpg 320w, /wp-content/uploads/2019/10/L.-A.-SENECA-De-providentia-300x169.jpg 300w" sizes="(max-width: 320px) 100vw, 320px"></a>
+</figure>
+</div>
+</div></div>
+<div class="vc_gitem_row vc_row vc_gitem-row-position-bottom"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/l-a-seneca-de-providentia/" class="vc_gitem-link" title="L. A. SENECA &#8211; De providentia">L. A. SENECA &#8211; De providentia</a></div></div></div></div>
+</div>
+</div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-16-9 vc_gitem-is-link">
+<a href="/leta-ellenistica-videolezioni-di-filosofia-ellenistica-e-medievale/" title="L&#8217;età ellenistica &#8211; Videolezioni di filosofia ellenistica e medievale" class="vc_gitem-link vc-zone-link"></a><div class="vc_gitem-zone-mini">
+<div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_right">
+<figure class="wpb_wrapper vc_figure">
+<a href="/leta-ellenistica-videolezioni-di-filosofia-ellenistica-e-medievale/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="L&#8217;età ellenistica &#8211; Videolezioni di filosofia ellenistica e medievale"><img width="1200" height="675" src="/wp-content/uploads/2019/02/Let-ellenistica-Videolezioni-di-filosofia-ellenistica-e-medievale.jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="/wp-content/uploads/2019/02/Let-ellenistica-Videolezioni-di-filosofia-ellenistica-e-medievale.jpg 1200w, /wp-content/uploads/2019/02/Let-ellenistica-Videolezioni-di-filosofia-ellenistica-e-medievale-300x169.jpg 300w, /wp-content/uploads/2019/02/Let-ellenistica-Videolezioni-di-filosofia-ellenistica-e-medievale-768x432.jpg 768w, /wp-content/uploads/2019/02/Let-ellenistica-Videolezioni-di-filosofia-ellenistica-e-medievale-1024x576.jpg 1024w" sizes="(max-width: 1200px) 100vw, 1200px"></a>
+</figure>
+</div>
+</div></div>
+<div class="vc_gitem_row vc_row vc_gitem-row-position-bottom"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/leta-ellenistica-videolezioni-di-filosofia-ellenistica-e-medievale/" class="vc_gitem-link" title="L&#8217;età ellenistica &#8211; Videolezioni di filosofia ellenistica e medievale">L&#8217;età ellenistica &#8211; Videolezioni di filosofia ellenistica e medievale</a></div></div></div></div>
+</div>
+</div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-16-9 vc_gitem-is-link">
+<a href="/la-legge-dell-effetto-e-della-causa-di-osho-radio-sat-nam/" title="La Legge dell Effetto e della Causa di Osho &#8211; Radio Sat Nam" class="vc_gitem-link vc-zone-link"></a><div class="vc_gitem-zone-mini">
+<div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_right">
+<figure class="wpb_wrapper vc_figure">
+<a href="/la-legge-dell-effetto-e-della-causa-di-osho-radio-sat-nam/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="La Legge dell Effetto e della Causa di Osho &#8211; Radio Sat Nam"><img width="320" height="180" src="/wp-content/uploads/2019/02/La-Legge-dell-Effetto-e-della-Causa-di-Osho-Radio-Sat-Nam.jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="/wp-content/uploads/2019/02/La-Legge-dell-Effetto-e-della-Causa-di-Osho-Radio-Sat-Nam.jpg 320w, /wp-content/uploads/2019/02/La-Legge-dell-Effetto-e-della-Causa-di-Osho-Radio-Sat-Nam-300x169.jpg 300w" sizes="(max-width: 320px) 100vw, 320px"></a>
+</figure>
+</div>
+</div></div>
+<div class="vc_gitem_row vc_row vc_gitem-row-position-bottom"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/la-legge-dell-effetto-e-della-causa-di-osho-radio-sat-nam/" class="vc_gitem-link" title="La Legge dell Effetto e della Causa di Osho &#8211; Radio Sat Nam">La Legge dell Effetto e della Causa di Osho &#8211; Radio Sat Nam</a></div></div></div></div>
+</div>
+</div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-16-9 vc_gitem-is-link">
+<a href="/la-legge-dellattrazione-tra-falsi-miti-e-verita/" title="La Legge dell&#8217;Attrazione, tra falsi miti e verità" class="vc_gitem-link vc-zone-link"></a><div class="vc_gitem-zone-mini">
+<div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_right">
+<figure class="wpb_wrapper vc_figure">
+<a href="/la-legge-dellattrazione-tra-falsi-miti-e-verita/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="La Legge dell&#8217;Attrazione, tra falsi miti e verità"><img width="320" height="180" src="/wp-content/uploads/2019/02/La-Legge-dellAttrazione-tra-falsi-miti-e-verit.jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="/wp-content/uploads/2019/02/La-Legge-dellAttrazione-tra-falsi-miti-e-verit.jpg 320w, /wp-content/uploads/2019/02/La-Legge-dellAttrazione-tra-falsi-miti-e-verit-300x169.jpg 300w" sizes="(max-width: 320px) 100vw, 320px"></a>
+</figure>
+</div>
+</div></div>
+<div class="vc_gitem_row vc_row vc_gitem-row-position-bottom"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/la-legge-dellattrazione-tra-falsi-miti-e-verita/" class="vc_gitem-link" title="La Legge dell&#8217;Attrazione, tra falsi miti e verità">La Legge dell&#8217;Attrazione, tra falsi miti e verità</a></div></div></div></div>
+</div>
+</div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-16-9 vc_gitem-is-link">
+<a href="/la-legge-di-risonanza-volume-i-i-fondamenti/" title="La Legge di Risonanza &#8211; Volume I &#8211; I Fondamenti" class="vc_gitem-link vc-zone-link"></a><div class="vc_gitem-zone-mini">
+<div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_right">
+<figure class="wpb_wrapper vc_figure">
+<a href="/la-legge-di-risonanza-volume-i-i-fondamenti/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="La Legge di Risonanza &#8211; Volume I &#8211; I Fondamenti"><img width="320" height="180" src="/wp-content/uploads/2019/02/La-Legge-di-Risonanza-Volume-I-I-Fondamenti.jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="/wp-content/uploads/2019/02/La-Legge-di-Risonanza-Volume-I-I-Fondamenti.jpg 320w, /wp-content/uploads/2019/02/La-Legge-di-Risonanza-Volume-I-I-Fondamenti-300x169.jpg 300w" sizes="(max-width: 320px) 100vw, 320px"></a>
+</figure>
+</div>
+</div></div>
+<div class="vc_gitem_row vc_row vc_gitem-row-position-bottom"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/la-legge-di-risonanza-volume-i-i-fondamenti/" class="vc_gitem-link" title="La Legge di Risonanza &#8211; Volume I &#8211; I Fondamenti">La Legge di Risonanza &#8211; Volume I &#8211; I Fondamenti</a></div></div></div></div>
+</div>
+</div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-16-9 vc_gitem-is-link">
+<a href="/la-lettera-di-bukowski-sulla-schiavitu-del-vivere-per-lavorare/" title="LA LETTERA DI BUKOWSKI SULLA SCHIAVITÙ DEL “VIVERE PER LAVORARE”" class="vc_gitem-link vc-zone-link"></a><div class="vc_gitem-zone-mini">
+<div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_right">
+<figure class="wpb_wrapper vc_figure">
+<a href="/la-lettera-di-bukowski-sulla-schiavitu-del-vivere-per-lavorare/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="LA LETTERA DI BUKOWSKI SULLA SCHIAVITÙ DEL “VIVERE PER LAVORARE”"><img width="320" height="180" src="/wp-content/uploads/2019/08/LA-LETTERA-DI-BUKOWSKI-SULLA-SCHIAVIT-DEL-VIVERE-PER-LAVORARE.jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="/wp-content/uploads/2019/08/LA-LETTERA-DI-BUKOWSKI-SULLA-SCHIAVIT-DEL-VIVERE-PER-LAVORARE.jpg 320w, /wp-content/uploads/2019/08/LA-LETTERA-DI-BUKOWSKI-SULLA-SCHIAVIT-DEL-VIVERE-PER-LAVORARE-300x169.jpg 300w" sizes="(max-width: 320px) 100vw, 320px"></a>
+</figure>
+</div>
+</div></div>
+<div class="vc_gitem_row vc_row vc_gitem-row-position-bottom"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/la-lettera-di-bukowski-sulla-schiavitu-del-vivere-per-lavorare/" class="vc_gitem-link" title="LA LETTERA DI BUKOWSKI SULLA SCHIAVITÙ DEL “VIVERE PER LAVORARE”">LA LETTERA DI BUKOWSKI SULLA SCHIAVITÙ DEL “VIVERE PER LAVORARE”</a></div></div></div></div>
+</div>
+</div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-16-9 vc_gitem-is-link">
+<a href="/la-liberta-e-il-senso-comune-di-r-la-capria/" title="LA LIBERTA&#8217; E IL SENSO COMUNE   di R. LA CAPRIA" class="vc_gitem-link vc-zone-link"></a><div class="vc_gitem-zone-mini">
+<div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_right">
+<figure class="wpb_wrapper vc_figure">
+<a href="/la-liberta-e-il-senso-comune-di-r-la-capria/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="LA LIBERTA&#8217; E IL SENSO COMUNE   di R. LA CAPRIA"><img width="1280" height="720" src="/wp-content/uploads/2019/08/LA-LIBERTA-E-IL-SENSO-COMUNE-di-R.-LA-CAPRIA.jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="/wp-content/uploads/2019/08/LA-LIBERTA-E-IL-SENSO-COMUNE-di-R.-LA-CAPRIA.jpg 1280w, /wp-content/uploads/2019/08/LA-LIBERTA-E-IL-SENSO-COMUNE-di-R.-LA-CAPRIA-300x169.jpg 300w, /wp-content/uploads/2019/08/LA-LIBERTA-E-IL-SENSO-COMUNE-di-R.-LA-CAPRIA-1024x576.jpg 1024w, /wp-content/uploads/2019/08/LA-LIBERTA-E-IL-SENSO-COMUNE-di-R.-LA-CAPRIA-768x432.jpg 768w, /wp-content/uploads/2019/08/LA-LIBERTA-E-IL-SENSO-COMUNE-di-R.-LA-CAPRIA-1232x693.jpg 1232w" sizes="(max-width: 1280px) 100vw, 1280px"></a>
+</figure>
+</div>
+</div></div>
+<div class="vc_gitem_row vc_row vc_gitem-row-position-bottom"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/la-liberta-e-il-senso-comune-di-r-la-capria/" class="vc_gitem-link" title="LA LIBERTA&#8217; E IL SENSO COMUNE   di R. LA CAPRIA">LA LIBERTA&#8217; E IL SENSO COMUNE di R. LA CAPRIA</a></div></div></div></div>
+</div>
+</div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-16-9 vc_gitem-is-link">
+<a href="/la-nascita-della-tragedia-di-f-nietzsche/" title="LA NASCITA DELLA TRAGEDIA di  F.  Nietzsche" class="vc_gitem-link vc-zone-link"></a><div class="vc_gitem-zone-mini">
+<div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_right">
+<figure class="wpb_wrapper vc_figure">
+<a href="/la-nascita-della-tragedia-di-f-nietzsche/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="LA NASCITA DELLA TRAGEDIA di  F.  Nietzsche"><img width="320" height="180" src="/wp-content/uploads/2019/09/LA-NASCITA-DELLA-TRAGEDIA-di-F.-Nietzsche.jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="/wp-content/uploads/2019/09/LA-NASCITA-DELLA-TRAGEDIA-di-F.-Nietzsche.jpg 320w, /wp-content/uploads/2019/09/LA-NASCITA-DELLA-TRAGEDIA-di-F.-Nietzsche-300x169.jpg 300w" sizes="(max-width: 320px) 100vw, 320px"></a>
+</figure>
+</div>
+</div></div>
+<div class="vc_gitem_row vc_row vc_gitem-row-position-bottom"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/la-nascita-della-tragedia-di-f-nietzsche/" class="vc_gitem-link" title="LA NASCITA DELLA TRAGEDIA di  F.  Nietzsche">LA NASCITA DELLA TRAGEDIA di F. Nietzsche</a></div></div></div></div>
+</div>
+</div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-16-9 vc_gitem-is-link">
+<a href="/la-trappola-del-pensiero-positivo-legge-dellattrazione/" title="La trappola del pensiero positivo (legge dell&#8217;attrazione)" class="vc_gitem-link vc-zone-link"></a><div class="vc_gitem-zone-mini">
+<div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_right">
+<figure class="wpb_wrapper vc_figure">
+<a href="/la-trappola-del-pensiero-positivo-legge-dellattrazione/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="La trappola del pensiero positivo (legge dell&#8217;attrazione)"><img width="1200" height="675" src="/wp-content/uploads/2019/02/La-trappola-del-pensiero-positivo-legge-dellattrazione.jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="/wp-content/uploads/2019/02/La-trappola-del-pensiero-positivo-legge-dellattrazione.jpg 1200w, /wp-content/uploads/2019/02/La-trappola-del-pensiero-positivo-legge-dellattrazione-300x169.jpg 300w, /wp-content/uploads/2019/02/La-trappola-del-pensiero-positivo-legge-dellattrazione-768x432.jpg 768w, /wp-content/uploads/2019/02/La-trappola-del-pensiero-positivo-legge-dellattrazione-1024x576.jpg 1024w" sizes="(max-width: 1200px) 100vw, 1200px"></a>
+</figure>
+</div>
+</div></div>
+<div class="vc_gitem_row vc_row vc_gitem-row-position-bottom"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/la-trappola-del-pensiero-positivo-legge-dellattrazione/" class="vc_gitem-link" title="La trappola del pensiero positivo (legge dell&#8217;attrazione)">La trappola del pensiero positivo (legge dell&#8217;attrazione)</a></div></div></div></div>
+</div>
+</div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-16-9 vc_gitem-is-link">
+<a href="/lao-tse-pillole-di-saggezza/" title="LAO TSE   &#8211; PILLOLE DI SAGGEZZA" class="vc_gitem-link vc-zone-link"></a><div class="vc_gitem-zone-mini">
+<div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_right">
+<figure class="wpb_wrapper vc_figure">
+<a href="/lao-tse-pillole-di-saggezza/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="LAO TSE   &#8211; PILLOLE DI SAGGEZZA"><img width="320" height="180" src="/wp-content/uploads/2020/01/LAO-TSE-PILLOLE-DI-SAGGEZZA.jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="/wp-content/uploads/2020/01/LAO-TSE-PILLOLE-DI-SAGGEZZA.jpg 320w, /wp-content/uploads/2020/01/LAO-TSE-PILLOLE-DI-SAGGEZZA-300x169.jpg 300w" sizes="(max-width: 320px) 100vw, 320px"></a>
+</figure>
+</div>
+</div></div>
+<div class="vc_gitem_row vc_row vc_gitem-row-position-bottom"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/lao-tse-pillole-di-saggezza/" class="vc_gitem-link" title="LAO TSE   &#8211; PILLOLE DI SAGGEZZA">LAO TSE &#8211; PILLOLE DI SAGGEZZA</a></div></div></div></div>
+</div>
+</div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-16-9 vc_gitem-is-link">
+<a href="/legge-di-attrazione-e-prosperita/" title="Legge di Attrazione e Prosperità" class="vc_gitem-link vc-zone-link"></a><div class="vc_gitem-zone-mini">
+<div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_right">
+<figure class="wpb_wrapper vc_figure">
+<a href="/legge-di-attrazione-e-prosperita/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="Legge di Attrazione e Prosperità"><img width="320" height="180" src="/wp-content/uploads/2019/02/Legge-di-Attrazione-e-Prosperit.jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="/wp-content/uploads/2019/02/Legge-di-Attrazione-e-Prosperit.jpg 320w, /wp-content/uploads/2019/02/Legge-di-Attrazione-e-Prosperit-300x169.jpg 300w" sizes="(max-width: 320px) 100vw, 320px"></a>
+</figure>
+</div>
+</div></div>
+<div class="vc_gitem_row vc_row vc_gitem-row-position-bottom"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/legge-di-attrazione-e-prosperita/" class="vc_gitem-link" title="Legge di Attrazione e Prosperità">Legge di Attrazione e Prosperità</a></div></div></div></div>
+</div>
+</div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-16-9 vc_gitem-is-link">
+<a href="/lettere-a-lucilio-l-a-seneca/" title="Lettere a Lucilio &#8211; L. A. Seneca" class="vc_gitem-link vc-zone-link"></a><div class="vc_gitem-zone-mini">
+<div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_right">
+<figure class="wpb_wrapper vc_figure">
+<a href="/lettere-a-lucilio-l-a-seneca/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="Lettere a Lucilio &#8211; L. A. Seneca"><img width="320" height="180" src="/wp-content/uploads/2019/02/Lettere-a-Lucilio-L.-A.-Seneca.jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="/wp-content/uploads/2019/02/Lettere-a-Lucilio-L.-A.-Seneca.jpg 320w, /wp-content/uploads/2019/02/Lettere-a-Lucilio-L.-A.-Seneca-300x169.jpg 300w" sizes="(max-width: 320px) 100vw, 320px"></a>
+</figure>
+</div>
+</div></div>
+<div class="vc_gitem_row vc_row vc_gitem-row-position-bottom"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/lettere-a-lucilio-l-a-seneca/" class="vc_gitem-link" title="Lettere a Lucilio &#8211; L. A. Seneca">Lettere a Lucilio &#8211; L. A. Seneca</a></div></div></div></div>
+</div>
+</div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-16-9 vc_gitem-is-link">
+<a href="/libri-e-letture/" title="libri e letture" class="vc_gitem-link vc-zone-link"></a><div class="vc_gitem-zone-mini">
+<div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_right">
+<figure class="wpb_wrapper vc_figure">
+<a href="/libri-e-letture/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="libri e letture"><img width="1200" height="675" src="/wp-content/uploads/2017/12/libri-e-letture.jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="/wp-content/uploads/2017/12/libri-e-letture.jpg 1200w, /wp-content/uploads/2017/12/libri-e-letture-300x169.jpg 300w, /wp-content/uploads/2017/12/libri-e-letture-768x432.jpg 768w, /wp-content/uploads/2017/12/libri-e-letture-1024x576.jpg 1024w" sizes="(max-width: 1200px) 100vw, 1200px"></a>
+</figure>
+</div>
+</div></div>
+<div class="vc_gitem_row vc_row vc_gitem-row-position-bottom"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/libri-e-letture/" class="vc_gitem-link" title="libri e letture">libri e letture</a></div></div></div></div>
+</div>
+</div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-16-9 vc_gitem-is-link">
+<a href="/marco-aurelio-a-se-stesso-pensieri-libro-quinto/" title="MARCO AURELIO  &#8211; A se stesso   PENSIERI &#8211;  LIBRO QUINTO" class="vc_gitem-link vc-zone-link"></a><div class="vc_gitem-zone-mini">
+<div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_right">
+<figure class="wpb_wrapper vc_figure">
+<a href="/marco-aurelio-a-se-stesso-pensieri-libro-quinto/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="MARCO AURELIO  &#8211; A se stesso   PENSIERI &#8211;  LIBRO QUINTO"><img width="320" height="180" src="/wp-content/uploads/2019/12/MARCO-AURELIO-A-se-stesso-PENSIERI-LIBRO-QUINTO.jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="/wp-content/uploads/2019/12/MARCO-AURELIO-A-se-stesso-PENSIERI-LIBRO-QUINTO.jpg 320w, /wp-content/uploads/2019/12/MARCO-AURELIO-A-se-stesso-PENSIERI-LIBRO-QUINTO-300x169.jpg 300w" sizes="(max-width: 320px) 100vw, 320px"></a>
+</figure>
+</div>
+</div></div>
+<div class="vc_gitem_row vc_row vc_gitem-row-position-bottom"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/marco-aurelio-a-se-stesso-pensieri-libro-quinto/" class="vc_gitem-link" title="MARCO AURELIO  &#8211; A se stesso   PENSIERI &#8211;  LIBRO QUINTO">MARCO AURELIO &#8211; A se stesso PENSIERI &#8211; LIBRO QUINTO</a></div></div></div></div>
+</div>
+</div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-16-9 vc_gitem-is-link">
+<a href="/nietzsche-umano-troppo-umano-1-21/" title="NIETZSCHE  UMANO TROPPO UMANO 1/21" class="vc_gitem-link vc-zone-link"></a><div class="vc_gitem-zone-mini">
+<div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_right">
+<figure class="wpb_wrapper vc_figure">
+<a href="/nietzsche-umano-troppo-umano-1-21/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="NIETZSCHE  UMANO TROPPO UMANO 1/21"><img width="320" height="180" src="/wp-content/uploads/2017/12/NIETZSCHE-UMANO-TROPPO-UMANO-121.jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="/wp-content/uploads/2017/12/NIETZSCHE-UMANO-TROPPO-UMANO-121.jpg 320w, /wp-content/uploads/2017/12/NIETZSCHE-UMANO-TROPPO-UMANO-121-300x169.jpg 300w" sizes="(max-width: 320px) 100vw, 320px"></a>
+</figure>
+</div>
+</div></div>
+<div class="vc_gitem_row vc_row vc_gitem-row-position-bottom"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/nietzsche-umano-troppo-umano-1-21/" class="vc_gitem-link" title="NIETZSCHE  UMANO TROPPO UMANO 1/21">NIETZSCHE UMANO TROPPO UMANO 1/21</a></div></div></div></div>
+</div>
+</div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-16-9 vc_gitem-is-link">
+<a href="/nietzsche-da-umano-troppo-umano-lettura-di-r-caracci-2/" title="NIETZSCHE da UMANO TROPPO UMANO, Lettura di R. Caracci" class="vc_gitem-link vc-zone-link"></a><div class="vc_gitem-zone-mini">
+<div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_right">
+<figure class="wpb_wrapper vc_figure">
+<a href="/nietzsche-da-umano-troppo-umano-lettura-di-r-caracci-2/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="NIETZSCHE da UMANO TROPPO UMANO, Lettura di R. Caracci"><img width="320" height="180" src="/wp-content/uploads/2017/12/NIETZSCHE-da-UMANO-TROPPO-UMANO-Lettura-di-R.-Caracci.jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="/wp-content/uploads/2017/12/NIETZSCHE-da-UMANO-TROPPO-UMANO-Lettura-di-R.-Caracci.jpg 320w, /wp-content/uploads/2017/12/NIETZSCHE-da-UMANO-TROPPO-UMANO-Lettura-di-R.-Caracci-300x169.jpg 300w" sizes="(max-width: 320px) 100vw, 320px"></a>
+</figure>
+</div>
+</div></div>
+<div class="vc_gitem_row vc_row vc_gitem-row-position-bottom"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/nietzsche-da-umano-troppo-umano-lettura-di-r-caracci-2/" class="vc_gitem-link" title="NIETZSCHE da UMANO TROPPO UMANO, Lettura di R. Caracci">NIETZSCHE da UMANO TROPPO UMANO, Lettura di R. Caracci</a></div></div></div></div>
+</div>
+</div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-16-9 vc_gitem-is-link">
+<a href="/nietzsche-umano-troppo-umano-1-23-lettura-di-r-caracci/" title="NIETZSCHE Umano troppo umano 1/23 Lettura di R.Caracci" class="vc_gitem-link vc-zone-link"></a><div class="vc_gitem-zone-mini">
+<div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_right">
+<figure class="wpb_wrapper vc_figure">
+<a href="/nietzsche-umano-troppo-umano-1-23-lettura-di-r-caracci/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="NIETZSCHE Umano troppo umano 1/23 Lettura di R.Caracci"><img width="320" height="180" src="/wp-content/uploads/2017/12/NIETZSCHE-Umano-troppo-umano-123-Lettura-di-R.Caracci.jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="/wp-content/uploads/2017/12/NIETZSCHE-Umano-troppo-umano-123-Lettura-di-R.Caracci.jpg 320w, /wp-content/uploads/2017/12/NIETZSCHE-Umano-troppo-umano-123-Lettura-di-R.Caracci-300x169.jpg 300w" sizes="(max-width: 320px) 100vw, 320px"></a>
+</figure>
+</div>
+</div></div>
+<div class="vc_gitem_row vc_row vc_gitem-row-position-bottom"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/nietzsche-umano-troppo-umano-1-23-lettura-di-r-caracci/" class="vc_gitem-link" title="NIETZSCHE Umano troppo umano 1/23 Lettura di R.Caracci">NIETZSCHE Umano troppo umano 1/23 Lettura di R.Caracci</a></div></div></div></div>
+</div>
+</div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-16-9 vc_gitem-is-link">
+<a href="/nietzsche-umano-troppo-umano-1-24-lettura-di-r-caracci/" title="NIETZSCHE UMANO TROPPO UMANO 1/24 Lettura di R.Caracci" class="vc_gitem-link vc-zone-link"></a><div class="vc_gitem-zone-mini">
+<div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_right">
+<figure class="wpb_wrapper vc_figure">
+<a href="/nietzsche-umano-troppo-umano-1-24-lettura-di-r-caracci/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="NIETZSCHE UMANO TROPPO UMANO 1/24 Lettura di R.Caracci"><img width="320" height="180" src="/wp-content/uploads/2017/12/NIETZSCHE-UMANO-TROPPO-UMANO-124-Lettura-di-R.Caracci.jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="/wp-content/uploads/2017/12/NIETZSCHE-UMANO-TROPPO-UMANO-124-Lettura-di-R.Caracci.jpg 320w, /wp-content/uploads/2017/12/NIETZSCHE-UMANO-TROPPO-UMANO-124-Lettura-di-R.Caracci-300x169.jpg 300w" sizes="(max-width: 320px) 100vw, 320px"></a>
+</figure>
+</div>
+</div></div>
+<div class="vc_gitem_row vc_row vc_gitem-row-position-bottom"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/nietzsche-umano-troppo-umano-1-24-lettura-di-r-caracci/" class="vc_gitem-link" title="NIETZSCHE UMANO TROPPO UMANO 1/24 Lettura di R.Caracci">NIETZSCHE UMANO TROPPO UMANO 1/24 Lettura di R.Caracci</a></div></div></div></div>
+</div>
+</div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-16-9 vc_gitem-is-link">
+<a href="/nietzsche-umano-troppo-umano-1-20/" title="NIETZSCHE, UMANO TROPPO UMANO-1/20" class="vc_gitem-link vc-zone-link"></a><div class="vc_gitem-zone-mini">
+<div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_right">
+<figure class="wpb_wrapper vc_figure">
+<a href="/nietzsche-umano-troppo-umano-1-20/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="NIETZSCHE, UMANO TROPPO UMANO-1/20"><img width="320" height="180" src="/wp-content/uploads/2017/12/NIETZSCHE-UMANO-TROPPO-UMANO-120.jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="/wp-content/uploads/2017/12/NIETZSCHE-UMANO-TROPPO-UMANO-120.jpg 320w, /wp-content/uploads/2017/12/NIETZSCHE-UMANO-TROPPO-UMANO-120-300x169.jpg 300w" sizes="(max-width: 320px) 100vw, 320px"></a>
+</figure>
+</div>
+</div></div>
+<div class="vc_gitem_row vc_row vc_gitem-row-position-bottom"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/nietzsche-umano-troppo-umano-1-20/" class="vc_gitem-link" title="NIETZSCHE, UMANO TROPPO UMANO-1/20">NIETZSCHE, UMANO TROPPO UMANO-1/20</a></div></div></div></div>
+</div>
+</div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-16-9 vc_gitem-is-link">
+<a href="/nietzsche-umano-troppo-umano-lettura-di-r-caracci/" title="NIETZSCHE, UMANO TROPPO UMANO, Lettura di R.Caracci" class="vc_gitem-link vc-zone-link"></a><div class="vc_gitem-zone-mini">
+<div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_right">
+<figure class="wpb_wrapper vc_figure">
+<a href="/nietzsche-umano-troppo-umano-lettura-di-r-caracci/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="NIETZSCHE, UMANO TROPPO UMANO, Lettura di R.Caracci"><img width="320" height="180" src="/wp-content/uploads/2017/12/NIETZSCHE-UMANO-TROPPO-UMANO-Lettura-di-R.Caracci.jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="/wp-content/uploads/2017/12/NIETZSCHE-UMANO-TROPPO-UMANO-Lettura-di-R.Caracci.jpg 320w, /wp-content/uploads/2017/12/NIETZSCHE-UMANO-TROPPO-UMANO-Lettura-di-R.Caracci-300x169.jpg 300w" sizes="(max-width: 320px) 100vw, 320px"></a>
+</figure>
+</div>
+</div></div>
+<div class="vc_gitem_row vc_row vc_gitem-row-position-bottom"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/nietzsche-umano-troppo-umano-lettura-di-r-caracci/" class="vc_gitem-link" title="NIETZSCHE, UMANO TROPPO UMANO, Lettura di R.Caracci">NIETZSCHE, UMANO TROPPO UMANO, Lettura di R.Caracci</a></div></div></div></div>
+</div>
+</div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-16-9 vc_gitem-is-link">
+<a href="/ovidio-rimedi-contro-l-amore/" title="OVIDIO  &#8211;  RIMEDI CONTRO L&#8217; AMORE" class="vc_gitem-link vc-zone-link"></a><div class="vc_gitem-zone-mini">
+<div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_right">
+<figure class="wpb_wrapper vc_figure">
+<a href="/ovidio-rimedi-contro-l-amore/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="OVIDIO  &#8211;  RIMEDI CONTRO L&#8217; AMORE"><img width="320" height="180" src="/wp-content/uploads/2020/01/OVIDIO-RIMEDI-CONTRO-L-AMORE.jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="/wp-content/uploads/2020/01/OVIDIO-RIMEDI-CONTRO-L-AMORE.jpg 320w, /wp-content/uploads/2020/01/OVIDIO-RIMEDI-CONTRO-L-AMORE-300x169.jpg 300w" sizes="(max-width: 320px) 100vw, 320px"></a>
+</figure>
+</div>
+</div></div>
+<div class="vc_gitem_row vc_row vc_gitem-row-position-bottom"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/ovidio-rimedi-contro-l-amore/" class="vc_gitem-link" title="OVIDIO  &#8211;  RIMEDI CONTRO L&#8217; AMORE">OVIDIO &#8211; RIMEDI CONTRO L&#8217; AMORE</a></div></div></div></div>
+</div>
+</div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-16-9 vc_gitem-is-link">
+<a href="/p-p-pasolini-dagli-scritti-corsari-74/" title="P.P. Pasolini &#8211; dagli &#8220;Scritti corsari &#8217;74&#8221;" class="vc_gitem-link vc-zone-link"></a><div class="vc_gitem-zone-mini">
+<div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_right">
+<figure class="wpb_wrapper vc_figure">
+<a href="/p-p-pasolini-dagli-scritti-corsari-74/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="P.P. Pasolini &#8211; dagli &#8220;Scritti corsari &#8217;74&#8221;"><img width="320" height="180" src="/wp-content/uploads/2019/07/P.P.-Pasolini-dagli-Scritti-corsari-74.jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="/wp-content/uploads/2019/07/P.P.-Pasolini-dagli-Scritti-corsari-74.jpg 320w, /wp-content/uploads/2019/07/P.P.-Pasolini-dagli-Scritti-corsari-74-300x169.jpg 300w" sizes="(max-width: 320px) 100vw, 320px"></a>
+</figure>
+</div>
+</div></div>
+<div class="vc_gitem_row vc_row vc_gitem-row-position-bottom"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/p-p-pasolini-dagli-scritti-corsari-74/" class="vc_gitem-link" title="P.P. Pasolini &#8211; dagli &#8220;Scritti corsari &#8217;74&#8221;">P.P. Pasolini &#8211; dagli &#8220;Scritti corsari &#8217;74&#8221;</a></div></div></div></div>
+</div>
+</div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-16-9 vc_gitem-is-link">
+<a href="/perche-la-bomba-su-hiroshima-per-non-dimenticare/" title="PERCHE&#8217;  LA BOMBA SU HIROSHIMA &#8211; per non dimenticare!" class="vc_gitem-link vc-zone-link"></a><div class="vc_gitem-zone-mini">
+<div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_right">
+<figure class="wpb_wrapper vc_figure">
+<a href="/perche-la-bomba-su-hiroshima-per-non-dimenticare/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="PERCHE&#8217;  LA BOMBA SU HIROSHIMA &#8211; per non dimenticare!"><img width="320" height="180" src="/wp-content/uploads/2019/07/PERCHE-LA-BOMBA-SU-HIROSHIMA-per-non-dimenticare.jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="/wp-content/uploads/2019/07/PERCHE-LA-BOMBA-SU-HIROSHIMA-per-non-dimenticare.jpg 320w, /wp-content/uploads/2019/07/PERCHE-LA-BOMBA-SU-HIROSHIMA-per-non-dimenticare-300x169.jpg 300w" sizes="(max-width: 320px) 100vw, 320px"></a>
+</figure>
+</div>
+</div></div>
+<div class="vc_gitem_row vc_row vc_gitem-row-position-bottom"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/perche-la-bomba-su-hiroshima-per-non-dimenticare/" class="vc_gitem-link" title="PERCHE&#8217;  LA BOMBA SU HIROSHIMA &#8211; per non dimenticare!">PERCHE&#8217; LA BOMBA SU HIROSHIMA &#8211; per non dimenticare!</a></div></div></div></div>
+</div>
+</div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-16-9 vc_gitem-is-link">
+<a href="/pietro-germi-un-idealista-senza-illusioni/" title="Pietro Germi &#8211; Un idealista senza illusioni" class="vc_gitem-link vc-zone-link"></a><div class="vc_gitem-zone-mini">
+<div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_right">
+<figure class="wpb_wrapper vc_figure">
+<a href="/pietro-germi-un-idealista-senza-illusioni/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="Pietro Germi &#8211; Un idealista senza illusioni"><img width="320" height="180" src="/wp-content/uploads/2019/02/Pietro-Germi-Un-idealista-senza-illusioni.jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="/wp-content/uploads/2019/02/Pietro-Germi-Un-idealista-senza-illusioni.jpg 320w, /wp-content/uploads/2019/02/Pietro-Germi-Un-idealista-senza-illusioni-300x169.jpg 300w" sizes="(max-width: 320px) 100vw, 320px"></a>
+</figure>
+</div>
+</div></div>
+<div class="vc_gitem_row vc_row vc_gitem-row-position-bottom"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/pietro-germi-un-idealista-senza-illusioni/" class="vc_gitem-link" title="Pietro Germi &#8211; Un idealista senza illusioni">Pietro Germi &#8211; Un idealista senza illusioni</a></div></div></div></div>
+</div>
+</div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-16-9 vc_gitem-is-link">
+<a href="/platone-il-mito-della-caverna-repubblica-libro-vii/" title="Platone &#8211; Il mito della caverna &#8212; repubblica &#8212; libro VII" class="vc_gitem-link vc-zone-link"></a><div class="vc_gitem-zone-mini">
+<div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_right">
+<figure class="wpb_wrapper vc_figure">
+<a href="/platone-il-mito-della-caverna-repubblica-libro-vii/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="Platone &#8211; Il mito della caverna &#8212; repubblica &#8212; libro VII"><img width="320" height="180" src="/wp-content/uploads/2010/12/Platone-Il-mito-della-caverna-repubblica-libro-VII.jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="/wp-content/uploads/2010/12/Platone-Il-mito-della-caverna-repubblica-libro-VII.jpg 320w, /wp-content/uploads/2010/12/Platone-Il-mito-della-caverna-repubblica-libro-VII-300x169.jpg 300w" sizes="(max-width: 320px) 100vw, 320px"></a>
+</figure>
+</div>
+</div></div>
+<div class="vc_gitem_row vc_row vc_gitem-row-position-bottom"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/platone-il-mito-della-caverna-repubblica-libro-vii/" class="vc_gitem-link" title="Platone &#8211; Il mito della caverna &#8212; repubblica &#8212; libro VII">Platone &#8211; Il mito della caverna &#8212; repubblica &#8212; libro VII</a></div></div></div></div>
+</div>
+</div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-16-9 vc_gitem-is-link">
+<a href="/platone-aforismi/" title="Platone AFORISMI" class="vc_gitem-link vc-zone-link"></a><div class="vc_gitem-zone-mini">
+<div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_right">
+<figure class="wpb_wrapper vc_figure">
+<a href="/platone-aforismi/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="Platone AFORISMI"><img width="1280" height="720" src="/wp-content/uploads/2016/12/Platone-AFORISMI.jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="/wp-content/uploads/2016/12/Platone-AFORISMI.jpg 1280w, /wp-content/uploads/2016/12/Platone-AFORISMI-300x169.jpg 300w, /wp-content/uploads/2016/12/Platone-AFORISMI-768x432.jpg 768w, /wp-content/uploads/2016/12/Platone-AFORISMI-1024x576.jpg 1024w" sizes="(max-width: 1280px) 100vw, 1280px"></a>
+</figure>
+</div>
+</div></div>
+<div class="vc_gitem_row vc_row vc_gitem-row-position-bottom"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/platone-aforismi/" class="vc_gitem-link" title="Platone AFORISMI">Platone AFORISMI</a></div></div></div></div>
+</div>
+</div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-16-9 vc_gitem-is-link">
+<a href="/primo-maggio-festa-del-lavoro-perche-questa-data-le-vere-origini/" title="Primo Maggio festa del lavoro, perchè questa data? Le vere origini" class="vc_gitem-link vc-zone-link"></a><div class="vc_gitem-zone-mini">
+<div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_right">
+<figure class="wpb_wrapper vc_figure">
+<a href="/primo-maggio-festa-del-lavoro-perche-questa-data-le-vere-origini/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="Primo Maggio festa del lavoro, perchè questa data? Le vere origini"><img width="1280" height="720" src="/wp-content/uploads/2017/05/Primo-Maggio-festa-del-lavoro-perch-questa-data-Le-vere-origini.jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="/wp-content/uploads/2017/05/Primo-Maggio-festa-del-lavoro-perch-questa-data-Le-vere-origini.jpg 1280w, /wp-content/uploads/2017/05/Primo-Maggio-festa-del-lavoro-perch-questa-data-Le-vere-origini-300x169.jpg 300w, /wp-content/uploads/2017/05/Primo-Maggio-festa-del-lavoro-perch-questa-data-Le-vere-origini-768x432.jpg 768w, /wp-content/uploads/2017/05/Primo-Maggio-festa-del-lavoro-perch-questa-data-Le-vere-origini-1024x576.jpg 1024w" sizes="(max-width: 1280px) 100vw, 1280px"></a>
+</figure>
+</div>
+</div></div>
+<div class="vc_gitem_row vc_row vc_gitem-row-position-bottom"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/primo-maggio-festa-del-lavoro-perche-questa-data-le-vere-origini/" class="vc_gitem-link" title="Primo Maggio festa del lavoro, perchè questa data? Le vere origini">Primo Maggio festa del lavoro, perchè questa data? Le vere origini</a></div></div></div></div>
+</div>
+</div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-16-9 vc_gitem-is-link">
+<a href="/valter49-propp-e-le-funzioni-delle-fiabe/" title="Propp e le funzioni delle fiabe" class="vc_gitem-link vc-zone-link"></a><div class="vc_gitem-zone-mini">
+<div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_right">
+<figure class="wpb_wrapper vc_figure">
+<a href="/valter49-propp-e-le-funzioni-delle-fiabe/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="Propp e le funzioni delle fiabe"><img width="320" height="180" src="/wp-content/uploads/2012/08/valter49-Propp-e-le-funzioni-delle-fiabe.jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="/wp-content/uploads/2012/08/valter49-Propp-e-le-funzioni-delle-fiabe.jpg 320w, /wp-content/uploads/2012/08/valter49-Propp-e-le-funzioni-delle-fiabe-300x169.jpg 300w" sizes="(max-width: 320px) 100vw, 320px"></a>
+</figure>
+</div>
+</div></div>
+<div class="vc_gitem_row vc_row vc_gitem-row-position-bottom"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/valter49-propp-e-le-funzioni-delle-fiabe/" class="vc_gitem-link" title="Propp e le funzioni delle fiabe">Propp e le funzioni delle fiabe</a></div></div></div></div>
+</div>
+</div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-16-9 vc_gitem-is-link">
+<a href="/questa-e-l-acqua-da-un-discorso-di-d-f-wallace/" title="QUESTA E&#8217; L&#8217; ACQUA &#8211; da un discorso di D. F. Wallace" class="vc_gitem-link vc-zone-link"></a><div class="vc_gitem-zone-mini">
+<div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_right">
+<figure class="wpb_wrapper vc_figure">
+<a href="/questa-e-l-acqua-da-un-discorso-di-d-f-wallace/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="QUESTA E&#8217; L&#8217; ACQUA &#8211; da un discorso di D. F. Wallace"><img width="320" height="180" src="/wp-content/uploads/2019/08/QUESTA-E-L-ACQUA-da-un-discorso-di-D.-F.-Wallace.jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="/wp-content/uploads/2019/08/QUESTA-E-L-ACQUA-da-un-discorso-di-D.-F.-Wallace.jpg 320w, /wp-content/uploads/2019/08/QUESTA-E-L-ACQUA-da-un-discorso-di-D.-F.-Wallace-300x169.jpg 300w" sizes="(max-width: 320px) 100vw, 320px"></a>
+</figure>
+</div>
+</div></div>
+<div class="vc_gitem_row vc_row vc_gitem-row-position-bottom"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/questa-e-l-acqua-da-un-discorso-di-d-f-wallace/" class="vc_gitem-link" title="QUESTA E&#8217; L&#8217; ACQUA &#8211; da un discorso di D. F. Wallace">QUESTA E&#8217; L&#8217; ACQUA &#8211; da un discorso di D. F. Wallace</a></div></div></div></div>
+</div>
+</div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-16-9 vc_gitem-is-link">
+<a href="/rene-girard-desiderio-mimetico-e-teoria-del-capro-espiatorio/" title="René Girard  &#8211; desiderio mimetico e teoria del capro espiatorio" class="vc_gitem-link vc-zone-link"></a><div class="vc_gitem-zone-mini">
+<div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_right">
+<figure class="wpb_wrapper vc_figure">
+<a href="/rene-girard-desiderio-mimetico-e-teoria-del-capro-espiatorio/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="René Girard  &#8211; desiderio mimetico e teoria del capro espiatorio"><img width="320" height="180" src="/wp-content/uploads/2019/08/Ren-Girard-desiderio-mimetico-e-teoria-del-capro-espiatorio.jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="/wp-content/uploads/2019/08/Ren-Girard-desiderio-mimetico-e-teoria-del-capro-espiatorio.jpg 320w, /wp-content/uploads/2019/08/Ren-Girard-desiderio-mimetico-e-teoria-del-capro-espiatorio-300x169.jpg 300w" sizes="(max-width: 320px) 100vw, 320px"></a>
+</figure>
+</div>
+</div></div>
+<div class="vc_gitem_row vc_row vc_gitem-row-position-bottom"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/rene-girard-desiderio-mimetico-e-teoria-del-capro-espiatorio/" class="vc_gitem-link" title="René Girard  &#8211; desiderio mimetico e teoria del capro espiatorio">René Girard &#8211; desiderio mimetico e teoria del capro espiatorio</a></div></div></div></div>
+</div>
+</div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-16-9 vc_gitem-is-link">
+<a href="/roberspierre-discorso-contro-la-guerra/" title="ROBERSPIERRE &#8211; DISCORSO CONTRO LA GUERRA" class="vc_gitem-link vc-zone-link"></a><div class="vc_gitem-zone-mini">
+<div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_right">
+<figure class="wpb_wrapper vc_figure">
+<a href="/roberspierre-discorso-contro-la-guerra/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="ROBERSPIERRE &#8211; DISCORSO CONTRO LA GUERRA"><img width="1280" height="720" src="/wp-content/uploads/2019/09/ROBERSPIERRE-DISCORSO-CONTRO-LA-GUERRA.jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="/wp-content/uploads/2019/09/ROBERSPIERRE-DISCORSO-CONTRO-LA-GUERRA.jpg 1280w, /wp-content/uploads/2019/09/ROBERSPIERRE-DISCORSO-CONTRO-LA-GUERRA-300x169.jpg 300w, /wp-content/uploads/2019/09/ROBERSPIERRE-DISCORSO-CONTRO-LA-GUERRA-1024x576.jpg 1024w, /wp-content/uploads/2019/09/ROBERSPIERRE-DISCORSO-CONTRO-LA-GUERRA-768x432.jpg 768w, /wp-content/uploads/2019/09/ROBERSPIERRE-DISCORSO-CONTRO-LA-GUERRA-1232x693.jpg 1232w" sizes="(max-width: 1280px) 100vw, 1280px"></a>
+</figure>
+</div>
+</div></div>
+<div class="vc_gitem_row vc_row vc_gitem-row-position-bottom"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/roberspierre-discorso-contro-la-guerra/" class="vc_gitem-link" title="ROBERSPIERRE &#8211; DISCORSO CONTRO LA GUERRA">ROBERSPIERRE &#8211; DISCORSO CONTRO LA GUERRA</a></div></div></div></div>
+</div>
+</div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-16-9 vc_gitem-is-link">
+<a href="/santagostino-discorso-sullamore/" title="Sant&#8217;Agostino, Discorso sull&#8217;amore" class="vc_gitem-link vc-zone-link"></a><div class="vc_gitem-zone-mini">
+<div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_right">
+<figure class="wpb_wrapper vc_figure">
+<a href="/santagostino-discorso-sullamore/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="Sant&#8217;Agostino, Discorso sull&#8217;amore"><img width="320" height="180" src="/wp-content/uploads/2019/02/SantAgostino-Discorso-sullamore.jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="/wp-content/uploads/2019/02/SantAgostino-Discorso-sullamore.jpg 320w, /wp-content/uploads/2019/02/SantAgostino-Discorso-sullamore-300x169.jpg 300w" sizes="(max-width: 320px) 100vw, 320px"></a>
+</figure>
+</div>
+</div></div>
+<div class="vc_gitem_row vc_row vc_gitem-row-position-bottom"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/santagostino-discorso-sullamore/" class="vc_gitem-link" title="Sant&#8217;Agostino, Discorso sull&#8217;amore">Sant&#8217;Agostino, Discorso sull&#8217;amore</a></div></div></div></div>
+</div>
+</div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-16-9 vc_gitem-is-link">
+<a href="/se-voglio-incontrare-persone-diverse-devo-essere-diverso-la-legge-di-attrazione-opera-per-risonanza/" title="Se voglio incontrare persone diverse devo essere diverso.La legge di attrazione opera per risonanza" class="vc_gitem-link vc-zone-link"></a><div class="vc_gitem-zone-mini">
+<div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_right">
+<figure class="wpb_wrapper vc_figure">
+<a href="/se-voglio-incontrare-persone-diverse-devo-essere-diverso-la-legge-di-attrazione-opera-per-risonanza/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="Se voglio incontrare persone diverse devo essere diverso.La legge di attrazione opera per risonanza"><img width="320" height="180" src="/wp-content/uploads/2019/02/Se-voglio-incontrare-persone-diverse-devo-essere-diverso.La-legge-di-attrazione-opera-per-risonanza.jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="/wp-content/uploads/2019/02/Se-voglio-incontrare-persone-diverse-devo-essere-diverso.La-legge-di-attrazione-opera-per-risonanza.jpg 320w, /wp-content/uploads/2019/02/Se-voglio-incontrare-persone-diverse-devo-essere-diverso.La-legge-di-attrazione-opera-per-risonanza-300x169.jpg 300w" sizes="(max-width: 320px) 100vw, 320px"></a>
+</figure>
+</div>
+</div></div>
+<div class="vc_gitem_row vc_row vc_gitem-row-position-bottom"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/se-voglio-incontrare-persone-diverse-devo-essere-diverso-la-legge-di-attrazione-opera-per-risonanza/" class="vc_gitem-link" title="Se voglio incontrare persone diverse devo essere diverso.La legge di attrazione opera per risonanza">Se voglio incontrare persone diverse devo essere diverso.La legge di attrazione opera per risonanza</a></div></div></div></div>
+</div>
+</div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-16-9 vc_gitem-is-link">
+<a href="/seneca-lettera-a-lucilio-libro-primo-n-15/" title="SENECA &#8211;  LETTERA A LUCILIO Libro primo  n. 15" class="vc_gitem-link vc-zone-link"></a><div class="vc_gitem-zone-mini">
+<div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_right">
+<figure class="wpb_wrapper vc_figure">
+<a href="/seneca-lettera-a-lucilio-libro-primo-n-15/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="SENECA &#8211;  LETTERA A LUCILIO Libro primo  n. 15"><img width="320" height="180" src="/wp-content/uploads/2019/10/SENECA-LETTERA-A-LUCILIO-Libro-primo-n.-15.jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="/wp-content/uploads/2019/10/SENECA-LETTERA-A-LUCILIO-Libro-primo-n.-15.jpg 320w, /wp-content/uploads/2019/10/SENECA-LETTERA-A-LUCILIO-Libro-primo-n.-15-300x169.jpg 300w" sizes="(max-width: 320px) 100vw, 320px"></a>
+</figure>
+</div>
+</div></div>
+<div class="vc_gitem_row vc_row vc_gitem-row-position-bottom"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/seneca-lettera-a-lucilio-libro-primo-n-15/" class="vc_gitem-link" title="SENECA &#8211;  LETTERA A LUCILIO Libro primo  n. 15">SENECA &#8211; LETTERA A LUCILIO Libro primo n. 15</a></div></div></div></div>
+</div>
+</div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-16-9 vc_gitem-is-link">
+<a href="/seneca-luomo-saggio/" title="SENECA &#8211; L&#8217;UOMO SAGGIO" class="vc_gitem-link vc-zone-link"></a><div class="vc_gitem-zone-mini">
+<div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_right">
+<figure class="wpb_wrapper vc_figure">
+<a href="/seneca-luomo-saggio/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="SENECA &#8211; L&#8217;UOMO SAGGIO"><img width="320" height="180" src="/wp-content/uploads/2019/02/SENECA-LUOMO-SAGGIO.jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="/wp-content/uploads/2019/02/SENECA-LUOMO-SAGGIO.jpg 320w, /wp-content/uploads/2019/02/SENECA-LUOMO-SAGGIO-300x169.jpg 300w" sizes="(max-width: 320px) 100vw, 320px"></a>
+</figure>
+</div>
+</div></div>
+<div class="vc_gitem_row vc_row vc_gitem-row-position-bottom"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/seneca-luomo-saggio/" class="vc_gitem-link" title="SENECA &#8211; L&#8217;UOMO SAGGIO">SENECA &#8211; L&#8217;UOMO SAGGIO</a></div></div></div></div>
+</div>
+</div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-16-9 vc_gitem-is-link">
+<a href="/seneca-lettera-a-lucilio-legge-chiara-tambani/" title="Seneca &#8211; Lettera a Lucilio &#8211; Legge Chiara Tambani" class="vc_gitem-link vc-zone-link"></a><div class="vc_gitem-zone-mini">
+<div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_right">
+<figure class="wpb_wrapper vc_figure">
+<a href="/seneca-lettera-a-lucilio-legge-chiara-tambani/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="Seneca &#8211; Lettera a Lucilio &#8211; Legge Chiara Tambani"><img width="320" height="180" src="/wp-content/uploads/2017/12/Seneca-Lettera-a-Lucilio-Legge-Chiara-Tambani.jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="/wp-content/uploads/2017/12/Seneca-Lettera-a-Lucilio-Legge-Chiara-Tambani.jpg 320w, /wp-content/uploads/2017/12/Seneca-Lettera-a-Lucilio-Legge-Chiara-Tambani-300x169.jpg 300w" sizes="(max-width: 320px) 100vw, 320px"></a>
+</figure>
+</div>
+</div></div>
+<div class="vc_gitem_row vc_row vc_gitem-row-position-bottom"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/seneca-lettera-a-lucilio-legge-chiara-tambani/" class="vc_gitem-link" title="Seneca &#8211; Lettera a Lucilio &#8211; Legge Chiara Tambani">Seneca &#8211; Lettera a Lucilio &#8211; Legge Chiara Tambani</a></div></div></div></div>
+</div>
+</div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-16-9 vc_gitem-is-link">
+<a href="/simone-weil-farsi-da-parte/" title="SIMONE WEIL  &#8211; FARSI DA PARTE" class="vc_gitem-link vc-zone-link"></a><div class="vc_gitem-zone-mini">
+<div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_right">
+<figure class="wpb_wrapper vc_figure">
+<a href="/simone-weil-farsi-da-parte/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="SIMONE WEIL  &#8211; FARSI DA PARTE"><img width="320" height="180" src="/wp-content/uploads/2017/12/SIMONE-WEIL-FARSI-DA-PARTE.jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="/wp-content/uploads/2017/12/SIMONE-WEIL-FARSI-DA-PARTE.jpg 320w, /wp-content/uploads/2017/12/SIMONE-WEIL-FARSI-DA-PARTE-300x169.jpg 300w" sizes="(max-width: 320px) 100vw, 320px"></a>
+</figure>
+</div>
+</div></div>
+<div class="vc_gitem_row vc_row vc_gitem-row-position-bottom"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/simone-weil-farsi-da-parte/" class="vc_gitem-link" title="SIMONE WEIL  &#8211; FARSI DA PARTE">SIMONE WEIL &#8211; FARSI DA PARTE</a></div></div></div></div>
+</div>
+</div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-16-9 vc_gitem-is-link">
+<a href="/simone-weil-vuoto-e-compensazione/" title="SIMONE WEIL -VUOTO E COMPENSAZIONE" class="vc_gitem-link vc-zone-link"></a><div class="vc_gitem-zone-mini">
+<div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_right">
+<figure class="wpb_wrapper vc_figure">
+<a href="/simone-weil-vuoto-e-compensazione/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="SIMONE WEIL -VUOTO E COMPENSAZIONE"><img width="320" height="180" src="/wp-content/uploads/2017/12/SIMONE-WEIL-VUOTO-E-COMPENSAZIONE.jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="/wp-content/uploads/2017/12/SIMONE-WEIL-VUOTO-E-COMPENSAZIONE.jpg 320w, /wp-content/uploads/2017/12/SIMONE-WEIL-VUOTO-E-COMPENSAZIONE-300x169.jpg 300w" sizes="(max-width: 320px) 100vw, 320px"></a>
+</figure>
+</div>
+</div></div>
+<div class="vc_gitem_row vc_row vc_gitem-row-position-bottom"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/simone-weil-vuoto-e-compensazione/" class="vc_gitem-link" title="SIMONE WEIL -VUOTO E COMPENSAZIONE">SIMONE WEIL -VUOTO E COMPENSAZIONE</a></div></div></div></div>
+</div>
+</div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-16-9 vc_gitem-is-link">
+<a href="/simone-weil-1-la-pesantezza-e-la-grazia/" title="SIMONE WEIL 1 LA PESANTEZZA E LA GRAZIA" class="vc_gitem-link vc-zone-link"></a><div class="vc_gitem-zone-mini">
+<div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_right">
+<figure class="wpb_wrapper vc_figure">
+<a href="/simone-weil-1-la-pesantezza-e-la-grazia/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="SIMONE WEIL 1 LA PESANTEZZA E LA GRAZIA"><img width="320" height="180" src="/wp-content/uploads/2017/12/SIMONE-WEIL-1-LA-PESANTEZZA-E-LA-GRAZIA.jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="/wp-content/uploads/2017/12/SIMONE-WEIL-1-LA-PESANTEZZA-E-LA-GRAZIA.jpg 320w, /wp-content/uploads/2017/12/SIMONE-WEIL-1-LA-PESANTEZZA-E-LA-GRAZIA-300x169.jpg 300w" sizes="(max-width: 320px) 100vw, 320px"></a>
+</figure>
+</div>
+</div></div>
+<div class="vc_gitem_row vc_row vc_gitem-row-position-bottom"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/simone-weil-1-la-pesantezza-e-la-grazia/" class="vc_gitem-link" title="SIMONE WEIL 1 LA PESANTEZZA E LA GRAZIA">SIMONE WEIL 1 LA PESANTEZZA E LA GRAZIA</a></div></div></div></div>
+</div>
+</div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-16-9 vc_gitem-is-link">
+<a href="/simone-weil-rinuncia-al-tempo/" title="SIMONE WEIL- RINUNCIA AL TEMPO" class="vc_gitem-link vc-zone-link"></a><div class="vc_gitem-zone-mini">
+<div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_right">
+<figure class="wpb_wrapper vc_figure">
+<a href="/simone-weil-rinuncia-al-tempo/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="SIMONE WEIL- RINUNCIA AL TEMPO"><img width="320" height="180" src="/wp-content/uploads/2017/12/SIMONE-WEIL-RINUNCIA-AL-TEMPO.jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="/wp-content/uploads/2017/12/SIMONE-WEIL-RINUNCIA-AL-TEMPO.jpg 320w, /wp-content/uploads/2017/12/SIMONE-WEIL-RINUNCIA-AL-TEMPO-300x169.jpg 300w" sizes="(max-width: 320px) 100vw, 320px"></a>
+</figure>
+</div>
+</div></div>
+<div class="vc_gitem_row vc_row vc_gitem-row-position-bottom"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/simone-weil-rinuncia-al-tempo/" class="vc_gitem-link" title="SIMONE WEIL- RINUNCIA AL TEMPO">SIMONE WEIL- RINUNCIA AL TEMPO</a></div></div></div></div>
+</div>
+</div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-16-9 vc_gitem-is-link">
+<a href="/simone-weil-amore/" title="SIMONE WEIL, AMORE" class="vc_gitem-link vc-zone-link"></a><div class="vc_gitem-zone-mini">
+<div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_right">
+<figure class="wpb_wrapper vc_figure">
+<a href="/simone-weil-amore/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="SIMONE WEIL, AMORE"><img width="320" height="180" src="/wp-content/uploads/2017/12/SIMONE-WEIL-AMORE.jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="/wp-content/uploads/2017/12/SIMONE-WEIL-AMORE.jpg 320w, /wp-content/uploads/2017/12/SIMONE-WEIL-AMORE-300x169.jpg 300w" sizes="(max-width: 320px) 100vw, 320px"></a>
+</figure>
+</div>
+</div></div>
+<div class="vc_gitem_row vc_row vc_gitem-row-position-bottom"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/simone-weil-amore/" class="vc_gitem-link" title="SIMONE WEIL, AMORE">SIMONE WEIL, AMORE</a></div></div></div></div>
+</div>
+</div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-16-9 vc_gitem-is-link">
+<a href="/simone-weil-contraddizioni/" title="SIMONE WEIL, CONTRADDIZIONI" class="vc_gitem-link vc-zone-link"></a><div class="vc_gitem-zone-mini">
+<div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_right">
+<figure class="wpb_wrapper vc_figure">
+<a href="/simone-weil-contraddizioni/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="SIMONE WEIL, CONTRADDIZIONI"><img width="320" height="180" src="/wp-content/uploads/2017/12/SIMONE-WEIL-CONTRADDIZIONI.jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="/wp-content/uploads/2017/12/SIMONE-WEIL-CONTRADDIZIONI.jpg 320w, /wp-content/uploads/2017/12/SIMONE-WEIL-CONTRADDIZIONI-300x169.jpg 300w" sizes="(max-width: 320px) 100vw, 320px"></a>
+</figure>
+</div>
+</div></div>
+<div class="vc_gitem_row vc_row vc_gitem-row-position-bottom"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/simone-weil-contraddizioni/" class="vc_gitem-link" title="SIMONE WEIL, CONTRADDIZIONI">SIMONE WEIL, CONTRADDIZIONI</a></div></div></div></div>
+</div>
+</div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-16-9 vc_gitem-is-link">
+<a href="/simone-weil-illusioni/" title="SIMONE WEIL, ILLUSIONI" class="vc_gitem-link vc-zone-link"></a><div class="vc_gitem-zone-mini">
+<div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_right">
+<figure class="wpb_wrapper vc_figure">
+<a href="/simone-weil-illusioni/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="SIMONE WEIL, ILLUSIONI"><img width="320" height="180" src="/wp-content/uploads/2017/12/SIMONE-WEIL-ILLUSIONI.jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="/wp-content/uploads/2017/12/SIMONE-WEIL-ILLUSIONI.jpg 320w, /wp-content/uploads/2017/12/SIMONE-WEIL-ILLUSIONI-300x169.jpg 300w" sizes="(max-width: 320px) 100vw, 320px"></a>
+</figure>
+</div>
+</div></div>
+<div class="vc_gitem_row vc_row vc_gitem-row-position-bottom"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/simone-weil-illusioni/" class="vc_gitem-link" title="SIMONE WEIL, ILLUSIONI">SIMONE WEIL, ILLUSIONI</a></div></div></div></div>
+</div>
+</div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-16-9 vc_gitem-is-link">
+<a href="/simone-weil-limpossibile-4v/" title="SIMONE WEIL, L&#8217;IMPOSSIBILE 4v" class="vc_gitem-link vc-zone-link"></a><div class="vc_gitem-zone-mini">
+<div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_right">
+<figure class="wpb_wrapper vc_figure">
+<a href="/simone-weil-limpossibile-4v/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="SIMONE WEIL, L&#8217;IMPOSSIBILE 4v"><img width="320" height="180" src="/wp-content/uploads/2017/12/SIMONE-WEIL-LIMPOSSIBILE-4v.jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="/wp-content/uploads/2017/12/SIMONE-WEIL-LIMPOSSIBILE-4v.jpg 320w, /wp-content/uploads/2017/12/SIMONE-WEIL-LIMPOSSIBILE-4v-300x169.jpg 300w" sizes="(max-width: 320px) 100vw, 320px"></a>
+</figure>
+</div>
+</div></div>
+<div class="vc_gitem_row vc_row vc_gitem-row-position-bottom"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/simone-weil-limpossibile-4v/" class="vc_gitem-link" title="SIMONE WEIL, L&#8217;IMPOSSIBILE 4v">SIMONE WEIL, L&#8217;IMPOSSIBILE 4v</a></div></div></div></div>
+</div>
+</div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-16-9 vc_gitem-is-link">
+<a href="/simone-weil-linfelicita/" title="SIMONE WEIL, L&#8217;INFELICITA&#8217;" class="vc_gitem-link vc-zone-link"></a><div class="vc_gitem-zone-mini">
+<div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_right">
+<figure class="wpb_wrapper vc_figure">
+<a href="/simone-weil-linfelicita/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="SIMONE WEIL, L&#8217;INFELICITA&#8217;"><img width="320" height="180" src="/wp-content/uploads/2017/12/SIMONE-WEIL-LINFELICITA.jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="/wp-content/uploads/2017/12/SIMONE-WEIL-LINFELICITA.jpg 320w, /wp-content/uploads/2017/12/SIMONE-WEIL-LINFELICITA-300x169.jpg 300w" sizes="(max-width: 320px) 100vw, 320px"></a>
+</figure>
+</div>
+</div></div>
+<div class="vc_gitem_row vc_row vc_gitem-row-position-bottom"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/simone-weil-linfelicita/" class="vc_gitem-link" title="SIMONE WEIL, L&#8217;INFELICITA&#8217;">SIMONE WEIL, L&#8217;INFELICITA&#8217;</a></div></div></div></div>
+</div>
+</div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-16-9 vc_gitem-is-link">
+<a href="/simone-weil-la-necessita-e-lobbedienza/" title="SIMONE WEIL, LA NECESSITA&#8217; E L&#8217;OBBEDIENZA" class="vc_gitem-link vc-zone-link"></a><div class="vc_gitem-zone-mini">
+<div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_right">
+<figure class="wpb_wrapper vc_figure">
+<a href="/simone-weil-la-necessita-e-lobbedienza/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="SIMONE WEIL, LA NECESSITA&#8217; E L&#8217;OBBEDIENZA"><img width="320" height="180" src="/wp-content/uploads/2017/12/SIMONE-WEIL-LA-NECESSITA-E-LOBBEDIENZA.jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="/wp-content/uploads/2017/12/SIMONE-WEIL-LA-NECESSITA-E-LOBBEDIENZA.jpg 320w, /wp-content/uploads/2017/12/SIMONE-WEIL-LA-NECESSITA-E-LOBBEDIENZA-300x169.jpg 300w" sizes="(max-width: 320px) 100vw, 320px"></a>
+</figure>
+</div>
+</div></div>
+<div class="vc_gitem_row vc_row vc_gitem-row-position-bottom"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/simone-weil-la-necessita-e-lobbedienza/" class="vc_gitem-link" title="SIMONE WEIL, LA NECESSITA&#8217; E L&#8217;OBBEDIENZA">SIMONE WEIL, LA NECESSITA&#8217; E L&#8217;OBBEDIENZA</a></div></div></div></div>
+</div>
+</div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-16-9 vc_gitem-is-link">
+<a href="/teogonia-esiodo-700-a-c/" title="TEOGONIA &#8211;    Esiodo  700 A. C." class="vc_gitem-link vc-zone-link"></a><div class="vc_gitem-zone-mini">
+<div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_right">
+<figure class="wpb_wrapper vc_figure">
+<a href="/teogonia-esiodo-700-a-c/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="TEOGONIA &#8211;    Esiodo  700 A. C."><img width="320" height="180" src="/wp-content/uploads/2019/10/TEOGONIA-Esiodo-700-A.-C..jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="/wp-content/uploads/2019/10/TEOGONIA-Esiodo-700-A.-C..jpg 320w, /wp-content/uploads/2019/10/TEOGONIA-Esiodo-700-A.-C.-300x169.jpg 300w" sizes="(max-width: 320px) 100vw, 320px"></a>
+</figure>
+</div>
+</div></div>
+<div class="vc_gitem_row vc_row vc_gitem-row-position-bottom"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/teogonia-esiodo-700-a-c/" class="vc_gitem-link" title="TEOGONIA &#8211;    Esiodo  700 A. C.">TEOGONIA &#8211; Esiodo 700 A. C.</a></div></div></div></div>
+</div>
+</div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-16-9 vc_gitem-is-link">
+<a href="/ultime-lettere-a-theo-vincent-van-gogh/" title="ULTIME LETTERE A THEO &#8211; Vincent van Gogh" class="vc_gitem-link vc-zone-link"></a><div class="vc_gitem-zone-mini">
+<div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_right">
+<figure class="wpb_wrapper vc_figure">
+<a href="/ultime-lettere-a-theo-vincent-van-gogh/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="ULTIME LETTERE A THEO &#8211; Vincent van Gogh"><img width="320" height="180" src="/wp-content/uploads/2019/11/ULTIME-LETTERE-A-THEO-Vincent-van-Gogh.jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="/wp-content/uploads/2019/11/ULTIME-LETTERE-A-THEO-Vincent-van-Gogh.jpg 320w, /wp-content/uploads/2019/11/ULTIME-LETTERE-A-THEO-Vincent-van-Gogh-300x169.jpg 300w" sizes="(max-width: 320px) 100vw, 320px"></a>
+</figure>
+</div>
+</div></div>
+<div class="vc_gitem_row vc_row vc_gitem-row-position-bottom"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/ultime-lettere-a-theo-vincent-van-gogh/" class="vc_gitem-link" title="ULTIME LETTERE A THEO &#8211; Vincent van Gogh">ULTIME LETTERE A THEO &#8211; Vincent van Gogh</a></div></div></div></div>
+</div>
+</div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+</div>
+<div data-lazy-loading-btn="true" style="display: none;"><a href="/saggi/"></a></div>
+</div>
+</div>
+</div>
+</div></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer footer-contact-boxes">
+<div class="footer-content">
+<div class="gridContainer">
+<div class="row text-center">
+<div class="col-sm-3">
+<div data-type="group" data-dynamic-mod="true">
+<i class="big-icon mdi mdi-android"></i>
+<p>
+<a href="https://play.google.com/store/apps/details?id=application.audiobooks">Audiolibri App</a> </p>
+</div>
+</div>
+<div class="col-sm-3">
+<div data-type="group" data-dynamic-mod="true">
+<i class="big-icon mdi mdi-email"></i>
+<p>
+<a href="/cdn-cgi/l/email-protection#c5acaba3aa85a4b0a1acaaa9aca7b7acebaab7a2"><span class="__cf_email__" data-cfemail="60090e060f20011504090f0c090212094e0f1207">[email&#160;protected]</span></a> </p>
+</div>
+</div>
+<div class="col-sm-3">
+<div data-type="group" data-dynamic-mod="true">
+<i class="big-icon mdi mdi-search-web"></i>
+<p>
+<a href="/search/">Cerca un audiolibro</a> </p>
+</div>
+</div>
+<div class="col-sm-3 footer-bg-accent">
+<div>
+<div data-type="group" data-dynamic-mod="true" class="footer-social-icons">
+<a target="_blank" class="social-icon" href="https://www.facebook.com/audiolibriGRATIS/">
+<i class="mdi mdi-facebook-box"></i>
+</a>
+<a target="_blank" class="social-icon" href="https://www.youtube.com/channel/UCcI3Bk2oB91HujHwX9ljEFw">
+<i class="mdi mdi-youtube-play"></i>
+</a>
+</div>
+</div>
+<p class="copyright">&copy;&nbsp;&nbsp;2022&nbsp;Audiolibri.org.&nbsp;create con WordPress e con il tema <a rel="nofollow" target="_blank" href="https://extendthemes.com/go/built-with-materialis/">Il tema Materialis</a></p> </div>
+</div>
+</div>
+</div>
+</div>
+<div id="pwaforwp_loading_div"></div>
+<div class="pwaforwp-loading-wrapper"><div id="pwaforwp_loading_icon" style="border-top-color: #3498db"></div></div>
+<link rel="stylesheet" id="lightbox2-css" href="/wp-content/plugins/js_composer/assets/lib/bower/lightbox2/dist/css/lightbox.min.css?ver=6.6.0" type="text/css" media="all">
+<link rel="stylesheet" id="vc_pageable_owl-carousel-css-css" href="/wp-content/plugins/js_composer/assets/lib/owl-carousel2-dist/assets/owl.min.css?ver=6.6.0" type="text/css" media="all">
+<link rel="stylesheet" id="vc_animate-css-css" href="/wp-content/plugins/js_composer/assets/lib/bower/animate-css/animate.min.css?ver=6.6.0" type="text/css" media="all">
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript" id="superpwa-register-sw-js-extra">
+/* <![CDATA[ */
+var superpwa_sw = {"url":"\/superpwa-amp-sw.js","disable_addtohome":"0","enableOnDesktop":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="/wp-content/plugins/super-progressive-web-apps/public/js/register-sw.js" id="superpwa-register-sw-js"></script>
+<script type="text/javascript" src="/wp-includes/js/jquery/ui/effect.min.js?ver=1.12.1" id="jquery-effects-core-js"></script>
+<script type="text/javascript" src="/wp-includes/js/jquery/ui/effect-slide.min.js?ver=1.12.1" id="jquery-effects-slide-js"></script>
+<script type="text/javascript" defer src="/wp-includes/js/imagesloaded.min.js?ver=4.1.4" id="imagesloaded-js"></script>
+<script type="text/javascript" defer src="/wp-includes/js/masonry.min.js?ver=4.2.2" id="masonry-js"></script>
+<script type="text/javascript" defer src="/wp-content/themes/materialis/assets/js/theme.bundle.min.js?ver=1.1.16" id="materialis-theme-js"></script>
+<script type="text/javascript" id="pwaforwp-js-js-extra">
+/* <![CDATA[ */
+var pwaforwp_js_obj = {"ajax_url":"\/wp-admin\/admin-ajax.php","pwa_ms_prefix":"","pwa_home_url":"\/","loader_desktop":"1","loader_mobile":"1","loader_only_pwa":"0","reset_cookies":"0"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="/wp-content/plugins/pwa-for-wp/assets/js/pwaforwp.min.js?ver=1.7.41" id="pwaforwp-js-js"></script>
+<script type="text/javascript" src="/pwa-register-sw.js?ver=1.7.41" id="pwa-main-script-js"></script>
+<script type="text/javascript" src="https://cdn.onesignal.com/sdks/OneSignalSDK.js?ver=03419a7def9bc99d964c28ff4ca4bab2" async="async" id="remote_sdk-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js?ver=6.6.0" id="wpb_composer_front_js-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/js_composer/assets/lib/bower/lightbox2/dist/js/lightbox.min.js?ver=6.6.0" id="lightbox2-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/js_composer/assets/lib/owl-carousel2-dist/owl.carousel.min.js?ver=6.6.0" id="vc_pageable_owl-carousel-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/js_composer/assets/lib/bower/imagesloaded/imagesloaded.pkgd.min.js?ver=6.6.0" id="vc_grid-js-imagesloaded-js"></script>
+<script type="text/javascript" src="/wp-includes/js/underscore.min.js?ver=1.13.1" id="underscore-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/js_composer/assets/lib/vc_waypoints/vc-waypoints.min.js?ver=6.6.0" id="vc_waypoints-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/js_composer/assets/js/dist/vc_grid.min.js?ver=6.6.0" id="vc_grid-js"></script>
+<script>
+        /(trident|msie)/i.test(navigator.userAgent) && document.getElementById && window.addEventListener && window.addEventListener("hashchange", function() {
+            var t, e = location.hash.substring(1);
+            /^[A-z0-9_-]+$/.test(e) && (t = document.getElementById(e)) && (/^(?:a|select|input|button|textarea)$/i.test(t.tagName) || (t.tabIndex = -1), t.focus())
+        }, !1);
+    </script>
+</body>
+</html>

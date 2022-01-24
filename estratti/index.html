@@ -1,0 +1,1468 @@
+<!DOCTYPE html>
+<html lang="it-IT">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="profile" href="https://gmpg.org/xfn/11">
+
+<link rel="manifest" href="/superpwa-manifest.json">
+<link rel="prefetch" href="/superpwa-manifest.json">
+<meta name="theme-color" content="#D5E0EB">
+
+<title>Estratti &#8211; Audiolibri.org</title>
+<meta name="robots" content="max-image-preview:large">
+<link rel="manifest" href="/pwa-manifest.json">
+<link rel="apple-touch-icon-precomposed" sizes="192x192" href="/wp-content/plugins/pwa-for-wp/images/logo.png">
+<link rel="amphtml" href="/estratti/amp/">
+<meta name="generator" content="AMP for WP 1.0.77.35">
+<link rel="dns-prefetch" href="//www.googletagmanager.com">
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//s.w.org">
+<link href="https://fonts.gstatic.com/" crossorigin rel="preconnect">
+<link rel="alternate" type="application/rss+xml" title="Audiolibri.org &raquo; Feed" href="/feed/">
+<link rel="alternate" type="application/rss+xml" title="Audiolibri.org &raquo; Feed dei commenti" href="/comments/feed/">
+<link rel="stylesheet" id="wp-block-library-css" href="/wp-includes/css/dist/block-library/style.min.css?ver=03419a7def9bc99d964c28ff4ca4bab2" type="text/css" media="all">
+<link rel="stylesheet" id="image-hover-effects-css-css" href="/wp-content/plugins/mega-addons-for-visual-composer/css/ihover.css?ver=03419a7def9bc99d964c28ff4ca4bab2" type="text/css" media="all">
+<link rel="stylesheet" id="style-css-css" href="/wp-content/plugins/mega-addons-for-visual-composer/css/style.css?ver=03419a7def9bc99d964c28ff4ca4bab2" type="text/css" media="all">
+<link rel="stylesheet" id="font-awesome-latest-css" href="/wp-content/plugins/mega-addons-for-visual-composer/css/font-awesome/css/all.css?ver=03419a7def9bc99d964c28ff4ca4bab2" type="text/css" media="all">
+<link rel="stylesheet" id="materialis-style-css" href="/wp-content/themes/materialis/style.min.css?ver=1.1.16" type="text/css" media="all">
+<style id="materialis-style-inline-css" type="text/css">img.logo.dark, img.custom-logo{width:auto;max-height:70px;}</style>
+<link rel="stylesheet" id="materialis-material-icons-css" href="/wp-content/themes/materialis/assets/css/material-icons.min.css?ver=1.1.16" type="text/css" media="all">
+<link rel="stylesheet" id="materialis-style-bundle-css" href="/wp-content/themes/materialis/assets/css/theme.bundle.min.css?ver=1.1.16" type="text/css" media="all">
+<link rel="stylesheet" id="materialis-fonts-css" data-href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,400,400italic,500,500italic,700,700italic,900,900italic%7CPlayfair%20Display:400,400italic,700,700italic&#038;subset=latin,latin-ext" type="text/css" media="all">
+<link rel="stylesheet" id="js_composer_front-css" href="/wp-content/plugins/js_composer/assets/css/js_composer.min.css?ver=6.6.0" type="text/css" media="all">
+<link rel="stylesheet" id="pwaforwp-style-css" href="/wp-content/plugins/pwa-for-wp/assets/css/pwaforwp-main.min.css?ver=1.7.41" type="text/css" media="all">
+<link rel="stylesheet" id="kirki-styles-materialis-css" href="/wp-content/themes/materialis/customizer/kirki/assets/css/kirki-styles.css" type="text/css" media="all">
+<style id="kirki-styles-materialis-inline-css" type="text/css">/** cached kirki style */.header{background-position:center center;}.header-homepage.color-overlay:before{background:#181818;}.header-homepage .background-overlay,.header-homepage.color-overlay::before{opacity:0.53;}.header.color-overlay:before{background:#181818;}.header .background-overlay,.header.color-overlay::before{opacity:0.4;}.header-homepage .hero-title{color:#ffffff;}.header-homepage .header-description-row{padding-top:15%;padding-bottom:25%;}.inner-header-description{padding-top:10%;padding-bottom:10%;}.materialis-inner-page .navigation-bar.bordered{border-bottom-color:#ffffff;border-bottom-style:solid;}.materialis-inner-page .navigation-bar.bordered:not(.fixto-fixed){border-bottom-width:2px;}@media screen and (max-width:767px){.header-homepage .header-description-row{padding-top:10%;padding-bottom:10%;}}@media only screen and (min-width: 768px){.header-content .align-holder{width:85%!important;}.inner-header-description{text-align:center!important;}}</style>
+<script type="text/javascript" src="/wp-includes/js/jquery/jquery.min.js?ver=3.6.0" id="jquery-core-js"></script>
+<script type="text/javascript" id="jquery-core-js-after">
+MaterialisTheme = {"blog_posts_as_masonry_grid":false}
+</script>
+<script type="text/javascript" src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
+<script type="text/javascript" id="jquery-js-after">
+    
+        (function ($) {
+            function setHeaderTopSpacing() {
+                $('.header-wrapper .header,.header-wrapper .header-homepage').css({
+                    'padding-top': $('.header-top').height()
+                });
+
+             setTimeout(function() {
+                  var headerTop = document.querySelector('.header-top');
+                  var headers = document.querySelectorAll('.header-wrapper .header,.header-wrapper .header-homepage');
+
+                  for (var i = 0; i < headers.length; i++) {
+                      var item = headers[i];
+                      item.style.paddingTop = headerTop.getBoundingClientRect().height + "px";
+                  }
+
+                    var languageSwitcher = document.querySelector('.materialis-language-switcher');
+
+                    if(languageSwitcher){
+                        languageSwitcher.style.top = "calc( " +  headerTop.getBoundingClientRect().height + "px + 1rem)" ;
+                    }
+                    
+                }, 100);
+
+            }
+
+            jQuery(window).on('resize orientationchange', setHeaderTopSpacing);
+            window.materialisSetHeaderTopSpacing = setHeaderTopSpacing
+
+        })(jQuery);
+    
+    
+</script>
+
+<script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-40272154-32" id="google_gtagjs-js" async></script>
+<script type="text/javascript" id="google_gtagjs-js-after">
+window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}
+gtag('set', 'linker', {"domains":["audiolibri.org"]} );
+gtag("js", new Date());
+gtag("set", "developer_id.dZTNiMT", true);
+gtag("config", "UA-40272154-32", {"anonymize_ip":true});
+</script>
+
+<link rel="https://api.w.org/" href="/wp-json/">
+<link rel="alternate" type="application/json" href="/wp-json/wp/v2/pages/3391">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd">
+<link rel="canonical" href="/estratti/">
+<link rel="shortlink" href="/?p=3391">
+<link rel="alternate" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2Festratti%2F">
+<link rel="alternate" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2Festratti%2F&#038;format=xml">
+<meta name="generator" content="Site Kit by Google 1.49.0"> <script type="text/javascript" data-name="async-styles">
+        (function () {
+            var links = document.querySelectorAll('link[data-href]');
+            for (var i = 0; i < links.length; i++) {
+                var item = links[i];
+                item.href = item.getAttribute('data-href')
+            }
+        })();
+    </script>
+<meta name="onesignal" content="wordpress-plugin">
+<script>
+
+      window.OneSignal = window.OneSignal || [];
+
+      OneSignal.push( function() {
+        OneSignal.SERVICE_WORKER_UPDATER_PATH = "OneSignalSDKUpdaterWorker.js.php";
+                      OneSignal.SERVICE_WORKER_PATH = "OneSignalSDKWorker.js.php";
+                      OneSignal.SERVICE_WORKER_PARAM = { scope: "/" };
+        OneSignal.setDefaultNotificationUrl("");
+        var oneSignal_options = {};
+        window._oneSignalInitOptions = oneSignal_options;
+
+        oneSignal_options['wordpress'] = true;
+oneSignal_options['appId'] = '7efbd26e-459f-4b2e-8ceb-8d35cabbf5c5';
+oneSignal_options['allowLocalhostAsSecureOrigin'] = true;
+oneSignal_options['welcomeNotification'] = { };
+oneSignal_options['welcomeNotification']['disable'] = true;
+oneSignal_options['path'] = "/wp-content/plugins/onesignal-free-web-push-notifications/sdk_files/";
+oneSignal_options['safari_web_id'] = "web.onesignal.auto.110555e6-7aae-4d44-9896-bfe7a2b1c987";
+oneSignal_options['persistNotification'] = true;
+oneSignal_options['promptOptions'] = { };
+                OneSignal.init(window._oneSignalInitOptions);
+                OneSignal.showSlidedownPrompt();      });
+
+      function documentInitOneSignal() {
+        var oneSignal_elements = document.getElementsByClassName("OneSignal-prompt");
+
+        var oneSignalLinkClickHandler = function(event) { OneSignal.push(['registerForPushNotifications']); event.preventDefault(); };        for(var i = 0; i < oneSignal_elements.length; i++)
+          oneSignal_elements[i].addEventListener('click', oneSignalLinkClickHandler, false);
+      }
+
+      if (document.readyState === 'complete') {
+           documentInitOneSignal();
+      }
+      else {
+           window.addEventListener("load", function(event){
+               documentInitOneSignal();
+          });
+      }
+    </script>
+<meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress.">
+<link rel="icon" href="/wp-content/uploads/2017/06/cropped-audiobooks_icon_alfa-32x32.png" sizes="32x32">
+<link rel="icon" href="/wp-content/uploads/2017/06/cropped-audiobooks_icon_alfa-192x192.png" sizes="192x192">
+<meta name="msapplication-TileImage" content="/wp-content/uploads/2017/06/cropped-audiobooks_icon_alfa-270x270.png">
+<meta name="pwaforwp" content="wordpress-plugin">
+<meta name="theme-color" content="#D5E0EB">
+<meta name="apple-mobile-web-app-title" content="Audiolibri.org">
+<meta name="application-name" content="Audiolibri.org">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="YES">
+<link rel="apple-touch-startup-image" href="/wp-content/plugins/pwa-for-wp/images/logo.png">
+<link rel="apple-touch-icon" sizes="192x192" href="/wp-content/plugins/pwa-for-wp/images/logo.png">
+<link rel="apple-touch-icon" sizes="512x512" href="/wp-content/plugins/pwa-for-wp/images/logo-512x512.png">
+<style type="text/css" id="wp-custom-css">.navigation-bar {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.emoji {
+    font-size: x-large;
+}
+
+a.link {
+    font-size: large;
+}
+
+.h3, h3 {
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+}
+
+.header-homepage .header-description-row {
+    padding-top: 5%;
+}</style>
+<noscript><style>.wpb_animate_when_almost_visible { opacity: 1; }</style></noscript> <style id="page-content-custom-styles"></style>
+<style data-name="background-content-colors">.materialis-front-page .content.blog-page,
+        .materialis-inner-page .page-content,
+        .materialis-inner-page .content,
+        .materialis-front-page.materialis-content-padding .page-content {
+            background-color: #f5fafd;
+        }</style>
+</head>
+<body class="page-template-default page page-id-3391 overlap-first-section materialis-inner-page wpb-js-composer js-comp-ver-6.6.0 vc_responsive">
+<style>.screen-reader-text[href="#page-content"]:focus {
+            background-color: #f1f1f1;
+            border-radius: 3px;
+            box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+            clip: auto !important;
+            clip-path: none;
+            color: #21759b;
+           
+        }</style>
+<a class="skip-link screen-reader-text" href="#page-content">Skip to content</a>
+<div id="page-top" class="header-top">
+<div class="navigation-bar  boxed bordered" data-sticky="0" data-sticky-mobile="1" data-sticky-to="top">
+<div class="gridContainer navigation-wrapper">
+<div class="row basis-auto">
+<div class="logo_col col-xs col-sm-fit">
+<a class="text-logo" data-type="group" data-dynamic-mod="true" href="/">Audiolibri.org</a> </div>
+<div class="main_menu_col col-xs">
+<div id="mainmenu_container" class="row"><ul id="main_menu" class="simple-text-buttons main-menu dropdown-menu">
+<li id="menu-item-7378" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7378">
+<a href="/audiolibri-in-italiano/">🇮🇹</a>
+<ul class="sub-menu">
+<li id="menu-item-18293" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18293"><a href="/audiolibri-in-italiano/poesia/">Poesia</a></li>
+<li id="menu-item-18289" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18289"><a href="/audiolibri-in-italiano/racconti/">Racconti</a></li>
+<li id="menu-item-18295" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18295"><a href="/audiolibri-in-italiano/romanzi/">Romanzi</a></li>
+<li id="menu-item-18290" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18290"><a href="/audiolibri-in-italiano/saggi/">Saggi</a></li>
+<li id="menu-item-18294" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18294"><a href="/audiolibri-in-italiano/religioni/">Religioni</a></li>
+<li id="menu-item-18292" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18292"><a href="/audiolibri-in-italiano/ragazzi/">Ragazzi</a></li>
+<li id="menu-item-18291" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18291"><a href="/audiolibri-in-italiano/estratti/">Estratti</a></li>
+</ul>
+</li>
+<li id="menu-item-7379" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7379">
+<a href="/audiolibri-in-inglese/">🇬🇧</a>
+<ul class="sub-menu">
+<li id="menu-item-18296" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18296"><a href="/audiolibri-in-inglese/kids/">Kids</a></li>
+<li id="menu-item-18297" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18297"><a href="/audiolibri-in-inglese/novels/">Novels</a></li>
+<li id="menu-item-18298" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18298"><a href="/audiolibri-in-inglese/poetry/">Poetry</a></li>
+</ul>
+</li>
+<li id="menu-item-7380" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7380">
+<a href="/audiolibri-in-spagnolo/">🇪🇸</a>
+<ul class="sub-menu">
+<li id="menu-item-18299" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18299"><a href="/audiolibri-in-spagnolo/cuentos/">Cuentos</a></li>
+<li id="menu-item-18300" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18300"><a href="/audiolibri-in-spagnolo/infantiles/">Infantiles</a></li>
+<li id="menu-item-18301" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18301"><a href="/audiolibri-in-spagnolo/novelas/">Novelas</a></li>
+<li id="menu-item-18302" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18302"><a href="/audiolibri-in-spagnolo/poesia-audiolibri-in-spagnolo/">Poesia</a></li>
+</ul>
+</li>
+<li id="menu-item-8728" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8728"><a href="/category/audiolibri-in-francese/">🇫🇷</a></li>
+<li id="menu-item-8729" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8729"><a href="/category/audiolibri-in-tedesco/">🇩🇪</a></li>
+<li id="menu-item-8730" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8730"><a href="/category/audiolibri-in-portoghese/">🇵🇹</a></li>
+<li id="menu-item-8731" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8731"><a href="/category/audiolibri-in-russo/">🇷🇺</a></li>
+<li id="menu-item-8732" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8732"><a href="/category/audiolibri-in-polacco/">🇵🇱</a></li>
+<li id="menu-item-8733" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8733"><a href="/category/audiolibri-in-olandese/">🇳🇱</a></li>
+<li id="menu-item-8736" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8736"><a href="/category/audiolibri-in-arabo/">🇸🇦</a></li>
+</ul></div> <a href="#" data-component="offcanvas" data-target="#offcanvas-wrapper" data-direction="right" data-width="300px" data-push="false">
+<div class="bubble"></div>
+<i class="mdi mdi-view-sequential"></i>
+</a>
+<div id="offcanvas-wrapper" class="hide force-hide offcanvas-right">
+<div class="offcanvas-top">
+<div class="logo-holder">
+<a class="text-logo" data-type="group" data-dynamic-mod="true" href="/">Audiolibri.org</a> </div>
+</div>
+<div id="offcanvas-menu" class="menu-top-bar-flags-container"><ul id="offcanvas_menu" class="offcanvas_menu">
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7378">
+<a href="/audiolibri-in-italiano/">🇮🇹</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18293"><a href="/audiolibri-in-italiano/poesia/">Poesia</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18289"><a href="/audiolibri-in-italiano/racconti/">Racconti</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18295"><a href="/audiolibri-in-italiano/romanzi/">Romanzi</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18290"><a href="/audiolibri-in-italiano/saggi/">Saggi</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18294"><a href="/audiolibri-in-italiano/religioni/">Religioni</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18292"><a href="/audiolibri-in-italiano/ragazzi/">Ragazzi</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18291"><a href="/audiolibri-in-italiano/estratti/">Estratti</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7379">
+<a href="/audiolibri-in-inglese/">🇬🇧</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18296"><a href="/audiolibri-in-inglese/kids/">Kids</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18297"><a href="/audiolibri-in-inglese/novels/">Novels</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18298"><a href="/audiolibri-in-inglese/poetry/">Poetry</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7380">
+<a href="/audiolibri-in-spagnolo/">🇪🇸</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18299"><a href="/audiolibri-in-spagnolo/cuentos/">Cuentos</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18300"><a href="/audiolibri-in-spagnolo/infantiles/">Infantiles</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18301"><a href="/audiolibri-in-spagnolo/novelas/">Novelas</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18302"><a href="/audiolibri-in-spagnolo/poesia-audiolibri-in-spagnolo/">Poesia</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8728"><a href="/category/audiolibri-in-francese/">🇫🇷</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8729"><a href="/category/audiolibri-in-tedesco/">🇩🇪</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8730"><a href="/category/audiolibri-in-portoghese/">🇵🇹</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8731"><a href="/category/audiolibri-in-russo/">🇷🇺</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8732"><a href="/category/audiolibri-in-polacco/">🇵🇱</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8733"><a href="/category/audiolibri-in-olandese/">🇳🇱</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8736"><a href="/category/audiolibri-in-arabo/">🇸🇦</a></li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="page" class="site">
+<div class="header-wrapper">
+<div class="header  color-overlay  custom-mobile-image" style="; background-image:url(&quot;/wp-content/themes/materialis/assets/images/curve-1209392.jpg&quot;); background-color:#6a73da">
+<div class="inner-header-description gridContainer">
+<div class="row header-description-row">
+<div class="col-xs col-xs-12">
+<h1 class="hero-title">
+Estratti </h1>
+<p class="header-subtitle">Audiolibri in Italiano e in lingua originale.</p>
+</div>
+</div>
+</div>
+<script>
+		if (window.materialisSetHeaderTopSpacing) {
+			window.materialisSetHeaderTopSpacing();
+		}
+    </script>
+</div>
+</div>
+<div class="page-content" id="page-content">
+<div class="gridContainer content">
+<div id="post-3391" class="post-3391 page type-page status-publish hentry">
+<div>
+<div class="vc_row wpb_row vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
+<div class="vc_grid-container-wrapper vc_clearfix">
+<div class="vc_grid-container vc_clearfix wpb_content_element vc_basic_grid" data-initial-loading-animation="fadeIn" data-vc-grid-settings="{&quot;page_id&quot;:3391,&quot;style&quot;:&quot;lazy&quot;,&quot;action&quot;:&quot;vc_get_vc_grid_data&quot;,&quot;shortcode_id&quot;:&quot;1497786592505-6acebbc6-6949-10&quot;,&quot;items_per_page&quot;:&quot;18&quot;,&quot;tag&quot;:&quot;vc_basic_grid&quot;}" data-vc-request="/wp-admin/admin-ajax.php" data-vc-post-id="3391" data-vc-public-nonce="765c0fdb61">
+<div class="vc_grid vc_row vc_grid-gutter-30px vc_pageable-wrapper vc_hook_hover" data-vc-pageable-content="true">
+<div class="vc_pageable-slide-wrapper vc_clearfix" data-vc-grid-content="true">
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/%f0%9f%8e%a7-audiolibro-4-capitolo-del-romanzo-twilight-%f0%9f%8e%a7/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="?  Audiolibro 4 capitolo del romanzo Twilight ?"><img width="150" height="150" src="/wp-content/uploads/2019/04/Audiolibro-4-capitolo-del-romanzo-Twilight--150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/%f0%9f%8e%a7-audiolibro-4-capitolo-del-romanzo-twilight-%f0%9f%8e%a7/" class="vc_gitem-link" title="?  Audiolibro 4 capitolo del romanzo Twilight ?">? Audiolibro 4 capitolo del romanzo Twilight ?</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/%f0%9f%8e%a7-audiolibro-10-capitolo-del-romanzo-twilight-%f0%9f%8e%a7/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="? Audiolibro 10 capitolo del romanzo Twilight ?"><img width="150" height="150" src="/wp-content/uploads/2019/04/Audiolibro-10-capitolo-del-romanzo-Twilight--150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/%f0%9f%8e%a7-audiolibro-10-capitolo-del-romanzo-twilight-%f0%9f%8e%a7/" class="vc_gitem-link" title="? Audiolibro 10 capitolo del romanzo Twilight ?">? Audiolibro 10 capitolo del romanzo Twilight ?</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/%f0%9f%8e%a7-audiolibro-2-capitolo-del-romanzo-twilight-%f0%9f%8e%a7/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="? Audiolibro 2 capitolo del romanzo Twilight ?"><img width="150" height="150" src="/wp-content/uploads/2019/04/Audiolibro-2-capitolo-del-romanzo-Twilight--150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/%f0%9f%8e%a7-audiolibro-2-capitolo-del-romanzo-twilight-%f0%9f%8e%a7/" class="vc_gitem-link" title="? Audiolibro 2 capitolo del romanzo Twilight ?">? Audiolibro 2 capitolo del romanzo Twilight ?</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/%f0%9f%8e%a7-audiolibro-3-capitolo-del-romanzo-twilight-%f0%9f%8e%a7/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="? Audiolibro 3 capitolo del romanzo Twilight ?"><img width="150" height="150" src="/wp-content/uploads/2019/04/Audiolibro-3-capitolo-del-romanzo-Twilight--150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/%f0%9f%8e%a7-audiolibro-3-capitolo-del-romanzo-twilight-%f0%9f%8e%a7/" class="vc_gitem-link" title="? Audiolibro 3 capitolo del romanzo Twilight ?">? Audiolibro 3 capitolo del romanzo Twilight ?</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/%f0%9f%8e%a7-audiolibro-5-capitolo-del-romanzo-twilight-%f0%9f%8e%a7/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="? Audiolibro 5 capitolo del romanzo Twilight ?"><img width="150" height="150" src="/wp-content/uploads/2019/04/Audiolibro-5-capitolo-del-romanzo-Twilight--150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/%f0%9f%8e%a7-audiolibro-5-capitolo-del-romanzo-twilight-%f0%9f%8e%a7/" class="vc_gitem-link" title="? Audiolibro 5 capitolo del romanzo Twilight ?">? Audiolibro 5 capitolo del romanzo Twilight ?</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/%f0%9f%8e%a7-audiolibro-6-capitolo-del-romanzo-twilight-%f0%9f%8e%a7/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="? Audiolibro 6 capitolo del romanzo Twilight ?"><img width="150" height="150" src="/wp-content/uploads/2019/04/Audiolibro-6-capitolo-del-romanzo-Twilight--150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/%f0%9f%8e%a7-audiolibro-6-capitolo-del-romanzo-twilight-%f0%9f%8e%a7/" class="vc_gitem-link" title="? Audiolibro 6 capitolo del romanzo Twilight ?">? Audiolibro 6 capitolo del romanzo Twilight ?</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/%f0%9f%8e%a7-audiolibro-7-capitolo-del-romanzo-twilight-%f0%9f%8e%a7/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="? Audiolibro 7 capitolo del romanzo Twilight ?"><img width="150" height="150" src="/wp-content/uploads/2019/04/Audiolibro-7-capitolo-del-romanzo-Twilight--150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/%f0%9f%8e%a7-audiolibro-7-capitolo-del-romanzo-twilight-%f0%9f%8e%a7/" class="vc_gitem-link" title="? Audiolibro 7 capitolo del romanzo Twilight ?">? Audiolibro 7 capitolo del romanzo Twilight ?</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/%f0%9f%8e%a7-audiolibro-8-capitolo-del-romanzo-twilight-%f0%9f%8e%a7/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="? Audiolibro 8 capitolo del romanzo Twilight ?"><img width="150" height="150" src="/wp-content/uploads/2019/04/Audiolibro-8-capitolo-del-romanzo-Twilight--150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/%f0%9f%8e%a7-audiolibro-8-capitolo-del-romanzo-twilight-%f0%9f%8e%a7/" class="vc_gitem-link" title="? Audiolibro 8 capitolo del romanzo Twilight ?">? Audiolibro 8 capitolo del romanzo Twilight ?</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/%f0%9f%8e%a7-audiolibro-9-capitolo-del-romanzo-twilight-%f0%9f%8e%a7/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="? Audiolibro 9 capitolo del romanzo Twilight ?"><img width="150" height="150" src="/wp-content/uploads/2019/04/Audiolibro-9-capitolo-del-romanzo-Twilight--150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/%f0%9f%8e%a7-audiolibro-9-capitolo-del-romanzo-twilight-%f0%9f%8e%a7/" class="vc_gitem-link" title="? Audiolibro 9 capitolo del romanzo Twilight ?">? Audiolibro 9 capitolo del romanzo Twilight ?</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/io-e-lombra-da-il-fu-mattia-pascal-di-l-pirandello-cap-15/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="&#8220;Io e l&#8217;ombra&#8221; da &#8220;il fu Mattia Pascal&#8221; di L. Pirandello cap. 15"><img width="150" height="150" src="/wp-content/uploads/2017/09/Io-e-lombra-da-il-fu-Mattia-Pascal-di-L.-Pirandello-cap.-15-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/io-e-lombra-da-il-fu-mattia-pascal-di-l-pirandello-cap-15/" class="vc_gitem-link" title="&#8220;Io e l&#8217;ombra&#8221; da &#8220;il fu Mattia Pascal&#8221; di L. Pirandello cap. 15">&#8220;Io e l&#8217;ombra&#8221; da &#8220;il fu Mattia Pascal&#8221; di L. Pirandello cap. 15</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/menu-da-la-fame-di-caparros/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="&#8220;Menu&#8221; da La fame di Caparros"><img width="150" height="150" src="/wp-content/uploads/2016/01/Menu-da-La-fame-di-Caparros-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/menu-da-la-fame-di-caparros/" class="vc_gitem-link" title="&#8220;Menu&#8221; da La fame di Caparros">&#8220;Menu&#8221; da La fame di Caparros</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/trovarsi-davanti-a-un-pazzo-dall-enrico-iv-di-l-pirandello/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="&#8220;trovarsi davanti a un pazzo&#8221; dall&#8217; ENRICO IV di L. Pirandello"><img width="150" height="150" src="/wp-content/uploads/2016/02/trovarsi-davanti-a-un-pazzo-dall-ENRICO-IV-di-L.-Pirandello-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/trovarsi-davanti-a-un-pazzo-dall-enrico-iv-di-l-pirandello/" class="vc_gitem-link" title="&#8220;trovarsi davanti a un pazzo&#8221; dall&#8217; ENRICO IV di L. Pirandello">&#8220;trovarsi davanti a un pazzo&#8221; dall&#8217; ENRICO IV di L. Pirandello</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/monologo-della-lucertola-da-non-si-sa-come-di-l-pirandello/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="“Monologo della Lucertola” da “Non si sa come” di L. Pirandello"><img width="150" height="150" src="/wp-content/uploads/2016/02/Monologo-della-Lucertola-da-Non-si-sa-come-di-L.-Pirandello-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/monologo-della-lucertola-da-non-si-sa-come-di-l-pirandello/" class="vc_gitem-link" title="“Monologo della Lucertola” da “Non si sa come” di L. Pirandello">“Monologo della Lucertola” da “Non si sa come” di L. Pirandello</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/audiolibro-il-nome-della-rosa-puntata-17/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="(audiolibro)  IL NOME DELLA ROSA &#8211; puntata 17"><img width="150" height="150" src="/wp-content/uploads/2017/12/audiolibro-IL-NOME-DELLA-ROSA-puntata-17-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/audiolibro-il-nome-della-rosa-puntata-17/" class="vc_gitem-link" title="(audiolibro)  IL NOME DELLA ROSA &#8211; puntata 17">(audiolibro) IL NOME DELLA ROSA &#8211; puntata 17</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/21-nov-2011-media-2/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="21 nov 2011 Media 2"><img width="150" height="150" src="/wp-content/uploads/2017/11/21-nov-2011-Media-2-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/21-nov-2011-media-2/" class="vc_gitem-link" title="21 nov 2011 Media 2">21 nov 2011 Media 2</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/armonia-dell-amore-di-vincenza-capuano/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="ARMONIA DELL&#8217; AMORE &#8211; di Vincenza Capuano"><img width="150" height="150" src="/wp-content/uploads/2019/12/ARMONIA-DELL-AMORE-di-Vincenza-Capuano-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/armonia-dell-amore-di-vincenza-capuano/" class="vc_gitem-link" title="ARMONIA DELL&#8217; AMORE &#8211; di Vincenza Capuano">ARMONIA DELL&#8217; AMORE &#8211; di Vincenza Capuano</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/buzzati-dino-il-deserto-dei-tartari/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="BUZZATI (Dino), &#8220;Il deserto dei Tartari&#8221;"><img width="150" height="150" src="/wp-content/uploads/2019/02/BUZZATI-Dino-Il-deserto-dei-Tartari-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/buzzati-dino-il-deserto-dei-tartari/" class="vc_gitem-link" title="BUZZATI (Dino), &#8220;Il deserto dei Tartari&#8221;">BUZZATI (Dino), &#8220;Il deserto dei Tartari&#8221;</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/da-tre-stanze-a-manhattan-di-g-simenon-incipit/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="da  &#8220;tre stanze a Manhattan di G. Simenon &#8211; incipit"><img width="150" height="150" src="/wp-content/uploads/2015/05/da-tre-stanze-a-Manhattan-di-G.-Simenon-incipit-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/da-tre-stanze-a-manhattan-di-g-simenon-incipit/" class="vc_gitem-link" title="da  &#8220;tre stanze a Manhattan di G. Simenon &#8211; incipit">da &#8220;tre stanze a Manhattan di G. Simenon &#8211; incipit</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/da-invece-della-catastrofe-saggio-di-g-chiesa-2013-alcuni-passi/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="da &#8220;INVECE DELLA CATASTROFE&#8221;  saggio di G. Chiesa 2013 &#8211; alcuni passi"><img width="150" height="150" src="/wp-content/uploads/2020/03/da-INVECE-DELLA-CATASTROFE-saggio-di-G.-Chiesa-2013-alcuni-passi-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/da-invece-della-catastrofe-saggio-di-g-chiesa-2013-alcuni-passi/" class="vc_gitem-link" title="da &#8220;INVECE DELLA CATASTROFE&#8221;  saggio di G. Chiesa 2013 &#8211; alcuni passi">da &#8220;INVECE DELLA CATASTROFE&#8221; saggio di G. Chiesa 2013 &#8211; alcuni passi</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/da-la-vita-agra-di-l-bianciardi/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="da &#8220;la vita agra&#8221; di L. Bianciardi"><img width="150" height="150" src="/wp-content/uploads/2019/02/da-la-vita-agra-di-L.-Bianciardi-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/da-la-vita-agra-di-l-bianciardi/" class="vc_gitem-link" title="da &#8220;la vita agra&#8221; di L. Bianciardi">da &#8220;la vita agra&#8221; di L. Bianciardi</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/da-le-ultime-lune-di-f-bordon-lungo-monologo-finale/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="da &#8220;LE ULTIME LUNE&#8221; di F. Bordon &#8211; lungo monologo finale"><img width="150" height="150" src="/wp-content/uploads/2020/03/da-LE-ULTIME-LUNE-di-F.-Bordon-lungo-monologo-finale-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/da-le-ultime-lune-di-f-bordon-lungo-monologo-finale/" class="vc_gitem-link" title="da &#8220;LE ULTIME LUNE&#8221; di F. Bordon &#8211; lungo monologo finale">da &#8220;LE ULTIME LUNE&#8221; di F. Bordon &#8211; lungo monologo finale</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/da-leggiadra-stella-quattro-lettere-d-amore-di-j-keats-a-fanny-brawne/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="da &#8220;LEGGIADRA STELLA&#8221; quattro lettere d&#8217; amore di J. Keats a Fanny Brawne"><img width="150" height="150" src="/wp-content/uploads/2020/03/da-LEGGIADRA-STELLA-quattro-lettere-d-amore-di-J.-Keats-a-Fanny-Brawne-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/da-leggiadra-stella-quattro-lettere-d-amore-di-j-keats-a-fanny-brawne/" class="vc_gitem-link" title="da &#8220;LEGGIADRA STELLA&#8221; quattro lettere d&#8217; amore di J. Keats a Fanny Brawne">da &#8220;LEGGIADRA STELLA&#8221; quattro lettere d&#8217; amore di J. Keats a Fanny Brawne</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/da-non-si-sa-come-di-l-pirandello-monologo/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="da &#8220;Non si sa come&#8221; di L. Pirandello &#8211;  monologo"><img width="150" height="150" src="/wp-content/uploads/2016/11/da-Non-si-sa-come-di-L.-Pirandello-monologo-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/da-non-si-sa-come-di-l-pirandello-monologo/" class="vc_gitem-link" title="da &#8220;Non si sa come&#8221; di L. Pirandello &#8211;  monologo">da &#8220;Non si sa come&#8221; di L. Pirandello &#8211; monologo</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/da-il-deserto-dei-tartari-di-d-buzzati-ultime-ore-di-drogo/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="da Il DESERTO DEI TARTARI di D. Buzzati &#8211; ULTIME ORE DI DROGO"><img width="150" height="150" src="/wp-content/uploads/2019/10/da-Il-DESERTO-DEI-TARTARI-di-D.-Buzzati-ULTIME-ORE-DI-DROGO-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/da-il-deserto-dei-tartari-di-d-buzzati-ultime-ore-di-drogo/" class="vc_gitem-link" title="da Il DESERTO DEI TARTARI di D. Buzzati &#8211; ULTIME ORE DI DROGO">da Il DESERTO DEI TARTARI di D. Buzzati &#8211; ULTIME ORE DI DROGO</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/da-la-montagna-incantata-di-t-mann-naphta-e-settembrini/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="da LA MONTAGNA INCANTATA di T. Mann  &#8211; Naphta e Settembrini"><img width="150" height="150" src="/wp-content/uploads/2019/08/da-LA-MONTAGNA-INCANTATA-di-T.-Mann-Naphta-e-Settembrini-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/da-la-montagna-incantata-di-t-mann-naphta-e-settembrini/" class="vc_gitem-link" title="da LA MONTAGNA INCANTATA di T. Mann  &#8211; Naphta e Settembrini">da LA MONTAGNA INCANTATA di T. Mann &#8211; Naphta e Settembrini</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/dai-promessi-sposi-manzoni-ci-aiuta-sempre-a-capire-anche-il-presente/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="dai PROMESSI SPOSI &#8211; Manzoni ci aiuta sempre a capire anche il presente"><img width="150" height="150" src="/wp-content/uploads/2020/02/dai-PROMESSI-SPOSI-Manzoni-ci-aiuta-sempre-a-capire-anche-il-presente-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/dai-promessi-sposi-manzoni-ci-aiuta-sempre-a-capire-anche-il-presente/" class="vc_gitem-link" title="dai PROMESSI SPOSI &#8211; Manzoni ci aiuta sempre a capire anche il presente">dai PROMESSI SPOSI &#8211; Manzoni ci aiuta sempre a capire anche il presente</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/e-m-remarque-da-la-via-del-ritorno-questo-e-dunque-lamore/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="E.  M..  Remarque da &#8220;la via del ritorno&#8221; questo è dunque l&#8217;amore"><img width="150" height="150" src="/wp-content/uploads/2019/02/E.-M..-Remarque-da-la-via-del-ritorno-questo-dunque-lamore-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/e-m-remarque-da-la-via-del-ritorno-questo-e-dunque-lamore/" class="vc_gitem-link" title="E.  M..  Remarque da &#8220;la via del ritorno&#8221; questo è dunque l&#8217;amore">E. M.. Remarque da &#8220;la via del ritorno&#8221; questo è dunque l&#8217;amore</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/e-zola-il-caso-dreyfus-scheurer-kestner/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="E.  Zola &#8211; IL CASO DREYFUS &#8211;  Scheurer Kestner"><img width="150" height="150" src="/wp-content/uploads/2020/02/E.-Zola-IL-CASO-DREYFUS-Scheurer-Kestner-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/e-zola-il-caso-dreyfus-scheurer-kestner/" class="vc_gitem-link" title="E.  Zola &#8211; IL CASO DREYFUS &#8211;  Scheurer Kestner">E. Zola &#8211; IL CASO DREYFUS &#8211; Scheurer Kestner</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/friedrich-nietzsche-genealogia-della-morale-prefazione-lettura-di-roberto-caracci/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="FRIEDRICH NIETZSCHE-GENEALOGIA DELLA MORALE-PREFAZIONE-LETTURA DI ROBERTO CARACCI"><img width="150" height="150" src="/wp-content/uploads/2017/11/FRIEDRICH-NIETZSCHE-GENEALOGIA-DELLA-MORALE-PREFAZIONE-LETTURA-DI-ROBERTO-CARACCI-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/friedrich-nietzsche-genealogia-della-morale-prefazione-lettura-di-roberto-caracci/" class="vc_gitem-link" title="FRIEDRICH NIETZSCHE-GENEALOGIA DELLA MORALE-PREFAZIONE-LETTURA DI ROBERTO CARACCI">FRIEDRICH NIETZSCHE-GENEALOGIA DELLA MORALE-PREFAZIONE-LETTURA DI ROBERTO CARACCI</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/hegel-fenomenologia-dello-spirito-la-certezza-sensibile-lettura-di-roberto-caracci/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="HEGEL, FENOMENOLOGIA DELLO SPIRITO, La certezza sensibile- Lettura di Roberto Caracci"><img width="150" height="150" src="/wp-content/uploads/2017/11/HEGEL-FENOMENOLOGIA-DELLO-SPIRITO-La-certezza-sensibile-Lettura-di-Roberto-Caracci-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/hegel-fenomenologia-dello-spirito-la-certezza-sensibile-lettura-di-roberto-caracci/" class="vc_gitem-link" title="HEGEL, FENOMENOLOGIA DELLO SPIRITO, La certezza sensibile- Lettura di Roberto Caracci">HEGEL, FENOMENOLOGIA DELLO SPIRITO, La certezza sensibile- Lettura di Roberto Caracci</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/il-caso-eatherly-prefazione-di-robert-jungk-al-libro-gunter-anders/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="il caso Eatherly prefazione di Robert Jungk al libro Gunter Anders"><img width="150" height="150" src="/wp-content/uploads/2019/02/il-caso-Eatherly-prefazione-di-Robert-Jungk-al-libro-Gunter-Anders-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/il-caso-eatherly-prefazione-di-robert-jungk-al-libro-gunter-anders/" class="vc_gitem-link" title="il caso Eatherly prefazione di Robert Jungk al libro Gunter Anders">il caso Eatherly prefazione di Robert Jungk al libro Gunter Anders</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/il-mestiere-di-vivere-di-c-pavese-estratti/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="IL MESTIERE DI VIVERE  di C. Pavese &#8211; ESTRATTI"><img width="150" height="150" src="/wp-content/uploads/2019/12/IL-MESTIERE-DI-VIVERE-di-C.-Pavese-ESTRATTI-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/il-mestiere-di-vivere-di-c-pavese-estratti/" class="vc_gitem-link" title="IL MESTIERE DI VIVERE  di C. Pavese &#8211; ESTRATTI">IL MESTIERE DI VIVERE di C. Pavese &#8211; ESTRATTI</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/il-nome-della-rosa-2/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="il nome della rosa 2"><img width="150" height="150" src="/wp-content/uploads/2017/12/il-nome-della-rosa-2-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/il-nome-della-rosa-2/" class="vc_gitem-link" title="il nome della rosa 2">il nome della rosa 2</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/il-nome-della-rosa-audiolibro-parte-3/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="il nome della rosa audiolibro parte 3"><img width="150" height="150" src="/wp-content/uploads/2017/12/il-nome-della-rosa-audiolibro-parte-3-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/il-nome-della-rosa-audiolibro-parte-3/" class="vc_gitem-link" title="il nome della rosa audiolibro parte 3">il nome della rosa audiolibro parte 3</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/il-nome-della-rosa-di-umberto-eco-35-puntate-80825-fedcalmus/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="Il nome della rosa di Umberto Eco (35 puntate &#8211; 8:08:25) &#8211; fedcalmus"><img width="150" height="150" src="/wp-content/uploads/2019/04/Il-nome-della-rosa-di-Umberto-Eco-35-puntate-80825-fedcalmus-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/il-nome-della-rosa-di-umberto-eco-35-puntate-80825-fedcalmus/" class="vc_gitem-link" title="Il nome della rosa di Umberto Eco (35 puntate &#8211; 8:08:25) &#8211; fedcalmus">Il nome della rosa di Umberto Eco (35 puntate &#8211; 8:08:25) &#8211; fedcalmus</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/il-nome-della-rosa-part-1-libro-audiolibro/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="Il nome della rosa part 1 libro, audiolibro"><img width="150" height="150" src="/wp-content/uploads/2017/12/Il-nome-della-rosa-part-1-libro-audiolibro-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/il-nome-della-rosa-part-1-libro-audiolibro/" class="vc_gitem-link" title="Il nome della rosa part 1 libro, audiolibro">Il nome della rosa part 1 libro, audiolibro</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/il-nome-della-rosa-umberto-eco-parte-11-audiolibro/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="Il nome della rosa Umberto Eco parte 11 audiolibro"><img width="150" height="150" src="/wp-content/uploads/2017/12/Il-nome-della-rosa-Umberto-Eco-parte-11-audiolibro-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/il-nome-della-rosa-umberto-eco-parte-11-audiolibro/" class="vc_gitem-link" title="Il nome della rosa Umberto Eco parte 11 audiolibro">Il nome della rosa Umberto Eco parte 11 audiolibro</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/il-nome-della-rosa-umberto-eco-parte-12-audiolibro/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="Il nome della rosa Umberto Eco parte 12 audiolibro"><img width="150" height="150" src="/wp-content/uploads/2017/12/Il-nome-della-rosa-Umberto-Eco-parte-12-audiolibro-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/il-nome-della-rosa-umberto-eco-parte-12-audiolibro/" class="vc_gitem-link" title="Il nome della rosa Umberto Eco parte 12 audiolibro">Il nome della rosa Umberto Eco parte 12 audiolibro</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/il-nome-della-rosa-umberto-eco-parte-13-audiolibro-libro-wmv/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="Il nome della rosa Umberto Eco parte 13  audiolibro libro .wmv"><img width="150" height="150" src="/wp-content/uploads/2017/12/Il-nome-della-rosa-Umberto-Eco-parte-13-audiolibro-libro-.wmv-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/il-nome-della-rosa-umberto-eco-parte-13-audiolibro-libro-wmv/" class="vc_gitem-link" title="Il nome della rosa Umberto Eco parte 13  audiolibro libro .wmv">Il nome della rosa Umberto Eco parte 13 audiolibro libro .wmv</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/il-nome-della-rosa-umberto-eco-parte-15-audiolibro/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="Il nome della rosa Umberto Eco parte 15 audiolibro"><img width="150" height="150" src="/wp-content/uploads/2017/12/Il-nome-della-rosa-Umberto-Eco-parte-15-audiolibro-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/il-nome-della-rosa-umberto-eco-parte-15-audiolibro/" class="vc_gitem-link" title="Il nome della rosa Umberto Eco parte 15 audiolibro">Il nome della rosa Umberto Eco parte 15 audiolibro</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/il-nome-della-rosa-umberto-eco-parte-16-audiolibro/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="Il nome della rosa Umberto Eco parte 16 audiolibro"><img width="150" height="150" src="/wp-content/uploads/2017/12/Il-nome-della-rosa-Umberto-Eco-parte-16-audiolibro-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/il-nome-della-rosa-umberto-eco-parte-16-audiolibro/" class="vc_gitem-link" title="Il nome della rosa Umberto Eco parte 16 audiolibro">Il nome della rosa Umberto Eco parte 16 audiolibro</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/il-nome-della-rosa-umberto-eco-parte-18-audiolibro/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="Il nome della rosa Umberto Eco parte 18 audiolibro"><img width="150" height="150" src="/wp-content/uploads/2017/12/Il-nome-della-rosa-Umberto-Eco-parte-18-audiolibro-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/il-nome-della-rosa-umberto-eco-parte-18-audiolibro/" class="vc_gitem-link" title="Il nome della rosa Umberto Eco parte 18 audiolibro">Il nome della rosa Umberto Eco parte 18 audiolibro</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/il-nome-della-rosa-umberto-eco-parte-19-audiolibro/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="Il nome della rosa Umberto Eco parte 19 audiolibro"><img width="150" height="150" src="/wp-content/uploads/2017/12/Il-nome-della-rosa-Umberto-Eco-parte-19-audiolibro-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/il-nome-della-rosa-umberto-eco-parte-19-audiolibro/" class="vc_gitem-link" title="Il nome della rosa Umberto Eco parte 19 audiolibro">Il nome della rosa Umberto Eco parte 19 audiolibro</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/il-nome-della-rosa-umberto-eco-parte-20-audiolibro-libro/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="Il nome della rosa Umberto Eco parte 20  audiolibro libro"><img width="150" height="150" src="/wp-content/uploads/2017/12/Il-nome-della-rosa-Umberto-Eco-parte-20-audiolibro-libro-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/il-nome-della-rosa-umberto-eco-parte-20-audiolibro-libro/" class="vc_gitem-link" title="Il nome della rosa Umberto Eco parte 20  audiolibro libro">Il nome della rosa Umberto Eco parte 20 audiolibro libro</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/il-nome-della-rosa-umberto-eco-parte-23-audiolibro/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="Il nome della rosa Umberto Eco parte 23 audiolibro"><img width="150" height="150" src="/wp-content/uploads/2017/12/Il-nome-della-rosa-Umberto-Eco-parte-23-audiolibro-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/il-nome-della-rosa-umberto-eco-parte-23-audiolibro/" class="vc_gitem-link" title="Il nome della rosa Umberto Eco parte 23 audiolibro">Il nome della rosa Umberto Eco parte 23 audiolibro</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/il-nome-della-rosa-umberto-eco-parte-24-audiolibro/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="Il nome della rosa Umberto Eco parte 24 audiolibro"><img width="150" height="150" src="/wp-content/uploads/2017/12/Il-nome-della-rosa-Umberto-Eco-parte-24-audiolibro-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/il-nome-della-rosa-umberto-eco-parte-24-audiolibro/" class="vc_gitem-link" title="Il nome della rosa Umberto Eco parte 24 audiolibro">Il nome della rosa Umberto Eco parte 24 audiolibro</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/il-nome-della-rosa-umberto-eco-parte-25-audiolibro/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="Il nome della rosa Umberto Eco parte 25 audiolibro"><img width="150" height="150" src="/wp-content/uploads/2017/12/Il-nome-della-rosa-Umberto-Eco-parte-25-audiolibro-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/il-nome-della-rosa-umberto-eco-parte-25-audiolibro/" class="vc_gitem-link" title="Il nome della rosa Umberto Eco parte 25 audiolibro">Il nome della rosa Umberto Eco parte 25 audiolibro</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/il-nome-della-rosa-umberto-eco-parte-26-audiolibro/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="Il nome della rosa Umberto Eco parte 26 audiolibro"><img width="150" height="150" src="/wp-content/uploads/2017/12/Il-nome-della-rosa-Umberto-Eco-parte-26-audiolibro-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/il-nome-della-rosa-umberto-eco-parte-26-audiolibro/" class="vc_gitem-link" title="Il nome della rosa Umberto Eco parte 26 audiolibro">Il nome della rosa Umberto Eco parte 26 audiolibro</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/il-nome-della-rosa-umberto-eco-parte-27-audiolibro/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="Il nome della rosa Umberto Eco parte 27 audiolibro"><img width="150" height="150" src="/wp-content/uploads/2017/12/Il-nome-della-rosa-Umberto-Eco-parte-27-audiolibro-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/il-nome-della-rosa-umberto-eco-parte-27-audiolibro/" class="vc_gitem-link" title="Il nome della rosa Umberto Eco parte 27 audiolibro">Il nome della rosa Umberto Eco parte 27 audiolibro</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/il-nome-della-rosa-umberto-eco-parte-28-audiolibro/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="Il nome della rosa Umberto Eco parte 28 audiolibro"><img width="150" height="150" src="/wp-content/uploads/2017/12/Il-nome-della-rosa-Umberto-Eco-parte-28-audiolibro-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/il-nome-della-rosa-umberto-eco-parte-28-audiolibro/" class="vc_gitem-link" title="Il nome della rosa Umberto Eco parte 28 audiolibro">Il nome della rosa Umberto Eco parte 28 audiolibro</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/il-nome-della-rosa-umberto-eco-parte-29-audiolibro/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="Il nome della rosa Umberto Eco parte 29 audiolibro"><img width="150" height="150" src="/wp-content/uploads/2017/12/Il-nome-della-rosa-Umberto-Eco-parte-29-audiolibro-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/il-nome-della-rosa-umberto-eco-parte-29-audiolibro/" class="vc_gitem-link" title="Il nome della rosa Umberto Eco parte 29 audiolibro">Il nome della rosa Umberto Eco parte 29 audiolibro</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/il-nome-della-rosa-umberto-eco-parte-35-audiolibro/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="Il nome della rosa Umberto Eco parte 35 audiolibro"><img width="150" height="150" src="/wp-content/uploads/2017/12/Il-nome-della-rosa-Umberto-Eco-parte-35-audiolibro-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/il-nome-della-rosa-umberto-eco-parte-35-audiolibro/" class="vc_gitem-link" title="Il nome della rosa Umberto Eco parte 35 audiolibro">Il nome della rosa Umberto Eco parte 35 audiolibro</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/il-nome-della-rosa-umberto-eco-parte-4-audiolibro/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="Il nome della rosa Umberto Eco parte 4 audiolibro"><img width="150" height="150" src="/wp-content/uploads/2017/12/Il-nome-della-rosa-Umberto-Eco-parte-4-audiolibro-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/il-nome-della-rosa-umberto-eco-parte-4-audiolibro/" class="vc_gitem-link" title="Il nome della rosa Umberto Eco parte 4 audiolibro">Il nome della rosa Umberto Eco parte 4 audiolibro</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/il-nome-della-rosa-umberto-eco-parte-5-audiolibro-libro-wmv/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="Il nome della rosa Umberto Eco parte 5 audiolibro libro.wmv"><img width="150" height="150" src="/wp-content/uploads/2017/12/Il-nome-della-rosa-Umberto-Eco-parte-5-audiolibro-libro.wmv-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/il-nome-della-rosa-umberto-eco-parte-5-audiolibro-libro-wmv/" class="vc_gitem-link" title="Il nome della rosa Umberto Eco parte 5 audiolibro libro.wmv">Il nome della rosa Umberto Eco parte 5 audiolibro libro.wmv</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/il-nome-della-rosa-umberto-eco-parte-6-audiolibro/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="Il nome della rosa Umberto Eco parte 6 audiolibro"><img width="150" height="150" src="/wp-content/uploads/2017/12/Il-nome-della-rosa-Umberto-Eco-parte-6-audiolibro-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/il-nome-della-rosa-umberto-eco-parte-6-audiolibro/" class="vc_gitem-link" title="Il nome della rosa Umberto Eco parte 6 audiolibro">Il nome della rosa Umberto Eco parte 6 audiolibro</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/il-nome-della-rosa-umberto-eco-parte-8-audiolibro/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="Il nome della rosa Umberto Eco parte 8 audiolibro"><img width="150" height="150" src="/wp-content/uploads/2017/12/Il-nome-della-rosa-Umberto-Eco-parte-8-audiolibro-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/il-nome-della-rosa-umberto-eco-parte-8-audiolibro/" class="vc_gitem-link" title="Il nome della rosa Umberto Eco parte 8 audiolibro">Il nome della rosa Umberto Eco parte 8 audiolibro</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/il-nome-della-rosa-umberto-eco-parte-9-audiolibro/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="Il nome della rosa Umberto Eco parte 9 audiolibro"><img width="150" height="150" src="/wp-content/uploads/2017/12/Il-nome-della-rosa-Umberto-Eco-parte-9-audiolibro-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/il-nome-della-rosa-umberto-eco-parte-9-audiolibro/" class="vc_gitem-link" title="Il nome della rosa Umberto Eco parte 9 audiolibro">Il nome della rosa Umberto Eco parte 9 audiolibro</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/j-r-r-tolkien-lo-hobbit-capitolo-1-audiolibro-lettura-di-vir/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="J.R.R. Tolkien: Lo Hobbit &#8211; Capitolo 1 &#8211; Audiolibro [Lettura di Vir]"><img width="150" height="150" src="/wp-content/uploads/2019/04/J.R.R.-Tolkien-Lo-Hobbit-Capitolo-1-Audiolibro-Lettura-di-Vir-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/j-r-r-tolkien-lo-hobbit-capitolo-1-audiolibro-lettura-di-vir/" class="vc_gitem-link" title="J.R.R. Tolkien: Lo Hobbit &#8211; Capitolo 1 &#8211; Audiolibro [Lettura di Vir]">J.R.R. Tolkien: Lo Hobbit &#8211; Capitolo 1 &#8211; Audiolibro [Lettura di Vir]</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/j-r-r-tolkien-lo-hobbit-capitolo-2-audiolibro-lettura-di-vir/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="J.R.R. Tolkien: Lo Hobbit &#8211; Capitolo 2 &#8211; Audiolibro [Lettura di Vir]"><img width="150" height="150" src="/wp-content/uploads/2019/04/J.R.R.-Tolkien-Lo-Hobbit-Capitolo-2-Audiolibro-Lettura-di-Vir-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/j-r-r-tolkien-lo-hobbit-capitolo-2-audiolibro-lettura-di-vir/" class="vc_gitem-link" title="J.R.R. Tolkien: Lo Hobbit &#8211; Capitolo 2 &#8211; Audiolibro [Lettura di Vir]">J.R.R. Tolkien: Lo Hobbit &#8211; Capitolo 2 &#8211; Audiolibro [Lettura di Vir]</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/j-r-r-tolkien-lo-hobbit-capitolo-3-audiolibro-lettura-di-vir/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="J.R.R. Tolkien: Lo Hobbit &#8211; Capitolo 3 &#8211; Audiolibro [Lettura di Vir]"><img width="150" height="150" src="/wp-content/uploads/2019/04/J.R.R.-Tolkien-Lo-Hobbit-Capitolo-3-Audiolibro-Lettura-di-Vir-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/j-r-r-tolkien-lo-hobbit-capitolo-3-audiolibro-lettura-di-vir/" class="vc_gitem-link" title="J.R.R. Tolkien: Lo Hobbit &#8211; Capitolo 3 &#8211; Audiolibro [Lettura di Vir]">J.R.R. Tolkien: Lo Hobbit &#8211; Capitolo 3 &#8211; Audiolibro [Lettura di Vir]</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/j-r-r-tolkien-lo-hobbit-capitolo-4-audiolibro-ita-lettura-di-vir/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="J.R.R. Tolkien: Lo Hobbit &#8211; Capitolo 4 &#8211; Audiolibro ita [Lettura di Vir]"><img width="150" height="150" src="/wp-content/uploads/2019/04/J.R.R.-Tolkien-Lo-Hobbit-Capitolo-4-Audiolibro-ita-Lettura-di-Vir-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/j-r-r-tolkien-lo-hobbit-capitolo-4-audiolibro-ita-lettura-di-vir/" class="vc_gitem-link" title="J.R.R. Tolkien: Lo Hobbit &#8211; Capitolo 4 &#8211; Audiolibro ita [Lettura di Vir]">J.R.R. Tolkien: Lo Hobbit &#8211; Capitolo 4 &#8211; Audiolibro ita [Lettura di Vir]</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/j-r-r-tolkien-lo-hobbit-capitolo-5-audiolibro-italettura-di-vir/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="J.R.R. Tolkien: Lo Hobbit &#8211; Capitolo 5 &#8211; Audiolibro ita[Lettura di Vir]"><img width="150" height="150" src="/wp-content/uploads/2019/04/J.R.R.-Tolkien-Lo-Hobbit-Capitolo-5-Audiolibro-itaLettura-di-Vir-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/j-r-r-tolkien-lo-hobbit-capitolo-5-audiolibro-italettura-di-vir/" class="vc_gitem-link" title="J.R.R. Tolkien: Lo Hobbit &#8211; Capitolo 5 &#8211; Audiolibro ita[Lettura di Vir]">J.R.R. Tolkien: Lo Hobbit &#8211; Capitolo 5 &#8211; Audiolibro ita[Lettura di Vir]</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/jrr-tolkien-lo-hobbit-capitolo-6-parte-1-audiolibro-italettura-di-vir/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="JRR Tolkien: Lo Hobbit &#8211; Capitolo 6 Parte 1 &#8211; Audiolibro ita[Lettura di Vir]"><img width="150" height="150" src="/wp-content/uploads/2019/04/JRR-Tolkien-Lo-Hobbit-Capitolo-6-Parte-1-Audiolibro-itaLettura-di-Vir-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/jrr-tolkien-lo-hobbit-capitolo-6-parte-1-audiolibro-italettura-di-vir/" class="vc_gitem-link" title="JRR Tolkien: Lo Hobbit &#8211; Capitolo 6 Parte 1 &#8211; Audiolibro ita[Lettura di Vir]">JRR Tolkien: Lo Hobbit &#8211; Capitolo 6 Parte 1 &#8211; Audiolibro ita[Lettura di Vir]</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/karl-marx-tesi-su-feuerbach-lettura-di-r-caracci/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="KARL MARX, TESI SU FEUERBACH &#8211; LETTURA DI R. CARACCI"><img width="150" height="150" src="/wp-content/uploads/2017/11/KARL-MARX-TESI-SU-FEUERBACH-LETTURA-DI-R.-CARACCI-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/karl-marx-tesi-su-feuerbach-lettura-di-r-caracci/" class="vc_gitem-link" title="KARL MARX, TESI SU FEUERBACH &#8211; LETTURA DI R. CARACCI">KARL MARX, TESI SU FEUERBACH &#8211; LETTURA DI R. CARACCI</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/la-liberta-e-il-senso-comune-di-r-la-capria/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="LA LIBERTA&#8217; E IL SENSO COMUNE   di R. LA CAPRIA"><img width="150" height="150" src="/wp-content/uploads/2019/08/LA-LIBERTA-E-IL-SENSO-COMUNE-di-R.-LA-CAPRIA-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/la-liberta-e-il-senso-comune-di-r-la-capria/" class="vc_gitem-link" title="LA LIBERTA&#8217; E IL SENSO COMUNE   di R. LA CAPRIA">LA LIBERTA&#8217; E IL SENSO COMUNE di R. LA CAPRIA</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/la-madre-di-cecilia-di-a-manzoni-legge-chiara-tambani/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="La Madre di Cecilia di A. Manzoni legge Chiara Tambani"><img width="150" height="150" src="/wp-content/uploads/2017/08/La-Madre-di-Cecilia-di-A.-Manzoni-legge-Chiara-Tambani-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/la-madre-di-cecilia-di-a-manzoni-legge-chiara-tambani/" class="vc_gitem-link" title="La Madre di Cecilia di A. Manzoni legge Chiara Tambani">La Madre di Cecilia di A. Manzoni legge Chiara Tambani</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/la-monaca-di-monza-cap-x-parte-2a/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="La Monaca di Monza cap  X parte 2a"><img width="150" height="150" src="/wp-content/uploads/2018/10/La-Monaca-di-Monza-cap-X-parte-2a-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/la-monaca-di-monza-cap-x-parte-2a/" class="vc_gitem-link" title="La Monaca di Monza cap  X parte 2a">La Monaca di Monza cap X parte 2a</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/la-monaca-di-monza-prima-parte-cap-ix-dei-promessi-sposi/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="La Monaca di Monza prima parte cap  IX dei Promessi Sposi"><img width="150" height="150" src="/wp-content/uploads/2017/09/La-Monaca-di-Monza-prima-parte-cap-IX-dei-Promessi-Sposi-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/la-monaca-di-monza-prima-parte-cap-ix-dei-promessi-sposi/" class="vc_gitem-link" title="La Monaca di Monza prima parte cap  IX dei Promessi Sposi">La Monaca di Monza prima parte cap IX dei Promessi Sposi</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/la-peste-di-a-camus-estratto/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="LA PESTE di A. Camus &#8211; estratto"><img width="150" height="150" src="/wp-content/uploads/2020/02/LA-PESTE-di-A.-Camus-estratto-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/la-peste-di-a-camus-estratto/" class="vc_gitem-link" title="LA PESTE di A. Camus &#8211; estratto">LA PESTE di A. Camus &#8211; estratto</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/le-feste-di-natale-da-memorie-di-una-casa-morta-di-f-dostoevskij/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="LE FESTE DI NATALE   da Memorie di una casa morta di F. Dostoevskij"><img width="150" height="150" src="/wp-content/uploads/2019/12/LE-FESTE-DI-NATALE-da-Memorie-di-una-casa-morta-di-F.-Dostoevskij-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/le-feste-di-natale-da-memorie-di-una-casa-morta-di-f-dostoevskij/" class="vc_gitem-link" title="LE FESTE DI NATALE   da Memorie di una casa morta di F. Dostoevskij">LE FESTE DI NATALE da Memorie di una casa morta di F. Dostoevskij</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/lettera-ad-un-ostaggio-antoine-de-saint-exupery-novita-da-ascoltare/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="LETTERA AD UN OSTAGGIO  Antoine de Saint Exupéry &#8211;  Novità da ascoltare   !"><img width="150" height="150" src="/wp-content/uploads/2019/10/LETTERA-AD-UN-OSTAGGIO-Antoine-de-Saint-Exupry-Novit-da-ascoltare--150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/lettera-ad-un-ostaggio-antoine-de-saint-exupery-novita-da-ascoltare/" class="vc_gitem-link" title="LETTERA AD UN OSTAGGIO  Antoine de Saint Exupéry &#8211;  Novità da ascoltare   !">LETTERA AD UN OSTAGGIO Antoine de Saint Exupéry &#8211; Novità da ascoltare !</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/ll-nome-della-rosa-umberto-eco-parte-10-audiolibro/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="ll nome della rosa Umberto Eco parte 10 audiolibro"><img width="150" height="150" src="/wp-content/uploads/2017/12/ll-nome-della-rosa-Umberto-Eco-parte-10-audiolibro-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/ll-nome-della-rosa-umberto-eco-parte-10-audiolibro/" class="vc_gitem-link" title="ll nome della rosa Umberto Eco parte 10 audiolibro">ll nome della rosa Umberto Eco parte 10 audiolibro</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/ll-nome-della-rosa-umberto-eco-parte-14-audiolibro/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="ll nome della rosa Umberto Eco parte 14 audiolibro"><img width="150" height="150" src="/wp-content/uploads/2017/12/ll-nome-della-rosa-Umberto-Eco-parte-14-audiolibro-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/ll-nome-della-rosa-umberto-eco-parte-14-audiolibro/" class="vc_gitem-link" title="ll nome della rosa Umberto Eco parte 14 audiolibro">ll nome della rosa Umberto Eco parte 14 audiolibro</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/ll-nome-della-rosa-umberto-eco-parte-21-audiolibro/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="ll nome della rosa Umberto Eco parte 21 audiolibro"><img width="150" height="150" src="/wp-content/uploads/2017/12/ll-nome-della-rosa-Umberto-Eco-parte-21-audiolibro-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/ll-nome-della-rosa-umberto-eco-parte-21-audiolibro/" class="vc_gitem-link" title="ll nome della rosa Umberto Eco parte 21 audiolibro">ll nome della rosa Umberto Eco parte 21 audiolibro</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/ll-nome-della-rosa-umberto-eco-parte-22-audiolibro/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="ll nome della rosa Umberto Eco parte 22 audiolibro"><img width="150" height="150" src="/wp-content/uploads/2017/12/ll-nome-della-rosa-Umberto-Eco-parte-22-audiolibro-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/ll-nome-della-rosa-umberto-eco-parte-22-audiolibro/" class="vc_gitem-link" title="ll nome della rosa Umberto Eco parte 22 audiolibro">ll nome della rosa Umberto Eco parte 22 audiolibro</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/ll-nome-della-rosa-umberto-eco-parte-30-audiolibro/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="ll nome della rosa Umberto Eco parte 30 audiolibro"><img width="150" height="150" src="/wp-content/uploads/2017/12/ll-nome-della-rosa-Umberto-Eco-parte-30-audiolibro-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/ll-nome-della-rosa-umberto-eco-parte-30-audiolibro/" class="vc_gitem-link" title="ll nome della rosa Umberto Eco parte 30 audiolibro">ll nome della rosa Umberto Eco parte 30 audiolibro</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/ll-nome-della-rosa-umberto-eco-parte-31-audiolibro/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="ll nome della rosa Umberto Eco parte 31 audiolibro"><img width="150" height="150" src="/wp-content/uploads/2017/12/ll-nome-della-rosa-Umberto-Eco-parte-31-audiolibro-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/ll-nome-della-rosa-umberto-eco-parte-31-audiolibro/" class="vc_gitem-link" title="ll nome della rosa Umberto Eco parte 31 audiolibro">ll nome della rosa Umberto Eco parte 31 audiolibro</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/ll-nome-della-rosa-umberto-eco-parte-32-audiolibro/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="ll nome della rosa Umberto Eco parte 32 audiolibro"><img width="150" height="150" src="/wp-content/uploads/2017/12/ll-nome-della-rosa-Umberto-Eco-parte-32-audiolibro-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/ll-nome-della-rosa-umberto-eco-parte-32-audiolibro/" class="vc_gitem-link" title="ll nome della rosa Umberto Eco parte 32 audiolibro">ll nome della rosa Umberto Eco parte 32 audiolibro</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/ll-nome-della-rosa-umberto-eco-parte-33-audiolibro/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="ll nome della rosa Umberto Eco parte 33 audiolibro"><img width="150" height="150" src="/wp-content/uploads/2017/12/ll-nome-della-rosa-Umberto-Eco-parte-33-audiolibro-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/ll-nome-della-rosa-umberto-eco-parte-33-audiolibro/" class="vc_gitem-link" title="ll nome della rosa Umberto Eco parte 33 audiolibro">ll nome della rosa Umberto Eco parte 33 audiolibro</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/ll-nome-della-rosa-umberto-eco-parte-34-audiolibro/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="ll nome della rosa Umberto Eco parte 34 audiolibro"><img width="150" height="150" src="/wp-content/uploads/2017/12/ll-nome-della-rosa-Umberto-Eco-parte-34-audiolibro-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/ll-nome-della-rosa-umberto-eco-parte-34-audiolibro/" class="vc_gitem-link" title="ll nome della rosa Umberto Eco parte 34 audiolibro">ll nome della rosa Umberto Eco parte 34 audiolibro</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/ll-nome-della-rosa-umberto-eco-parte-7-audiolibro-libro/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="ll nome della rosa Umberto Eco parte 7 audiolibro libro"><img width="150" height="150" src="/wp-content/uploads/2017/12/ll-nome-della-rosa-Umberto-Eco-parte-7-audiolibro-libro-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/ll-nome-della-rosa-umberto-eco-parte-7-audiolibro-libro/" class="vc_gitem-link" title="ll nome della rosa Umberto Eco parte 7 audiolibro libro">ll nome della rosa Umberto Eco parte 7 audiolibro libro</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/memorie-di-adriano-m-yourcenar-estratto/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="MEMORIE DI ADRIANO &#8211; M. Yourcenar &#8211; ESTRATTO"><img width="150" height="150" src="/wp-content/uploads/2016/02/MEMORIE-DI-ADRIANO-M.-Yourcenar-ESTRATTO-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy" srcset="/wp-content/uploads/2016/02/MEMORIE-DI-ADRIANO-M.-Yourcenar-ESTRATTO-150x150.jpg 150w, /wp-content/uploads/2016/02/MEMORIE-DI-ADRIANO-M.-Yourcenar-ESTRATTO-300x300.jpg 300w, /wp-content/uploads/2016/02/MEMORIE-DI-ADRIANO-M.-Yourcenar-ESTRATTO-768x768.jpg 768w, /wp-content/uploads/2016/02/MEMORIE-DI-ADRIANO-M.-Yourcenar-ESTRATTO.jpg 800w" sizes="(max-width: 150px) 100vw, 150px"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/memorie-di-adriano-m-yourcenar-estratto/" class="vc_gitem-link" title="MEMORIE DI ADRIANO &#8211; M. Yourcenar &#8211; ESTRATTO">MEMORIE DI ADRIANO &#8211; M. Yourcenar &#8211; ESTRATTO</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/nietzsche-da-umano-troppo-umano-lettura-di-roberto-caracci-3/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="NIETZSCHE da &#8216;UMANO TROPPO UMANO&#8217; Lettura di Roberto Caracci"><img width="150" height="150" src="/wp-content/uploads/2017/11/NIETZSCHE-da-UMANO-TROPPO-UMANO-Lettura-di-Roberto-Caracci-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/nietzsche-da-umano-troppo-umano-lettura-di-roberto-caracci-3/" class="vc_gitem-link" title="NIETZSCHE da &#8216;UMANO TROPPO UMANO&#8217; Lettura di Roberto Caracci">NIETZSCHE da &#8216;UMANO TROPPO UMANO&#8217; Lettura di Roberto Caracci</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/nietzsche-da-umano-troppo-umano-lettura-di-roberto-caracci-2/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="NIETZSCHE da &#8216;UMANO TROPPO UMANO&#8217;, lettura di Roberto Caracci"><img width="150" height="150" src="/wp-content/uploads/2017/11/NIETZSCHE-da-UMANO-TROPPO-UMANO-lettura-di-Roberto-Caracci-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/nietzsche-da-umano-troppo-umano-lettura-di-roberto-caracci-2/" class="vc_gitem-link" title="NIETZSCHE da &#8216;UMANO TROPPO UMANO&#8217;, lettura di Roberto Caracci">NIETZSCHE da &#8216;UMANO TROPPO UMANO&#8217;, lettura di Roberto Caracci</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/nietzsche-da-umano-troppo-umano-lettura-di-roberto-caracci/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="NIETZSCHE DA &#8220;UMANO TROPPO UMANO&#8221; LETTURA DI ROBERTO CARACCI"><img width="150" height="150" src="/wp-content/uploads/2017/11/NIETZSCHE-DA-UMANO-TROPPO-UMANO-LETTURA-DI-ROBERTO-CARACCI-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/nietzsche-da-umano-troppo-umano-lettura-di-roberto-caracci/" class="vc_gitem-link" title="NIETZSCHE DA &#8220;UMANO TROPPO UMANO&#8221; LETTURA DI ROBERTO CARACCI">NIETZSCHE DA &#8220;UMANO TROPPO UMANO&#8221; LETTURA DI ROBERTO CARACCI</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/nietzsche-umano-troppo-umano-lettura-di-roberto-caracci/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="NIETZSCHE UMANO TROPPO UMANO -Lettura di Roberto Caracci"><img width="150" height="150" src="/wp-content/uploads/2017/11/NIETZSCHE-UMANO-TROPPO-UMANO-Lettura-di-Roberto-Caracci-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/nietzsche-umano-troppo-umano-lettura-di-roberto-caracci/" class="vc_gitem-link" title="NIETZSCHE UMANO TROPPO UMANO -Lettura di Roberto Caracci">NIETZSCHE UMANO TROPPO UMANO -Lettura di Roberto Caracci</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/nietzsche-da-umano-troppo-umano-lettura-di-r-caracci/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="NIETZSCHE, Da Umano troppo umano, Lettura di R. Caracci"><img width="150" height="150" src="/wp-content/uploads/2017/11/NIETZSCHE-Da-Umano-troppo-umano-Lettura-di-R.-Caracci-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/nietzsche-da-umano-troppo-umano-lettura-di-r-caracci/" class="vc_gitem-link" title="NIETZSCHE, Da Umano troppo umano, Lettura di R. Caracci">NIETZSCHE, Da Umano troppo umano, Lettura di R. Caracci</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/novecento-di-alessandro-baricco/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="Novecento di Alessandro Baricco"><img width="150" height="150" src="/wp-content/uploads/2017/11/Novecento-di-Alessandro-Baricco-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/novecento-di-alessandro-baricco/" class="vc_gitem-link" title="Novecento di Alessandro Baricco">Novecento di Alessandro Baricco</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/perche-la-bomba-su-hiroshima-per-non-dimenticare/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="PERCHE&#8217;  LA BOMBA SU HIROSHIMA &#8211; per non dimenticare!"><img width="150" height="150" src="/wp-content/uploads/2019/07/PERCHE-LA-BOMBA-SU-HIROSHIMA-per-non-dimenticare-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/perche-la-bomba-su-hiroshima-per-non-dimenticare/" class="vc_gitem-link" title="PERCHE&#8217;  LA BOMBA SU HIROSHIMA &#8211; per non dimenticare!">PERCHE&#8217; LA BOMBA SU HIROSHIMA &#8211; per non dimenticare!</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/roberspierre-discorso-contro-la-guerra/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="ROBERSPIERRE &#8211; DISCORSO CONTRO LA GUERRA"><img width="150" height="150" src="/wp-content/uploads/2019/09/ROBERSPIERRE-DISCORSO-CONTRO-LA-GUERRA-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/roberspierre-discorso-contro-la-guerra/" class="vc_gitem-link" title="ROBERSPIERRE &#8211; DISCORSO CONTRO LA GUERRA">ROBERSPIERRE &#8211; DISCORSO CONTRO LA GUERRA</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/se-questo-e-un-uomo-primo-levi/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="Se questo è un uomo &#8211; Primo Levi"><img width="150" height="150" src="/wp-content/uploads/2019/04/Se-questo-un-uomo-Primo-Levi-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/se-questo-e-un-uomo-primo-levi/" class="vc_gitem-link" title="Se questo è un uomo &#8211; Primo Levi">Se questo è un uomo &#8211; Primo Levi</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/seneca-luomo-saggio/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="SENECA &#8211; L&#8217;UOMO SAGGIO"><img width="150" height="150" src="/wp-content/uploads/2019/02/SENECA-LUOMO-SAGGIO-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/seneca-luomo-saggio/" class="vc_gitem-link" title="SENECA &#8211; L&#8217;UOMO SAGGIO">SENECA &#8211; L&#8217;UOMO SAGGIO</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/seneca-lettera-a-lucilio-legge-chiara-tambani/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="Seneca &#8211; Lettera a Lucilio &#8211; Legge Chiara Tambani"><img width="150" height="150" src="/wp-content/uploads/2017/12/Seneca-Lettera-a-Lucilio-Legge-Chiara-Tambani-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/seneca-lettera-a-lucilio-legge-chiara-tambani/" class="vc_gitem-link" title="Seneca &#8211; Lettera a Lucilio &#8211; Legge Chiara Tambani">Seneca &#8211; Lettera a Lucilio &#8211; Legge Chiara Tambani</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/sommersi-e-salvati-da-se-questo-e-un-uomo-di-primo-levi/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="Sommersi e salvati  da &#8220;SE QUESTO E&#8217; UN UOMO&#8221; di Primo Levi"><img width="150" height="150" src="/wp-content/uploads/2019/11/Sommersi-e-salvati-da-SE-QUESTO-E-UN-UOMO-di-Primo-Levi-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/sommersi-e-salvati-da-se-questo-e-un-uomo-di-primo-levi/" class="vc_gitem-link" title="Sommersi e salvati  da &#8220;SE QUESTO E&#8217; UN UOMO&#8221; di Primo Levi">Sommersi e salvati da &#8220;SE QUESTO E&#8217; UN UOMO&#8221; di Primo Levi</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/storia-di-una-capinera-di-g-verga-incipit/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="STORIA DI UNA CAPINERA di G. Verga &#8211; incipit"><img width="150" height="150" src="/wp-content/uploads/2019/05/STORIA-DI-UNA-CAPINERA-di-G.-Verga-incipit-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/storia-di-una-capinera-di-g-verga-incipit/" class="vc_gitem-link" title="STORIA DI UNA CAPINERA di G. Verga &#8211; incipit">STORIA DI UNA CAPINERA di G. Verga &#8211; incipit</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+<div class="vc_grid-item vc_clearfix vc_col-sm-4">
+<div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block "><div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1"><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-">
+<div class="wpb_single_image wpb_content_element vc_align_">
+<figure class="wpb_wrapper vc_figure">
+<a href="/tocca-a-te-marinaio-da-novecento-di-a-baricco-liberamente-tratto/" class="vc_gitem-link vc_single_image-wrapper vc_box_border_grey" title="TOCCA A TE MARINAIO &#8211; da Novecento di A. Baricco (liberamente tratto)"><img width="150" height="150" src="/wp-content/uploads/2019/09/TOCCA-A-TE-MARINAIO-da-Novecento-di-A.-Baricco-liberamente-tratto-150x150.jpg" class="vc_single_image-img attachment-thumbnail" alt="" loading="lazy"></a>
+</figure>
+</div>
+<div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"><div style="text-align: left"><a href="/tocca-a-te-marinaio-da-novecento-di-a-baricco-liberamente-tratto/" class="vc_gitem-link" title="TOCCA A TE MARINAIO &#8211; da Novecento di A. Baricco (liberamente tratto)">TOCCA A TE MARINAIO &#8211; da Novecento di A. Baricco (liberamente tratto)</a></div></div>
+</div></div></div></div></div></div>
+<div class="vc_clearfix"></div>
+</div>
+</div>
+<div data-lazy-loading-btn="true" style="display: none;"><a href="/estratti/"></a></div>
+</div>
+</div>
+</div>
+</div></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer footer-contact-boxes">
+<div class="footer-content">
+<div class="gridContainer">
+<div class="row text-center">
+<div class="col-sm-3">
+<div data-type="group" data-dynamic-mod="true">
+<i class="big-icon mdi mdi-android"></i>
+<p>
+<a href="https://play.google.com/store/apps/details?id=application.audiobooks">Audiolibri App</a> </p>
+</div>
+</div>
+<div class="col-sm-3">
+<div data-type="group" data-dynamic-mod="true">
+<i class="big-icon mdi mdi-email"></i>
+<p>
+<a href="/cdn-cgi/l/email-protection#4e272028210e2f3b2a272122272c3c2760213c29"><span class="__cf_email__" data-cfemail="f990979f96b9988c9d909695909b8b90d7968b9e">[email&#160;protected]</span></a> </p>
+</div>
+</div>
+<div class="col-sm-3">
+<div data-type="group" data-dynamic-mod="true">
+<i class="big-icon mdi mdi-search-web"></i>
+<p>
+<a href="/search/">Cerca un audiolibro</a> </p>
+</div>
+</div>
+<div class="col-sm-3 footer-bg-accent">
+<div>
+<div data-type="group" data-dynamic-mod="true" class="footer-social-icons">
+<a target="_blank" class="social-icon" href="https://www.facebook.com/audiolibriGRATIS/">
+<i class="mdi mdi-facebook-box"></i>
+</a>
+<a target="_blank" class="social-icon" href="https://www.youtube.com/channel/UCcI3Bk2oB91HujHwX9ljEFw">
+<i class="mdi mdi-youtube-play"></i>
+</a>
+</div>
+</div>
+<p class="copyright">&copy;&nbsp;&nbsp;2022&nbsp;Audiolibri.org.&nbsp;create con WordPress e con il tema <a rel="nofollow" target="_blank" href="https://extendthemes.com/go/built-with-materialis/">Il tema Materialis</a></p> </div>
+</div>
+</div>
+</div>
+</div>
+<div id="pwaforwp_loading_div"></div>
+<div class="pwaforwp-loading-wrapper"><div id="pwaforwp_loading_icon" style="border-top-color: #3498db"></div></div>
+<link rel="stylesheet" id="lightbox2-css" href="/wp-content/plugins/js_composer/assets/lib/bower/lightbox2/dist/css/lightbox.min.css?ver=6.6.0" type="text/css" media="all">
+<link rel="stylesheet" id="vc_pageable_owl-carousel-css-css" href="/wp-content/plugins/js_composer/assets/lib/owl-carousel2-dist/assets/owl.min.css?ver=6.6.0" type="text/css" media="all">
+<link rel="stylesheet" id="vc_animate-css-css" href="/wp-content/plugins/js_composer/assets/lib/bower/animate-css/animate.min.css?ver=6.6.0" type="text/css" media="all">
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript" id="superpwa-register-sw-js-extra">
+/* <![CDATA[ */
+var superpwa_sw = {"url":"\/superpwa-amp-sw.js","disable_addtohome":"0","enableOnDesktop":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="/wp-content/plugins/super-progressive-web-apps/public/js/register-sw.js" id="superpwa-register-sw-js"></script>
+<script type="text/javascript" src="/wp-includes/js/jquery/ui/effect.min.js?ver=1.12.1" id="jquery-effects-core-js"></script>
+<script type="text/javascript" src="/wp-includes/js/jquery/ui/effect-slide.min.js?ver=1.12.1" id="jquery-effects-slide-js"></script>
+<script type="text/javascript" defer src="/wp-includes/js/imagesloaded.min.js?ver=4.1.4" id="imagesloaded-js"></script>
+<script type="text/javascript" defer src="/wp-includes/js/masonry.min.js?ver=4.2.2" id="masonry-js"></script>
+<script type="text/javascript" defer src="/wp-content/themes/materialis/assets/js/theme.bundle.min.js?ver=1.1.16" id="materialis-theme-js"></script>
+<script type="text/javascript" id="pwaforwp-js-js-extra">
+/* <![CDATA[ */
+var pwaforwp_js_obj = {"ajax_url":"\/wp-admin\/admin-ajax.php","pwa_ms_prefix":"","pwa_home_url":"\/","loader_desktop":"1","loader_mobile":"1","loader_only_pwa":"0","reset_cookies":"0"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="/wp-content/plugins/pwa-for-wp/assets/js/pwaforwp.min.js?ver=1.7.41" id="pwaforwp-js-js"></script>
+<script type="text/javascript" src="/pwa-register-sw.js?ver=1.7.41" id="pwa-main-script-js"></script>
+<script type="text/javascript" src="https://cdn.onesignal.com/sdks/OneSignalSDK.js?ver=03419a7def9bc99d964c28ff4ca4bab2" async="async" id="remote_sdk-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js?ver=6.6.0" id="wpb_composer_front_js-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/js_composer/assets/lib/bower/lightbox2/dist/js/lightbox.min.js?ver=6.6.0" id="lightbox2-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/js_composer/assets/lib/owl-carousel2-dist/owl.carousel.min.js?ver=6.6.0" id="vc_pageable_owl-carousel-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/js_composer/assets/lib/bower/imagesloaded/imagesloaded.pkgd.min.js?ver=6.6.0" id="vc_grid-js-imagesloaded-js"></script>
+<script type="text/javascript" src="/wp-includes/js/underscore.min.js?ver=1.13.1" id="underscore-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/js_composer/assets/lib/vc_waypoints/vc-waypoints.min.js?ver=6.6.0" id="vc_waypoints-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/js_composer/assets/js/dist/vc_grid.min.js?ver=6.6.0" id="vc_grid-js"></script>
+<script>
+        /(trident|msie)/i.test(navigator.userAgent) && document.getElementById && window.addEventListener && window.addEventListener("hashchange", function() {
+            var t, e = location.hash.substring(1);
+            /^[A-z0-9_-]+$/.test(e) && (t = document.getElementById(e)) && (/^(?:a|select|input|button|textarea)$/i.test(t.tagName) || (t.tabIndex = -1), t.focus())
+        }, !1);
+    </script>
+</body>
+</html>

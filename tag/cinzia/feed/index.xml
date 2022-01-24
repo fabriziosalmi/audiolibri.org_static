@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Cinzia &#8211; Audiolibri.org</title>
+	<atom:link href="/tag/cinzia/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Audiolibri in Italiano e in lingua originale.</description>
+	<lastBuildDate>Wed, 17 Mar 2021 11:32:17 +0000</lastBuildDate>
+	<language>it-IT</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	
+
+<image>
+	<url>/wp-content/uploads/2017/06/cropped-audiobooks_icon_alfa-32x32.png</url>
+	<title>Cinzia &#8211; Audiolibri.org</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>&#8220;Relitti&#8221; Emilia Cinzia Perri &#8211; racconto</title>
+		<link>/relitti-emilia-cinzia-perri-racconto/</link>
+					<comments>/relitti-emilia-cinzia-perri-racconto/#respond</comments>
+		
+		<dc:creator><![CDATA[audiolibri.org]]></dc:creator>
+		<pubDate>Fri, 22 Apr 2016 12:39:39 +0000</pubDate>
+				<category><![CDATA[NASF]]></category>
+		<category><![CDATA[Cinzia]]></category>
+		<category><![CDATA[Emilia]]></category>
+		<category><![CDATA[ippogrillo]]></category>
+		<category><![CDATA[mondoaparte2007]]></category>
+		<category><![CDATA[Perri]]></category>
+		<category><![CDATA[racconti]]></category>
+		<category><![CDATA[racconto]]></category>
+		<category><![CDATA[Relitti]]></category>
+		<category><![CDATA[valter]]></category>
+		<category><![CDATA[valter49]]></category>
+		<category><![CDATA[videoblog]]></category>
+		<category><![CDATA[videoletture]]></category>
+		<category><![CDATA[zanardi]]></category>
+		<guid isPermaLink="false">/?p=25919</guid>
+
+					<description><![CDATA[legge valter zanardi]]></description>
+										<content:encoded><![CDATA[<p><iframe loading="lazy" width="200" height="150" src="https://www.youtube.com/embed/6AQz53FIpoc?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+<p>legge valter zanardi</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/relitti-emilia-cinzia-perri-racconto/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

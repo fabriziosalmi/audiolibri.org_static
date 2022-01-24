@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Audiolibri in Svedese &#8211; Audiolibri.org</title>
+	<atom:link href="/category/audiolibri-in-svedese/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Audiolibri in Italiano e in lingua originale.</description>
+	<lastBuildDate>Tue, 12 Mar 2019 03:03:52 +0000</lastBuildDate>
+	<language>it-IT</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	
+
+<image>
+	<url>/wp-content/uploads/2017/06/cropped-audiobooks_icon_alfa-32x32.png</url>
+	<title>Audiolibri in Svedese &#8211; Audiolibri.org</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Paulo Coelho Alkemisten Swedish Audiobook &#8211; Svenska Ljudbok</title>
+		<link>/paulo-coelho-alkemisten-swedish-audiobook-svenska-ljudbok/</link>
+		
+		<dc:creator><![CDATA[audiolibri.org]]></dc:creator>
+		<pubDate>Tue, 12 Mar 2019 03:03:50 +0000</pubDate>
+				<category><![CDATA[Audiolibri in Svedese]]></category>
+		<guid isPermaLink="false">/?page_id=18524</guid>
+
+					<description><![CDATA[Alkemisten: en berättelse om att följa sina drömmar (originaltitel O alquimista) är en roman skriven av Paulo Coelho. Boken gavs först ut i författarens hemland .]]></description>
+										<content:encoded><![CDATA[<div class='embed-container'><iframe loading="lazy" width="480" height="270" src="https://www.youtube.com/embed/KzqY5rGBFTk?feature=oembed" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>Alkemisten: en berättelse om att följa sina drömmar (originaltitel O alquimista) är en roman skriven av Paulo Coelho. Boken gavs först ut i författarens hemland .</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>SVENSKA AUDIOBOOKS PLAYLIST</title>
+		<link>/svenska-audiobooks-playlist/</link>
+		
+		<dc:creator><![CDATA[audiolibri.org]]></dc:creator>
+		<pubDate>Tue, 12 Mar 2019 03:03:43 +0000</pubDate>
+				<category><![CDATA[Audiolibri in Svedese]]></category>
+		<guid isPermaLink="false">/?page_id=18521</guid>
+
+					<description><![CDATA[Swedish Ljudböcker &#8211; Svenska Audiobooks https://www.youtube.com/playlist?list=PLGXHsIJdc69lEd7ZylDO6Ay5HbJpY-vkT]]></description>
+										<content:encoded><![CDATA[<div class='embed-container'><iframe loading="lazy" width="360" height="270" src="https://www.youtube.com/embed/JIDscVyjNFo?feature=oembed" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>Swedish Ljudböcker &#8211; Svenska Audiobooks https://www.youtube.com/playlist?list=PLGXHsIJdc69lEd7ZylDO6Ay5HbJpY-vkT</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

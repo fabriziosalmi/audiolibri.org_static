@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>antologia di racconti &#8211; Audiolibri.org</title>
+	<atom:link href="/tag/antologia-di-racconti/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Audiolibri in Italiano e in lingua originale.</description>
+	<lastBuildDate>Wed, 17 Mar 2021 11:32:41 +0000</lastBuildDate>
+	<language>it-IT</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	
+
+<image>
+	<url>/wp-content/uploads/2017/06/cropped-audiobooks_icon_alfa-32x32.png</url>
+	<title>antologia di racconti &#8211; Audiolibri.org</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>bando concorso gratuito di fantascienza NASF edizione 13</title>
+		<link>/bando-concorso-gratuito-di-fantascienza-nasf-edizione-13/</link>
+					<comments>/bando-concorso-gratuito-di-fantascienza-nasf-edizione-13/#respond</comments>
+		
+		<dc:creator><![CDATA[audiolibri.org]]></dc:creator>
+		<pubDate>Sun, 07 May 2017 00:19:04 +0000</pubDate>
+				<category><![CDATA[NASF]]></category>
+		<category><![CDATA[antologia di racconti]]></category>
+		<category><![CDATA[autori]]></category>
+		<category><![CDATA[bandi]]></category>
+		<category><![CDATA[bando]]></category>
+		<category><![CDATA[biografie]]></category>
+		<category><![CDATA[concorso]]></category>
+		<category><![CDATA[fantascienza]]></category>
+		<category><![CDATA[fantascienza italiana]]></category>
+		<category><![CDATA[forum]]></category>
+		<category><![CDATA[gratis]]></category>
+		<category><![CDATA[narrativa]]></category>
+		<category><![CDATA[partecipa]]></category>
+		<category><![CDATA[racconti]]></category>
+		<category><![CDATA[racconto]]></category>
+		<category><![CDATA[selezione]]></category>
+		<guid isPermaLink="false">/?p=25949</guid>
+
+					<description><![CDATA[Nuovi Autori Sci Fi è lieto di presentare&#8230; https://www.assonuoviautori.org/forumnasf/]]></description>
+										<content:encoded><![CDATA[<p><iframe loading="lazy" width="200" height="150" src="https://www.youtube.com/embed/PI8sBnAKTtI?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+<p>Nuovi Autori Sci Fi è lieto di presentare&#8230;<br />
+https://www.assonuoviautori.org/forumnasf/</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/bando-concorso-gratuito-di-fantascienza-nasf-edizione-13/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

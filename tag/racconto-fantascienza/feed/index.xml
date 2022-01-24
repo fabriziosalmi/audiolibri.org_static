@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>racconto fantascienza &#8211; Audiolibri.org</title>
+	<atom:link href="/tag/racconto-fantascienza/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Audiolibri in Italiano e in lingua originale.</description>
+	<lastBuildDate>Wed, 17 Mar 2021 11:32:22 +0000</lastBuildDate>
+	<language>it-IT</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	
+
+<image>
+	<url>/wp-content/uploads/2017/06/cropped-audiobooks_icon_alfa-32x32.png</url>
+	<title>racconto fantascienza &#8211; Audiolibri.org</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Il tempo scorre.  Il tempo scorre.  Ser Stefano racconto fantascienza</title>
+		<link>/il-tempo-scorre-il-tempo-scorre-ser-stefano-racconto-fantascienza/</link>
+					<comments>/il-tempo-scorre-il-tempo-scorre-ser-stefano-racconto-fantascienza/#respond</comments>
+		
+		<dc:creator><![CDATA[audiolibri.org]]></dc:creator>
+		<pubDate>Mon, 25 Apr 2016 14:00:54 +0000</pubDate>
+				<category><![CDATA[NASF]]></category>
+		<category><![CDATA[Il tempo scorre. Il tempo scorre. Ser Stefano]]></category>
+		<category><![CDATA[ippogrillo]]></category>
+		<category><![CDATA[mondoaparte2007]]></category>
+		<category><![CDATA[racconti]]></category>
+		<category><![CDATA[racconto fantascienza]]></category>
+		<category><![CDATA[valter]]></category>
+		<category><![CDATA[valter49]]></category>
+		<category><![CDATA[videoblog]]></category>
+		<category><![CDATA[videoletture]]></category>
+		<category><![CDATA[zanardi]]></category>
+		<guid isPermaLink="false">/?p=25925</guid>
+
+					<description><![CDATA[legge valter zanardi]]></description>
+										<content:encoded><![CDATA[<p><iframe loading="lazy" width="200" height="150" src="https://www.youtube.com/embed/ya-elm59_GQ?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+<p>legge valter zanardi</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/il-tempo-scorre-il-tempo-scorre-ser-stefano-racconto-fantascienza/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

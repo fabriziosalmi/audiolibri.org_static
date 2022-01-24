@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>nasfer &#8211; Audiolibri.org</title>
+	<atom:link href="/tag/nasfer/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Audiolibri in Italiano e in lingua originale.</description>
+	<lastBuildDate>Wed, 17 Mar 2021 11:32:37 +0000</lastBuildDate>
+	<language>it-IT</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	
+
+<image>
+	<url>/wp-content/uploads/2017/06/cropped-audiobooks_icon_alfa-32x32.png</url>
+	<title>nasfer &#8211; Audiolibri.org</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Nasfer.wmv</title>
+		<link>/nasfer-wmv/</link>
+					<comments>/nasfer-wmv/#respond</comments>
+		
+		<dc:creator><![CDATA[audiolibri.org]]></dc:creator>
+		<pubDate>Mon, 25 Jan 2010 15:33:34 +0000</pubDate>
+				<category><![CDATA[NASF]]></category>
+		<category><![CDATA[fantascienza]]></category>
+		<category><![CDATA[nasf]]></category>
+		<category><![CDATA[nasfer]]></category>
+		<guid isPermaLink="false">/?p=25943</guid>
+
+					<description><![CDATA[Quando la Sci-Fi è in pericolo, noi entriamo in azione e&#8230; il risultato non è mai scontato!]]></description>
+										<content:encoded><![CDATA[<p><iframe loading="lazy" width="200" height="113" src="https://www.youtube.com/embed/yilnYKhT4p0?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+<p>Quando la Sci-Fi è in pericolo, noi entriamo in azione e&#8230; il risultato non è mai scontato!</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/nasfer-wmv/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>
