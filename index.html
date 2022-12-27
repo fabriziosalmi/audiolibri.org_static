@@ -91,48 +91,7 @@ MaterialisTheme = {"blog_posts_as_masonry_grid":false}
             }
         })();
     </script>
-<meta name="onesignal" content="wordpress-plugin">
-<script>
 
-      window.OneSignal = window.OneSignal || [];
-
-      OneSignal.push( function() {
-        OneSignal.SERVICE_WORKER_UPDATER_PATH = "OneSignalSDKUpdaterWorker.js.php";
-                      OneSignal.SERVICE_WORKER_PATH = "OneSignalSDKWorker.js.php";
-                      OneSignal.SERVICE_WORKER_PARAM = { scope: "/" };
-        OneSignal.setDefaultNotificationUrl("");
-        var oneSignal_options = {};
-        window._oneSignalInitOptions = oneSignal_options;
-
-        oneSignal_options['wordpress'] = true;
-oneSignal_options['appId'] = '7efbd26e-459f-4b2e-8ceb-8d35cabbf5c5';
-oneSignal_options['allowLocalhostAsSecureOrigin'] = true;
-oneSignal_options['welcomeNotification'] = { };
-oneSignal_options['welcomeNotification']['disable'] = true;
-oneSignal_options['path'] = "/wp-content/plugins/onesignal-free-web-push-notifications/sdk_files/";
-oneSignal_options['safari_web_id'] = "web.onesignal.auto.110555e6-7aae-4d44-9896-bfe7a2b1c987";
-oneSignal_options['persistNotification'] = true;
-oneSignal_options['promptOptions'] = { };
-                OneSignal.init(window._oneSignalInitOptions);
-                OneSignal.showSlidedownPrompt();      });
-
-      function documentInitOneSignal() {
-        var oneSignal_elements = document.getElementsByClassName("OneSignal-prompt");
-
-        var oneSignalLinkClickHandler = function(event) { OneSignal.push(['registerForPushNotifications']); event.preventDefault(); };        for(var i = 0; i < oneSignal_elements.length; i++)
-          oneSignal_elements[i].addEventListener('click', oneSignalLinkClickHandler, false);
-      }
-
-      if (document.readyState === 'complete') {
-           documentInitOneSignal();
-      }
-      else {
-           window.addEventListener("load", function(event){
-               documentInitOneSignal();
-          });
-      }
-    </script>
-<meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress.">
 <link rel="icon" href="/wp-content/uploads/2017/06/cropped-audiobooks_icon_alfa-32x32.png" sizes="32x32">
 <link rel="icon" href="/wp-content/uploads/2017/06/cropped-audiobooks_icon_alfa-192x192.png" sizes="192x192">
 <meta name="msapplication-TileImage" content="/wp-content/uploads/2017/06/cropped-audiobooks_icon_alfa-270x270.png">
@@ -174,23 +133,6 @@ a.link {
         .materialis-front-page.materialis-content-padding .page-content {
             background-color: #f5fafd;
         }</style>
-
-	<!-- Matomo -->
-<script>
-  var _paq = window._paq = window._paq || [];
-  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  (function() {
-    var u="https://analytics.irrazionale.org/";
-    _paq.push(['setTrackerUrl', u+'matomo.php']);
-    _paq.push(['setSiteId', '2']);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-  })();
-</script>
-<!-- End Matomo Code -->
-
 	
 </head>
 <body class="home page-template page-template-page-templates page-template-homepage page-template-page-templateshomepage-php page page-id-18231 overlap-first-section materialis-front-page wpb-js-composer js-comp-ver-6.6.0 vc_responsive materialis-content-no-padding  materialis-maintainable-in-customizer ">
